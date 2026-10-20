@@ -56,24 +56,39 @@ def write_feed(papers: dict[str, dict], config: Config, path: Path, limit: int =
     path.write_text(xml, encoding="utf-8")
 
 
+FAMILY_LABELS = {"theory": "Theory", "recovery": "Recovery methods", "broader": "Interpretability"}
+
+
+def _short_date(iso: str) -> str:
+    d = dt.date.fromisoformat(iso)
+    return f"{d:%b}&nbsp;{d.day}"
+
+
 def update_readme(papers: dict[str, dict], config: Config, index: dict, path: Path,
-                  limit: int = 30) -> None:
+                  limit: int = 20) -> None:
     names = {t.slug: t.name for t in config.topics}
     site = config.site
+    first = dt.date.fromisoformat(min(index["days"])) if index["days"] else None
+    since = f" since {first.day} {first:%B %Y}" if first else ""
     lines = [
-        f"Last update: {index['generated_at'][:10]} · {index['total']} papers tracked · "
-        f"[browse and filter on the website]({site['site_url']}) · [RSS]({site['site_url']}feed.xml)",
+        f"**{index['total']} papers**{since} · updated {index['generated_at'][:10]} · "
+        f"[search and filter them on the website]({site['site_url']}) · [RSS]({site['site_url']}feed.xml)",
         "",
-        "| Topic | Papers |",
-        "|---|---:|",
+        "| | Topics and papers |",
+        "|:--|:--|",
     ]
-    for topic in index["topics"]:
-        lines.append(f"| {topic['name']} | {topic['count']} |")
-    lines += ["", f"### Latest {limit} papers", "", "| Date | Paper | Topics |", "|---|---|---|"]
+    for family, label in FAMILY_LABELS.items():
+        topics = [t for t in index["topics"] if t.get("family") == family]
+        if topics:
+            lines.append(f"| **{label}** | " + " · ".join(f"{t['name']} `{t['count']}`" for t in topics) + " |")
+    lines += ["", "### Latest papers", "", "| Date | Paper | Topics |", "|:--|:--|:--|"]
     for paper in [p for p in _ranked_recent(papers, limit * 2) if _visible(p)][:limit]:
         title = paper["title"].replace("|", "\\|")
         topics = ", ".join(names.get(t, t) for t in paper["topics"])
-        lines.append(f"| {paper['published']} | [{title}](https://arxiv.org/abs/{paper['id']}) | {topics} |")
+        lines.append(f"| {_short_date(paper['published'])} | [{title}](https://arxiv.org/abs/{paper['id']}) "
+                     f"| <sub>{topics}</sub> |")
+    lines += ["", f"<sub>The other {max(0, index['total'] - limit)} papers are on [the website]({site['site_url']}), "
+                  "with search and topic filters.</sub>"]
     block = "\n".join(lines)
 
     text = path.read_text(encoding="utf-8")

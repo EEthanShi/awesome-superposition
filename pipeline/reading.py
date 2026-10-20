@@ -23,15 +23,25 @@ def _anchor(name: str) -> str:
     return re.sub(r"[^a-z0-9 -]", "", name.lower()).replace(" ", "-")
 
 
+def _contents(sections: list[dict]) -> list[str]:
+    """One row per part of the survey, each section with its number of works."""
+    parts: dict[str, list[str]] = {}
+    for s in sections:
+        link = f"[{s['name']}](#{_anchor(s['name'])}) <sub>{len(s['item'])}</sub>"
+        parts.setdefault(s.get("part", ""), []).append(link)
+    lines = ["| Part | Sections |", "|:--|:--|"]
+    lines += [f"| **{part}** | {' · '.join(links)} |" for part, links in parts.items()]
+    return lines
+
+
 def update_readme(sections: list[dict], path: Path) -> None:
-    lines = ["**Contents:** " + " · ".join(f"[{s['name']}](#{_anchor(s['name'])})" for s in sections), ""]
+    lines = _contents(sections) + [""]
     for section in sections:
         lines += [f"### {section['name']}", "", f"*{section['description']}*", ""]
         for item in section["item"]:
-            venue = f", {item['venue']}" if item.get("venue") else ""
-            lines.append(f"- [{item['title']}]({item['url']}) ({item['authors']}, {item['year']}{venue}). "
-                         f"{item['note']}")
-        lines.append("")
+            meta = " · ".join(x for x in (item["authors"], item["year"], item.get("venue")) if x)
+            lines.append(f"- **[{item['title']}]({item['url']})** <sub>{meta}</sub><br>{item['note']}")
+        lines += ["", "<sub>[↑ contents](#reading-list)</sub>", ""]
     block = "\n".join(lines).rstrip()
     text = path.read_text(encoding="utf-8")
     head, _, rest = text.partition(START)

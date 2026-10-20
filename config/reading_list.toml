@@ -1,8 +1,10 @@
 # Curated reading list, rendered into the README and the website's Reading list view.
+# Each section has a part (Start, Theory, Practice, New) that groups it in the README contents.
 # Each entry: title, authors, year, venue, url, note. Pull requests welcome.
 
 [[section]]
 slug = "start"
+part = "Start"
 name = "Start here"
 description = "Reviews and the reports that set up the field."
 
@@ -64,6 +66,7 @@ note = "Survey of methods for interpreting the inner structures of deep networks
 
 [[section]]
 slug = "geometry"
+part = "Theory"
 name = "Definitions and geometry"
 description = "What superposition is, and how much overlap a given width forces."
 
@@ -133,6 +136,7 @@ note = "Proves that a polysemous word embedding is approximately a frequency-wei
 
 [[section]]
 slug = "learning"
+part = "Theory"
 name = "When training produces superposition"
 description = "Conditions under which trained models share dimensions among features."
 
@@ -178,6 +182,7 @@ note = "Splitting neurons into sparser sub-neurons at a fixed nonzero parameter 
 
 [[section]]
 slug = "access"
+part = "Theory"
 name = "Reading features back"
 description = "How wide a layer must be for its features to be recovered, and by which decoder."
 
@@ -231,6 +236,7 @@ note = "Casts SAE, transcoder, and crosscoder objectives as one piecewise biconv
 
 [[section]]
 slug = "computation"
+part = "Theory"
 name = "Computation in superposition"
 description = "What a network can compute without first decompressing its features."
 
@@ -284,6 +290,7 @@ note = "Superposition across time in recurrent networks, with an exact loss deco
 
 [[section]]
 slug = "explanation"
+part = "Theory"
 name = "Superposition as an explanation"
 description = "Phenomena that superposition has been proposed to explain."
 
@@ -337,6 +344,7 @@ note = "Neuroscience: decoding several stimuli from one neural population with u
 
 [[section]]
 slug = "probes"
+part = "Practice"
 name = "Supervised probes"
 description = "Reading a property named in advance from the activations."
 
@@ -358,6 +366,7 @@ note = "Supervised dictionaries built from class-conditional means, used as a re
 
 [[section]]
 slug = "dictionaries"
+part = "Practice"
 name = "Sparse autoencoders"
 description = "Unsupervised dictionaries that estimate features from activations."
 
@@ -443,6 +452,7 @@ note = "More than 400 open sparse autoencoders across every layer of Gemma 2 2B 
 
 [[section]]
 slug = "replacement"
+part = "Practice"
 name = "Transcoders, crosscoders, and circuits"
 description = "Interpretable stand-ins for parts of the network's computation."
 
@@ -504,6 +514,7 @@ note = "How the crosscoder objective decides which latents are exclusive to one 
 
 [[section]]
 slug = "parameters"
+part = "Practice"
 name = "Parameter decomposition"
 description = "Decomposing the trained weights into mechanisms."
 
@@ -541,6 +552,7 @@ note = "Extends parameter decomposition to language models and tests components 
 
 [[section]]
 slug = "evaluation"
+part = "Practice"
 name = "Evaluation and benchmarks"
 description = "How recovered features are checked when the true features are unknown."
 
@@ -626,6 +638,7 @@ note = "Ablates and steers recovered features in a synthetic setting to test whe
 
 [[section]]
 slug = "failures"
+part = "Practice"
 name = "Failure modes"
 description = "Where recovered features differ from the network's features."
 
@@ -703,6 +716,7 @@ note = "Separates stable endpoints from convergence across independent runs for 
 
 [[section]]
 slug = "applications"
+part = "Practice"
 name = "Applications and other domains"
 description = "Steering, editing, and models beyond language."
 
@@ -788,6 +802,7 @@ note = "In a time-series forecaster, competitive forecasting does not require su
 
 [[section]]
 slug = "recent"
+part = "New"
 name = "Recent, not yet covered by the survey"
 description = "Selected papers from July to October 2026."
 

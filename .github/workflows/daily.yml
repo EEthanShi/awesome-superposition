@@ -1,0 +1,54 @@
+name: Daily update
+
+on:
+  schedule:
+    - cron: "30 1 * * *"   # 01:30 UTC, after the arXiv announcement at 00:00 UTC
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Backfill from this date (YYYY-MM-DD); leave empty for the last 4 days"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the dependency of the optional AI step
+        run: pip install -r requirements.txt
+
+      - name: Crawl, classify, and rebuild
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPERPOSITION_DAILY_MODEL: ${{ vars.SUPERPOSITION_DAILY_MODEL }}
+        run: |
+          if [ -n "${{ github.event.inputs.since }}" ]; then
+            python -m pipeline.run --since "${{ github.event.inputs.since }}"
+          else
+            python -m pipeline.run
+          fi
+
+      - name: Commit the update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data feed.xml README.md
+          if git diff --cached --quiet; then
+            echo "No new papers today."
+          else
+            git commit -m "Daily update $(date -u +%Y-%m-%d)"
+            git push
+          fi

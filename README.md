@@ -32,16 +32,16 @@ applications). Each entry has one sentence on what the work shows.
 
 ## Watch: the survey in eight minutes
 
-[![Superposition, an 8-minute film: from five features in two dimensions to what sparse autoencoders can and cannot establish](assets/film-poster.jpg)](https://www.youtube.com/watch?v=IeBiVGzkPZw)
+[![Superposition, an 8-minute film: from five features in two dimensions to what sparse autoencoders can and cannot establish](assets/film-poster.jpg)](https://www.youtube.com/watch?v=scsMqFfoiKY)
 
-[0:00 Overture](https://www.youtube.com/watch?v=IeBiVGzkPZw&t=0s) ·
-[0:38 Geometry](https://www.youtube.com/watch?v=IeBiVGzkPZw&t=38s) ·
-[1:53 Sparsity](https://www.youtube.com/watch?v=IeBiVGzkPZw&t=113s) ·
-[2:45 Computation](https://www.youtube.com/watch?v=IeBiVGzkPZw&t=165s) ·
-[3:58 Practice](https://www.youtube.com/watch?v=IeBiVGzkPZw&t=238s) ·
-[5:38 Failure modes](https://www.youtube.com/watch?v=IeBiVGzkPZw&t=338s) ·
-[6:58 Open questions](https://www.youtube.com/watch?v=IeBiVGzkPZw&t=418s) ·
-[7:32 Coda](https://www.youtube.com/watch?v=IeBiVGzkPZw&t=452s)
+[0:00 Overture](https://www.youtube.com/watch?v=scsMqFfoiKY&t=0s) ·
+[0:38 Geometry](https://www.youtube.com/watch?v=scsMqFfoiKY&t=38s) ·
+[1:53 Sparsity](https://www.youtube.com/watch?v=scsMqFfoiKY&t=113s) ·
+[2:45 Computation](https://www.youtube.com/watch?v=scsMqFfoiKY&t=165s) ·
+[3:58 Practice](https://www.youtube.com/watch?v=scsMqFfoiKY&t=238s) ·
+[5:38 Failure modes](https://www.youtube.com/watch?v=scsMqFfoiKY&t=338s) ·
+[6:58 Open questions](https://www.youtube.com/watch?v=scsMqFfoiKY&t=418s) ·
+[7:32 Coda](https://www.youtube.com/watch?v=scsMqFfoiKY&t=452s)
 
 [![The website: a toy model trained live in the browser stores five features in two dimensions](assets/screenshot.png)](https://eethanshi.github.io/awesome-superposition/)
 

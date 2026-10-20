@@ -1,0 +1,848 @@
+# Curated reading list, rendered into the README and the website's Reading list view.
+# Each entry: title, authors, year, venue, url, note. Pull requests welcome.
+
+[[section]]
+slug = "start"
+name = "Start here"
+description = "Reviews and the reports that set up the field."
+
+[[section.item]]
+title = "Toy Models of Superposition"
+authors = "Elhage et al."
+year = "2022"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2022/toy_model/index.html"
+note = "Small ReLU networks trained on sparse synthetic features keep more useful features than they have hidden dimensions; the reference point for the field."
+
+[[section.item]]
+title = "Feature Superposition in Neural Networks: From Theory to Practice"
+authors = "Shi, Li, Han, and Hernández-Lobato"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2609.06862"
+note = "Survey that organizes the theory by the class of decoder allowed to read features back, and the practice by the strength of the claims each result supports."
+
+[[section.item]]
+title = "Open Problems in Mechanistic Interpretability"
+authors = "Sharkey et al."
+year = "2025"
+venue = "TMLR"
+url = "https://arxiv.org/abs/2501.16496"
+note = "Open problems in mechanistic interpretability, covering methods and applications, including the limits of sparse dictionary learning."
+
+[[section.item]]
+title = "A unifying framework from neural superposition to sparse interpretable codes"
+authors = "Klindt et al."
+year = "2026"
+venue = "Nature Machine Intelligence"
+url = "https://doi.org/10.1038/s42256-026-01259-z"
+note = "Connects superposition to identifiability theory, sparse coding through compressed sensing, and quantitative interpretability metrics."
+
+[[section.item]]
+title = "Mechanistic Interpretability for AI Safety: A Review"
+authors = "Bereska and Gavves"
+year = "2024"
+venue = "TMLR"
+url = "https://arxiv.org/abs/2404.14082"
+note = "Review of mechanistic interpretability methods for explaining internal representations and computations."
+
+[[section.item]]
+title = "A Survey on Sparse Autoencoders: Interpreting the Internal Mechanisms of Large Language Models"
+authors = "Shu et al."
+year = "2025"
+venue = "Findings of EMNLP"
+url = "https://doi.org/10.18653/v1/2025.findings-emnlp.89"
+note = "Survey of sparse autoencoders: architectures, training, feature explanations, evaluation, and applications."
+
+[[section.item]]
+title = "Toward Transparent AI: A Survey on Interpreting the Inner Structures of Deep Neural Networks"
+authors = "Räuker et al."
+year = "2023"
+venue = "preprint"
+url = "https://arxiv.org/abs/2207.13243"
+note = "Survey of methods for interpreting the inner structures of deep networks."
+
+[[section]]
+slug = "geometry"
+name = "Definitions and geometry"
+description = "What superposition is, and how much overlap a given width forces."
+
+[[section.item]]
+title = "From Data Statistics to Feature Geometry: How Correlations Shape Superposition"
+authors = "Prieto et al."
+year = "2026"
+venue = "ICLR"
+url = "https://arxiv.org/abs/2603.09972"
+note = "Defines superposition by overlapping directions plus recoverability, and shows that correlated features can be placed so that their interference helps rather than hurts."
+
+[[section.item]]
+title = "The Linear Representation Hypothesis and the Geometry of Large Language Models"
+authors = "Park et al."
+year = "2024"
+venue = "ICML"
+url = "https://arxiv.org/abs/2311.03658"
+note = "The linear representation hypothesis: a concept is carried by a direction and its intensity by the coefficient along that direction."
+
+[[section.item]]
+title = "Lower Bounds on the Maximum Cross Correlation of Signals"
+authors = "Welch"
+year = "1974"
+venue = "IEEE Trans. Inf. Theory"
+url = "https://doi.org/10.1109/TIT.1974.1055219"
+note = "The Welch bound: more unit vectors than dimensions force a minimum worst-case overlap."
+
+[[section.item]]
+title = "Finite Normalized Tight Frames"
+authors = "Benedetto and Fickus"
+year = "2003"
+venue = "Adv. Comput. Math."
+url = "https://doi.org/10.1023/A:1021323312367"
+note = "Tight frames, which attain the lower bound on the total squared overlap of unit vectors."
+
+[[section.item]]
+title = "Extensions of Lipschitz mappings into a Hilbert space"
+authors = "Johnson and Lindenstrauss"
+year = "1984"
+venue = "Contemp. Math."
+url = "https://doi.org/10.1090/conm/026/737400"
+note = "The Johnson-Lindenstrauss lemma: exponentially many nearly orthogonal directions fit in a given dimension."
+
+[[section.item]]
+title = "Optimally sparse representation in general (nonorthogonal) dictionaries via ℓ¹ minimization"
+authors = "Donoho and Elad"
+year = "2003"
+venue = "PNAS"
+url = "https://doi.org/10.1073/pnas.0437847100"
+note = "Exact sparse recovery from overcomplete dictionaries, the compressed-sensing side of superposition."
+
+[[section.item]]
+title = "Emergence of simple-cell receptive field properties by learning a sparse code for natural images"
+authors = "Olshausen and Field"
+year = "1996"
+venue = "Nature"
+url = "https://doi.org/10.1038/381607a0"
+note = "Sparse coding of natural images, the origin of dictionary learning."
+
+[[section.item]]
+title = "Linear Algebraic Structure of Word Senses, with Applications to Polysemy"
+authors = "Arora et al."
+year = "2018"
+venue = "TACL"
+url = "https://arxiv.org/abs/1601.03764"
+note = "Proves that a polysemous word embedding is approximately a frequency-weighted sum of sense vectors, which sparse coding recovers."
+
+[[section]]
+slug = "learning"
+name = "When training produces superposition"
+description = "Conditions under which trained models share dimensions among features."
+
+[[section.item]]
+title = "Polysemanticity and Capacity in Neural Networks"
+authors = "Scherlis et al."
+year = "2022"
+venue = "preprint"
+url = "https://arxiv.org/abs/2210.01892"
+note = "Defines feature capacity and shows that the loss-minimizing allocation shares dimensions among features of intermediate importance once feature values are heavier-tailed than a Gaussian."
+
+[[section.item]]
+title = "What Causes Polysemanticity? An Alternative Origin Story of Mixed Selectivity from Incidental Causes"
+authors = "Lecomte et al."
+year = "2024"
+venue = "preprint"
+url = "https://arxiv.org/abs/2312.03096"
+note = "Incidental polysemanticity: networks with at least as many neurons as features can still become polysemantic."
+
+[[section.item]]
+title = "Superposition Yields Robust Neural Scaling"
+authors = "Liu et al."
+year = "2025"
+venue = "NeurIPS"
+url = "https://arxiv.org/abs/2505.10465"
+note = "Argues that loss falls as one over width in a strong-superposition regime, and relates this to loss-width fits on open language models."
+
+[[section.item]]
+title = "Superposition Unifies Power-Law Training Dynamics"
+authors = "Chen et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2602.01045"
+note = "Derives power-law training dynamics from a superposition bottleneck in a teacher-student model."
+
+[[section.item]]
+title = "Expand Neurons, Not Parameters"
+authors = "Kong et al."
+year = "2026"
+venue = "ICML"
+url = "https://arxiv.org/abs/2510.04500"
+note = "Splitting neurons into sparser sub-neurons at a fixed nonzero parameter count improves performance, attributed to fewer feature collisions."
+
+[[section]]
+slug = "access"
+name = "Reading features back"
+description = "How wide a layer must be for its features to be recovered, and by which decoder."
+
+[[section.item]]
+title = "How Many Features Can a Language Model Store Under the Linear Representation Hypothesis?"
+authors = "Garg et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2602.11246"
+note = "One fixed linear map that reads back every k-sparse pattern needs a width of order k squared, up to logarithmic factors."
+
+[[section.item]]
+title = "Stable signal recovery from incomplete and inaccurate measurements"
+authors = "Candès et al."
+year = "2006"
+venue = "Comm. Pure Appl. Math."
+url = "https://arxiv.org/abs/math/0503066"
+note = "Sparse optimization recovers every k-sparse signal from about k log(d/k) measurements under restricted isometry."
+
+[[section.item]]
+title = "Taming Polysemanticity in LLMs: Provable Feature Recovery via Sparse Autoencoders"
+authors = "Chen et al."
+year = "2025"
+venue = "preprint"
+url = "https://arxiv.org/abs/2506.14002"
+note = "Feature-recovery guarantees for a sparse autoencoder variant under a generative model of activations."
+
+[[section.item]]
+title = "Provably Extracting the Features from a General Superposition"
+authors = "Liu"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2512.15987"
+note = "Recovers the directions of a sum of ridge functions from noisy queries, under nondegeneracy conditions."
+
+[[section.item]]
+title = "On the Limits of Sparse Autoencoders: A Theoretical Framework and Reweighted Remedy"
+authors = "Cui et al."
+year = "2025"
+venue = "preprint"
+url = "https://arxiv.org/abs/2506.15963"
+note = "Closed-form sparse autoencoder optima recover the true features only under stringent sparsity conditions."
+
+[[section.item]]
+title = "A Unified Theory of Sparse Dictionary Learning in Mechanistic Interpretability: Piecewise Biconvexity and Spurious Minima"
+authors = "Tang et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2512.05534"
+note = "Casts SAE, transcoder, and crosscoder objectives as one piecewise biconvex problem; absorption and dead latents follow from the geometry of its solutions."
+
+[[section]]
+slug = "computation"
+name = "Computation in superposition"
+description = "What a network can compute without first decompressing its features."
+
+[[section.item]]
+title = "On the Complexity of Neural Computation in Superposition"
+authors = "Adler and Shavit"
+year = "2024"
+venue = "preprint"
+url = "https://arxiv.org/abs/2409.15318"
+note = "Storing sparse Boolean features takes logarithmic width, while computing a whole family of such functions needs more width than storing their outputs."
+
+[[section.item]]
+title = "Mathematical Models of Computation in Superposition"
+authors = "Hänni et al."
+year = "2024"
+venue = "workshop"
+url = "https://arxiv.org/abs/2408.05451"
+note = "Constructions that compute all pairwise ANDs of sparse features in superposition; even random networks make many such functions linearly readable."
+
+[[section.item]]
+title = "Towards Combinatorial Interpretability of Neural Computation"
+authors = "Adler et al."
+year = "2025"
+venue = "preprint"
+url = "https://arxiv.org/abs/2504.08842"
+note = "Reads output-channel routing motifs off the weight signs of two-layer MLPs trained on sparse Boolean formulas."
+
+[[section.item]]
+title = "Compressed Computation is (probably) not Computation in Superposition"
+authors = "Bhagat et al."
+year = "2026"
+venue = "workshop"
+url = "https://arxiv.org/abs/2606.14673"
+note = "Shows that a reported loss advantage for compressed computation comes from a linear mixing term created by the residual and the embedding."
+
+[[section.item]]
+title = "Compressed Computation under L⁴ Loss is likely Computation in Superposition"
+authors = "Ferreira da Silva and Heimersheim"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2607.04800"
+note = "Removes the residual and trains under a fourth-power loss, which yields a sparse code consistent with computation in superposition."
+
+[[section.item]]
+title = "Temporal Superposition and Feature Geometry of RNNs under Memory Demands"
+authors = "Sharma et al."
+year = "2026"
+venue = "ICLR"
+url = "https://openreview.net/forum?id=7cMzTpbJHC"
+note = "Superposition across time in recurrent networks, with an exact loss decomposition into projection and composition interference."
+
+[[section]]
+slug = "explanation"
+name = "Superposition as an explanation"
+description = "Phenomena that superposition has been proposed to explain."
+
+[[section.item]]
+title = "Adversarial Examples Are Not Bugs, They Are Superposition"
+authors = "Gorton and Lewis"
+year = "2025"
+venue = "preprint"
+url = "https://arxiv.org/abs/2508.17456"
+note = "Argues that superposition may be a primary cause of adversarial examples."
+
+[[section.item]]
+title = "Adversarial Attacks Leverage Interference Between Features in Superposition"
+authors = "Stevinson et al."
+year = "2026"
+venue = "ICML"
+url = "https://arxiv.org/abs/2510.11709"
+note = "Proves that optimal perturbations in a linear bottleneck follow the interference between readout directions."
+
+[[section.item]]
+title = "Superposition as Lossy Compression: Measure with Sparse Autoencoders and Connect to Adversarial Vulnerability"
+authors = "Bereska et al."
+year = "2025"
+venue = "TMLR"
+url = "https://arxiv.org/abs/2512.13568"
+note = "Counts effective features per neuron with an entropy measure built on sparse autoencoders, and relates the count to adversarial training."
+
+[[section.item]]
+title = "Similarity of Neural Network Representations in Superposition"
+authors = "Liu et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2604.00208"
+note = "How RSA, linear CKA, and linear regression behave on representations in superposition."
+
+[[section.item]]
+title = "The importance of mixed selectivity in complex cognitive tasks"
+authors = "Rigotti et al."
+year = "2013"
+venue = "Nature"
+url = "https://doi.org/10.1038/nature12160"
+note = "Neuroscience: nonlinear mixed selectivity raises the dimension of neural activity and supports linear classification."
+
+[[section.item]]
+title = "Neural Population Coding of Multiple Stimuli"
+authors = "Orhan and Ma"
+year = "2015"
+venue = "J. Neurosci."
+url = "https://arxiv.org/abs/1410.1093"
+note = "Neuroscience: decoding several stimuli from one neural population with unbiased and optimal linear estimators."
+
+[[section]]
+slug = "probes"
+name = "Supervised probes"
+description = "Reading a property named in advance from the activations."
+
+[[section.item]]
+title = "Finding Neurons in a Haystack: Case Studies with Sparse Probing"
+authors = "Gurnee et al."
+year = "2023"
+venue = "TMLR"
+url = "https://arxiv.org/abs/2305.01610"
+note = "Sparse probing: restricts a probe to a few neurons to test whether a property is localized in the neuron basis."
+
+[[section.item]]
+title = "Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control"
+authors = "Makelov et al."
+year = "2025"
+venue = "ICLR"
+url = "https://arxiv.org/abs/2405.08366"
+note = "Supervised dictionaries built from class-conditional means, used as a reference against which sparse autoencoders are tested causally."
+
+[[section]]
+slug = "dictionaries"
+name = "Sparse autoencoders"
+description = "Unsupervised dictionaries that estimate features from activations."
+
+[[section.item]]
+title = "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning"
+authors = "Bricken et al."
+year = "2023"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2023/monosemantic-features/index.html"
+note = "Dictionary learning on a one-layer transformer, decomposing polysemantic neurons into sparse latents."
+
+[[section.item]]
+title = "Sparse Autoencoders Find Highly Interpretable Features in Language Models"
+authors = "Cunningham et al."
+year = "2024"
+venue = "ICLR"
+url = "https://arxiv.org/abs/2309.08600"
+note = "Trains sparse autoencoders on language-model activations to find interpretable directions."
+
+[[section.item]]
+title = "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet"
+authors = "Templeton et al."
+year = "2024"
+venue = "Transformer Circuits"
+url = "https://arxiv.org/abs/2605.29358"
+note = "Scales sparse autoencoders to a production model, with up to 34 million latents on Claude 3 Sonnet."
+
+[[section.item]]
+title = "Scaling and Evaluating Sparse Autoencoders"
+authors = "Gao et al."
+year = "2025"
+venue = "ICLR"
+url = "https://arxiv.org/abs/2406.04093"
+note = "TopK sparse autoencoders with an auxiliary loss against dead latents, scaled to 16 million latents on GPT-4 activations."
+
+[[section.item]]
+title = "Improving Dictionary Learning with Gated Sparse Autoencoders"
+authors = "Rajamanoharan et al."
+year = "2024"
+venue = "NeurIPS"
+url = "https://arxiv.org/abs/2404.16014"
+note = "Separates which latents fire from how large they are, removing the shrinkage caused by the L1 penalty."
+
+[[section.item]]
+title = "Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders"
+authors = "Rajamanoharan et al."
+year = "2024"
+venue = "preprint"
+url = "https://arxiv.org/abs/2407.14435"
+note = "Per-latent thresholds that allow variable activity without coupling latents to each other."
+
+[[section.item]]
+title = "BatchTopK Sparse Autoencoders"
+authors = "Bussmann et al."
+year = "2024"
+venue = "preprint"
+url = "https://arxiv.org/abs/2412.06410"
+note = "Selects the active latents per batch instead of per example."
+
+[[section.item]]
+title = "Learning Multi-Level Features with Matryoshka Sparse Autoencoders"
+authors = "Bussmann et al."
+year = "2025"
+venue = "ICML"
+url = "https://arxiv.org/abs/2503.17547"
+note = "Nested dictionaries that change how related properties share latents, reducing absorption as width grows."
+
+[[section.item]]
+title = "Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning"
+authors = "Braun et al."
+year = "2024"
+venue = "NeurIPS"
+url = "https://arxiv.org/abs/2405.12241"
+note = "Trains the dictionary on the model's downstream loss instead of activation reconstruction."
+
+[[section.item]]
+title = "Gemma Scope: Open Sparse Autoencoders Everywhere All at Once on Gemma 2"
+authors = "Lieberum et al."
+year = "2024"
+venue = "technical report"
+url = "https://arxiv.org/abs/2408.05147"
+note = "More than 400 open sparse autoencoders across every layer of Gemma 2 2B and 9B, plus selected layers of 27B."
+
+[[section]]
+slug = "replacement"
+name = "Transcoders, crosscoders, and circuits"
+description = "Interpretable stand-ins for parts of the network's computation."
+
+[[section.item]]
+title = "Transcoders Find Interpretable LLM Feature Circuits"
+authors = "Dunefsky et al."
+year = "2024"
+venue = "NeurIPS"
+url = "https://arxiv.org/abs/2406.11944"
+note = "Replaces MLPs with sparse transcoders, so that latent-to-latent attributions factorize through the weights."
+
+[[section.item]]
+title = "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models"
+authors = "Marks et al."
+year = "2025"
+venue = "ICLR"
+url = "https://arxiv.org/abs/2403.19647"
+note = "Builds circuits from sparse autoencoder latents with error nodes, and edits model behavior through them."
+
+[[section.item]]
+title = "Sparse Crosscoders for Cross-Layer Features and Model Diffing"
+authors = "Lindsey et al."
+year = "2024"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2024/crosscoders/index.html"
+note = "Latents that read from and write to several layers, also used to compare two models."
+
+[[section.item]]
+title = "Circuit Tracing: Revealing Computational Graphs in Language Models"
+authors = "Ameisen et al."
+year = "2025"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2025/attribution-graphs/methods.html"
+note = "Cross-layer transcoders and attribution graphs for tracing a model's computation on a prompt."
+
+[[section.item]]
+title = "On the Biology of a Large Language Model"
+authors = "Lindsey et al."
+year = "2025"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2025/attribution-graphs/biology.html"
+note = "Attribution graphs applied to many behaviors of Claude 3.5 Haiku; the authors report insight on about a quarter of the prompts they tried."
+
+[[section.item]]
+title = "Sparse Mixtures of Linear Transforms"
+authors = "Lindsey et al."
+year = "2025"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2025/bulk-update/index.html"
+note = "Replacement layers built from sparse mixtures of linear transforms."
+
+[[section.item]]
+title = "Insights on Crosscoder Model Diffing"
+authors = "Mishra-Sharma et al."
+year = "2025"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2025/crosscoder-diffing-update/index.html"
+note = "How the crosscoder objective decides which latents are exclusive to one of two models."
+
+[[section]]
+slug = "parameters"
+name = "Parameter decomposition"
+description = "Decomposing the trained weights into mechanisms."
+
+[[section.item]]
+title = "A Toy Model of Interference Weights"
+authors = "Olah et al."
+year = "2025"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2025/interference-weights/index.html"
+note = "Argues that superposition contaminates the weights between features, motivating decomposition in parameter space."
+
+[[section.item]]
+title = "Interpretability in Parameter Space: Minimizing Mechanistic Description Length with Attribution-based Parameter Decomposition"
+authors = "Braun et al."
+year = "2025"
+venue = "preprint"
+url = "https://arxiv.org/abs/2501.14926"
+note = "Decomposes weights into mechanisms by minimizing description length; recovers ground-truth mechanisms in toy models."
+
+[[section.item]]
+title = "Stochastic Parameter Decomposition"
+authors = "Bushnaq et al."
+year = "2025"
+venue = "preprint"
+url = "https://arxiv.org/abs/2506.20790"
+note = "A stochastic, more scalable form of parameter decomposition."
+
+[[section.item]]
+title = "Interpreting Language Model Parameters"
+authors = "Bushnaq et al."
+year = "2026"
+venue = "research report"
+url = "https://arxiv.org/abs/2610.20748"
+note = "Extends parameter decomposition to language models and tests components with adversarially chosen ablations."
+
+[[section]]
+slug = "evaluation"
+name = "Evaluation and benchmarks"
+description = "How recovered features are checked when the true features are unknown."
+
+[[section.item]]
+title = "Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models"
+authors = "Karvonen et al."
+year = "2024"
+venue = "NeurIPS"
+url = "https://arxiv.org/abs/2408.00113"
+note = "Chess and Othello models with known board properties as a test of dictionary recovery."
+
+[[section.item]]
+title = "SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability"
+authors = "Karvonen et al."
+year = "2025"
+venue = "ICML"
+url = "https://arxiv.org/abs/2503.09532"
+note = "A benchmark across more than 200 dictionaries, seven architectures, and several metrics."
+
+[[section.item]]
+title = "SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data"
+authors = "Chanin and Garriga-Alonso"
+year = "2026"
+venue = "ICML"
+url = "https://arxiv.org/abs/2602.14687"
+note = "Synthetic activations with hierarchy, correlations, and Zipfian firing, so recovered features can be checked against the truth."
+
+[[section.item]]
+title = "Are Sparse Autoencoder Benchmarks Reliable?"
+authors = "Chanin"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2605.18229"
+note = "Finds score differences between similar dictionaries within their own seed-to-seed variation."
+
+[[section.item]]
+title = "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?"
+authors = "Korznikov et al."
+year = "2026"
+venue = "NeurIPS"
+url = "https://arxiv.org/abs/2602.14111"
+note = "Sparse autoencoders with directions kept at or near random initialization score close to trained ones on several evaluations."
+
+[[section.item]]
+title = "Sparse but Wrong: Incorrect L₀ Leads to Incorrect Features in Sparse Autoencoders"
+authors = "Chanin and Garriga-Alonso"
+year = "2026"
+venue = "ICML"
+url = "https://arxiv.org/abs/2508.16560"
+note = "Too low an L0 mixes correlated features, and too high an L0 admits degenerate mixtures."
+
+[[section.item]]
+title = "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing"
+authors = "Kantamneni et al."
+year = "2025"
+venue = "ICML"
+url = "https://arxiv.org/abs/2502.16681"
+note = "Sparse-autoencoder probes against baselines under data scarcity, class imbalance, label noise, and covariate shift."
+
+[[section.item]]
+title = "Decomposing the Dark Matter of Sparse Autoencoders"
+authors = "Engels et al."
+year = "2025"
+venue = "TMLR"
+url = "https://arxiv.org/abs/2410.14670"
+note = "Models activations as sparse features plus a dense component, and studies the error that sparse autoencoders leave."
+
+[[section.item]]
+title = "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders"
+authors = "Wu et al."
+year = "2025"
+venue = "ICML"
+url = "https://arxiv.org/abs/2501.17148"
+note = "Steering and concept detection across 500 concepts; dictionary methods are not competitive with simple baselines in its settings."
+
+[[section.item]]
+title = "From Geometric Recovery to Causal Validation: A Reproducible Audit of Sparse Autoencoder Features"
+authors = "Bal"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2607.12166"
+note = "Ablates and steers recovered features in a synthetic setting to test whether they are causal."
+
+[[section]]
+slug = "failures"
+name = "Failure modes"
+description = "Where recovered features differ from the network's features."
+
+[[section.item]]
+title = "A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders"
+authors = "Chanin et al."
+year = "2025"
+venue = "NeurIPS"
+url = "https://arxiv.org/abs/2409.14507"
+note = "Feature splitting and absorption: a specific latent takes over a general one when a child feature implies its parent."
+
+[[section.item]]
+title = "Feature Hedging: Correlated Features Break Narrow Sparse Autoencoders"
+authors = "Chanin et al."
+year = "2025"
+venue = "preprint"
+url = "https://arxiv.org/abs/2505.11756"
+note = "Dictionaries narrower than the feature set merge correlated features into one latent."
+
+[[section.item]]
+title = "Sparse Autoencoders Do Not Find Canonical Units of Analysis"
+authors = "Leask et al."
+year = "2025"
+venue = "ICLR"
+url = "https://arxiv.org/abs/2502.04878"
+note = "Latents at one dictionary width decompose into latents at another, so they are not canonical units."
+
+[[section.item]]
+title = "Not All Language Model Features Are One-Dimensionally Linear"
+authors = "Engels et al."
+year = "2025"
+venue = "ICLR"
+url = "https://arxiv.org/abs/2405.14860"
+note = "Days, months, and years lie on circles in two-dimensional subspaces."
+
+[[section.item]]
+title = "When Models Manipulate Manifolds: The Geometry of a Counting Task"
+authors = "Gurnee et al."
+year = "2026"
+venue = "Transformer Circuits"
+url = "https://transformer-circuits.pub/2025/linebreaks/index.html"
+note = "A counting task represented on a curved manifold that dictionary latents discretize."
+
+[[section.item]]
+title = "Do Sparse Autoencoders Capture Concept Manifolds?"
+authors = "Bhalla et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2604.28119"
+note = "Separates capturing a concept manifold with a few latents from shattering or diluting it."
+
+[[section.item]]
+title = "An Interpretability Illusion for BERT"
+authors = "Bolukbasi et al."
+year = "2021"
+venue = "preprint"
+url = "https://arxiv.org/abs/2104.07143"
+note = "Random directions show coherent top-activating examples about as often as neurons do."
+
+[[section.item]]
+title = "Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders"
+authors = "Gerasimov et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2606.12138"
+note = "Estimates how likely a latent is to reappear in an independent training run."
+
+[[section.item]]
+title = "Ablating Archetypes: The Stability of Archetypal SAEs is an Artifact of Initialization and Metric Design"
+authors = "Brzozowski and Chung"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2606.02061"
+note = "Separates stable endpoints from convergence across independent runs for archetypal sparse autoencoders."
+
+[[section]]
+slug = "applications"
+name = "Applications and other domains"
+description = "Steering, editing, and models beyond language."
+
+[[section.item]]
+title = "Steering LLMs? Actually, Sparse Autoencoders Can Outperform Simple Baselines"
+authors = "Jørgensen and Hansen"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2605.31183"
+note = "With supervised labeling and selection, sparse-autoencoder steering approaches a LoRA reference while staying below prompting."
+
+[[section.item]]
+title = "Look But Don't Touch with Sparse Autoencoders for Unlearning in Diffusion Models"
+authors = "Cassano et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2606.31699"
+note = "Autoencoder-based concept erasure in diffusion models localizes the concept but often produces image artifacts."
+
+[[section.item]]
+title = "Understanding Emergent Misalignment via Feature Superposition Geometry"
+authors = "Minegishi et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2605.00842"
+note = "Explains emergent misalignment by amplification of a target feature also amplifying overlapping directions."
+
+[[section.item]]
+title = "Verbalizable Representations Form a Global Workspace in Language Models"
+authors = "Gurnee et al."
+year = "2026"
+venue = "Transformer Circuits"
+url = "https://arxiv.org/abs/2607.15495"
+note = "Directions built from the model's sensitivity to its activations; a small share of a concept vector's variance carries much of its output effect."
+
+[[section.item]]
+title = "Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds"
+authors = "Fel et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2606.25234"
+note = "Vision concepts recovered as low-dimensional blocks rather than single directions, with generation steered within a block."
+
+[[section.item]]
+title = "Superposition in Graph Neural Networks"
+authors = "Pertl et al."
+year = "2025"
+venue = "workshop"
+url = "https://arxiv.org/abs/2509.00928"
+note = "Measures superposition in message-passing networks on synthetic graph tasks."
+
+[[section.item]]
+title = "Sparse Autoencoders Reveal Organized Biological Knowledge but Minimal Regulatory Logic in Single-Cell Foundation Models"
+authors = "Kendiukhov"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2603.02952"
+note = "In a single-cell foundation model, only 3 of 48 transcription factors show target-specific latent responses under perturbation."
+
+[[section.item]]
+title = "Mechanistic Interpretability of EEG Foundation Models via Sparse Autoencoders"
+authors = "Lehn-Schiøler et al."
+year = "2026"
+venue = "NeurIPS"
+url = "https://arxiv.org/abs/2605.13930"
+note = "Ranks dictionary latents by alignment with clinical concept directions in EEG foundation models."
+
+[[section.item]]
+title = "Sparse Probes and Murky Physics: A Case Study of Interpretability Challenges in a Foundation Model for Continuum Dynamics"
+authors = "Rosenfeld and Sonnewald"
+year = "2026"
+venue = "workshop"
+url = "https://arxiv.org/abs/2606.11657"
+note = "Recovered features in a fluid-dynamics emulator do not align with standard physical decompositions."
+
+[[section.item]]
+title = "Superposition Is Not Necessary: A Mechanistic Interpretability Analysis of Transformer Representations for Time Series Forecasting"
+authors = "Yildirim"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2605.05151"
+note = "In a time-series forecaster, competitive forecasting does not require superposition."
+
+[[section]]
+slug = "recent"
+name = "Recent, not yet covered by the survey"
+description = "Selected papers from July to October 2026."
+
+[[section.item]]
+title = "High-probability guarantees for linear accessibility in feature superposition"
+authors = "Vompa"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2609.09556"
+note = "For a fixed support with subgaussian noise, a linear readout needs a width of only about k log d with high probability."
+
+[[section.item]]
+title = "Towards a mathematical theory of superposition"
+authors = "Ivanitskiy et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2608.27540"
+note = "Recovery theorems for the tied readout ReLU(WᵀWx + b), built on frame theory and compressed sensing."
+
+[[section.item]]
+title = "Emergent phases of superposition: from partial to full representation"
+authors = "Guo et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2609.36455"
+note = "Width drives a transition from representing a subset of the features to representing all of them."
+
+[[section.item]]
+title = "The Ball and the Box: Two Geometries of Computation in Superposition"
+authors = "Li et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2610.11744"
+note = "Sharp width thresholds for Boolean gates from a single threshold layer; the threshold depends on the error criterion."
+
+[[section.item]]
+title = "Self-Confirming Superposition Traps in Reinforcement Learning"
+authors = "Shi et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2609.32966"
+note = "The reinforcement-learning loop can sustain a lower-return policy because optimal codes overlap features that rarely occur together."
+
+[[section.item]]
+title = "Sparse Transformer: a Controlled Testbed for Mechanistic Interpretability"
+authors = "Korznikov et al."
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2610.19907"
+note = "A small language model whose sparse MLP gives a reference basis for testing recovery methods."
+
+[[section.item]]
+title = "Planning or Improvisation? Stress-Testing the Poetry Planning Site on Open Models and Open Cross-Layer Transcoders"
+authors = "Jacopin"
+year = "2026"
+venue = "preprint"
+url = "https://arxiv.org/abs/2609.18440"
+note = "Re-runs the rhyme-planning case study on open models with open cross-layer transcoders: position specificity generalizes, the planning site does not."

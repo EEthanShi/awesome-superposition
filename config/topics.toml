@@ -1,0 +1,148 @@
+# Topics tracked by the daily crawler.
+#
+# Each topic is one arXiv API query plus local checks on the title and abstract:
+#   query        arXiv API search query (title/abstract fields), combined with `categories`
+#                and the date window by the crawler
+#   require_any  regexes; at least one must match the title or abstract
+#   context_any  regexes; if given, at least one must also match (removes homonyms,
+#                e.g. "transcoder" in video coding)
+#   exclude_any  regexes; any match drops the topic for that paper
+#   weight       contribution to the ranking score (doubled when the title matches)
+#   family       theory, recovery, or broader; the website colors topics by family
+#
+# Fork this repository and edit this file to track your own topics.
+
+[site]
+title = "Awesome Superposition"
+tagline = "A curated reading list and a daily feed of new papers on feature superposition and mechanistic interpretability."
+repo = "EEthanShi/awesome-superposition"
+site_url = "https://eethanshi.github.io/awesome-superposition/"
+categories = ["cs.LG", "cs.AI", "cs.CL", "cs.CV", "cs.NE", "stat.ML", "q-bio.NC"]
+
+# Exclusions taken from the selection criteria of the survey "Feature Superposition in
+# Neural Networks: From Theory to Practice": quantum superposition, the Kolmogorov
+# superposition theorem and Kolmogorov-Arnold networks, superposition coding in
+# communications, and model, task-vector, or parameter superposition in model merging.
+[exclusions]
+superposition = [
+  "quantum", "qubit", "kolmogorov", "superposition coding", "\\bNOMA\\b",
+  "non-orthogonal multiple access", "model merging", "task[- ]vector",
+  "superposition of (models|tasks|weights|parameters)", "parameter superposition",
+  "superposition principle", "electromagnetic", "interferometr", "hologra",
+]
+
+[[topic]]
+slug = "superposition"
+family = "theory"
+name = "Superposition"
+description = "More features than dimensions: geometry, capacity, interference, toy models."
+query = 'abs:superposition AND (abs:feature OR abs:features OR abs:neuron OR abs:neurons OR abs:representation OR abs:representations OR abs:polysemantic OR abs:interpretability)'
+require_any = ["superpos"]
+context_any = ["polysemantic", "monosemantic", "interpretab", "sparse auto-?encoder", "\\bSAEs?\\b", "features? than (dimensions|neurons)",
+               "feature directions?", "toy models?", "feature superposition", "superposition of features",
+               "in superposition", "superposition hypothesis", "neurons?\\b", "overlapping directions",
+               "superposition in (neural|deep|language|transformer)", "feature recovery", "sparse features",
+               "active features", "overcomplete", "superposition (traps?|regimes?)"]
+exclude_from = "superposition"
+weight = 4
+
+[[topic]]
+slug = "polysemanticity"
+family = "theory"
+name = "Polysemanticity"
+description = "Neurons and units that respond to several features."
+query = 'abs:polysemantic OR abs:polysemanticity OR abs:monosemantic OR abs:monosemanticity'
+require_any = ["polysemantic", "monosemantic"]
+context_any = ["neuron", "feature", "representation", "activation", "interpretab", "latent", "unit"]
+weight = 3
+
+[[topic]]
+slug = "computation"
+family = "theory"
+name = "Computation in superposition"
+description = "Computing on features without first decompressing them."
+query = 'abs:"computation in superposition" OR abs:"compressed computation"'
+require_any = ["computation in superposition", "compressed computation"]
+weight = 4
+
+[[topic]]
+slug = "sae"
+family = "recovery"
+name = "Sparse autoencoders"
+description = "Sparse autoencoders and their variants for recovering features."
+query = 'abs:"sparse autoencoder" OR abs:"sparse autoencoders" OR ti:SAE OR ti:SAEs OR abs:"sparse dictionary"'
+require_any = ["sparse auto-?encoder", "\\bSAE (features?|latents?)\\b", "sparse dictionar"]
+context_any = ["interpretab", "mechanistic", "language model", "\\bLLMs?\\b", "transformer", "neuron", "steer", "monosemantic",
+               "polysemantic", "superposition", "residual stream", "foundation model", "vision model", "diffusion model"]
+weight = 2
+
+[[topic]]
+slug = "dictionary"
+family = "recovery"
+name = "Dictionary learning"
+description = "Sparse coding and dictionary learning on network activations."
+query = 'abs:"dictionary learning" AND (abs:interpretability OR abs:activations OR abs:"language model" OR abs:neurons OR abs:features)'
+require_any = ["dictionary learning"]
+context_any = ["interpretab", "activation", "neuron", "language model", "\\bLLMs?\\b", "transformer"]
+weight = 2
+
+[[topic]]
+slug = "circuits"
+family = "recovery"
+name = "Transcoders and circuits"
+description = "Transcoders, crosscoders, attribution graphs, and circuit discovery."
+query = 'abs:transcoder OR abs:transcoders OR abs:crosscoder OR abs:crosscoders OR abs:"attribution graph" OR abs:"attribution graphs" OR abs:"circuit tracing" OR abs:"replacement model" OR abs:"circuit discovery"'
+require_any = ["transcoder", "crosscoder", "attribution graph", "circuit tracing", "replacement model", "circuit discovery"]
+context_any = ["interpretab", "language model", "\\bLLMs?\\b", "transformer", "neuron", "circuit", "activation",
+               "cross-layer", "features?\\b"]
+exclude_any = ["video transcod", "bitrate", "\\bcodec", "quantum"]
+weight = 2
+
+[[topic]]
+slug = "parameter-decomposition"
+family = "recovery"
+name = "Parameter decomposition"
+description = "Decomposing trained weights into mechanisms."
+query = 'abs:"parameter decomposition" OR abs:"parameter decompositions"'
+require_any = ["parameter decomposition"]
+context_any = ["interpretab", "mechanistic", "neural network", "weights"]
+weight = 3
+
+[[topic]]
+slug = "geometry"
+family = "theory"
+name = "Feature geometry"
+description = "The linear representation hypothesis, feature geometry, and feature manifolds."
+query = 'abs:"linear representation hypothesis" OR abs:"feature geometry" OR abs:"feature manifold" OR abs:"feature manifolds"'
+require_any = ["linear representation hypothesis", "feature geometry", "feature manifold"]
+context_any = ["linear representation hypothesis", "mechanistic", "superposition", "polysemantic", "sparse auto-?encoder",
+               "\\bSAEs?\\b", "steer", "concept directions?", "linear probe"]
+weight = 2
+
+[[topic]]
+slug = "sae-failures"
+family = "recovery"
+name = "Absorption and splitting"
+description = "Feature absorption, feature splitting, and dark matter in dictionaries."
+query = 'abs:"feature absorption" OR abs:"feature splitting" OR (abs:"dark matter" AND abs:autoencoder)'
+require_any = ["feature absorption", "feature splitting", "dark matter"]
+context_any = ["autoencoder", "\\bSAEs?\\b", "interpretab", "dictionar"]
+weight = 3
+
+[[topic]]
+slug = "steering"
+family = "broader"
+name = "Steering"
+description = "Activation steering, steering vectors, and representation engineering."
+query = 'abs:"activation steering" OR abs:"steering vector" OR abs:"steering vectors" OR abs:"representation engineering"'
+require_any = ["activation steering", "steering vector", "representation engineering"]
+weight = 1
+
+[[topic]]
+slug = "mech-interp"
+family = "broader"
+name = "Mechanistic interpretability"
+description = "Reverse-engineering the computations of trained networks."
+query = 'abs:"mechanistic interpretability" OR abs:"mechanistic interpretation" OR abs:"activation patching" OR abs:"causal tracing" OR abs:"logit lens"'
+require_any = ["mechanistic interpret", "activation patching", "causal tracing", "logit lens"]
+weight = 1

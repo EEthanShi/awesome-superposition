@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Awesome Superposition</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A curated reading list and a daily feed of new arXiv papers on feature superposition and mechanistic interpretability.">
+<link rel="alternate" type="application/rss+xml" title="Awesome Superposition: new papers" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,500;7..72,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap hero">
+    <div class="hero-text">
+      <p class="eyebrow">
+        <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="21" class="mark-ring"/>
+          <g class="mark-arrows">
+            <line x1="24" y1="24" x2="24" y2="6"/><line x1="24" y1="24" x2="41.1" y2="18.4"/>
+            <line x1="24" y1="24" x2="34.6" y2="38.6"/><line x1="24" y1="24" x2="13.4" y2="38.6"/>
+            <line x1="24" y1="24" x2="6.9" y2="18.4"/>
+          </g>
+          <g class="mark-tips">
+            <circle cx="24" cy="6" r="2.4"/><circle cx="41.1" cy="18.4" r="2.4"/>
+            <circle cx="34.6" cy="38.6" r="2.4"/><circle cx="13.4" cy="38.6" r="2.4"/>
+            <circle cx="6.9" cy="18.4" r="2.4"/>
+          </g>
+        </svg>
+        <span>Reading list and daily arXiv feed</span>
+      </p>
+      <h1 id="site-title">Awesome Superposition</h1>
+      <p class="lede">Neural networks represent more features than they have dimensions. Here is the work that explains how they do it and how the features can be recovered, with the new papers added every day.</p>
+      <p class="stats"><span id="stat-curated">Curated works</span><span id="stat-total">Loading papers</span><span id="stat-updated"></span></p>
+      <div class="cta">
+        <button type="button" class="btn primary" data-view="reading" data-scroll="1">Read the list</button>
+        <button type="button" class="btn" data-view="daily" data-scroll="1">New papers</button>
+        <a id="link-github" class="btn ghost" href="#" rel="noopener"><span aria-hidden="true">&#9733;</span> Star on GitHub</a>
+      </div>
+      <nav class="links" aria-label="More">
+        <a href="feed.xml">RSS feed</a>
+        <a href="https://arxiv.org/abs/2609.06862">The survey</a>
+        <button type="button" id="theme-toggle" class="link-button" aria-label="Switch color theme">Theme: system</button>
+      </nav>
+    </div>
+    <figure class="toy-card">
+      <div class="toy-stage">
+        <canvas id="toy-canvas" role="img" aria-label="Feature directions of a toy model"></canvas>
+        <p class="toy-readout"><span id="toy-status">Training</span><span id="toy-step"></span></p>
+      </div>
+      <figcaption>
+        A toy autoencoder, trained live in your browser, stores
+        <strong id="toy-n-label">5</strong> features in 2 dimensions. Each arrow is one feature's direction;
+        darker arrows are more important features. Make the features sparser and watch them share
+        the plane.
+      </figcaption>
+      <div class="toy-controls">
+        <label class="toy-slider" for="toy-density">
+          <span>Feature density <output id="toy-density-label" for="toy-density">3% active</output></span>
+          <input id="toy-density" type="range" min="0" max="4" step="1" value="3">
+          <span class="scale"><span>dense</span><span>sparse</span></span>
+        </label>
+        <label class="select toy-n" for="toy-n">
+          <span>Features</span>
+          <select id="toy-n">
+            <option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option>
+          </select>
+        </label>
+        <button type="button" id="toy-run" class="btn small">Train again</button>
+      </div>
+    </figure>
+  </div>
+  <div class="wrap">
+    <nav class="views" aria-label="Views" id="views">
+      <button type="button" class="view-tab" data-view="daily" aria-pressed="true">New papers</button>
+      <button type="button" class="view-tab" data-view="reading" aria-pressed="false">Reading list<span class="n" id="reading-count"></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="wrap highlights-wrap" data-for="daily">
+  <figure class="volume">
+    <svg id="volume-chart" role="img" aria-label="Papers per submission day"></svg>
+    <figcaption id="volume-caption">Papers per submission day</figcaption>
+  </figure>
+  <h2 class="kicker">Most central this week</h2>
+  <div id="highlights" class="highlights"></div>
+</section>
+
+<section class="controls" aria-label="Filters" data-for="daily">
+  <div class="wrap controls-inner">
+    <div class="control-row">
+      <label class="search">
+        <span class="visually-hidden">Search</span>
+        <input id="q" type="search" placeholder="Search titles, abstracts, and authors" autocomplete="off">
+      </label>
+      <label class="select">
+        <span>Period</span>
+        <select id="range">
+          <option value="3">Last 3 days</option>
+          <option value="7" selected>Last 7 days</option>
+          <option value="30">Last 30 days</option>
+          <option value="all">Everything</option>
+        </select>
+      </label>
+      <label class="select">
+        <span>Order</span>
+        <select id="sort">
+          <option value="day" selected>By day</option>
+          <option value="score">Most central first</option>
+        </select>
+      </label>
+    </div>
+    <div id="chips" class="chip-groups"></div>
+    <p id="status" class="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<main class="wrap" data-for="daily">
+  <div id="list" class="list"></div>
+  <div class="more-row"><button type="button" id="more" class="more" hidden>Show more papers</button></div>
+</main>
+
+<main class="wrap reading" id="reading" data-for="reading" hidden>
+  <p class="reading-intro">Selected works, ordered as in the survey: first the theory, then the practice. Each entry has one sentence on what the work shows. Suggestions are welcome as pull requests to <code>config/reading_list.toml</code>.</p>
+  <nav class="toc" id="reading-toc" aria-label="Sections"></nav>
+  <div id="reading-sections"></div>
+</main>
+
+<footer class="wrap footer">
+  <p>The reading list and the topics follow the survey <a href="https://arxiv.org/abs/2609.06862">Feature Superposition in Neural Networks: From Theory to Practice</a>, and are maintained by its authors. To track other topics, fork the repository and edit <code>config/topics.toml</code>.</p>
+  <p>Paper metadata comes from the arXiv API. Thank you to arXiv for use of its open access interoperability.</p>
+</footer>
+
+<script src="assets/toy.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

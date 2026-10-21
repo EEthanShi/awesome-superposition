@@ -1,5 +1,193 @@
 [
  {
+  "id": "2610.27421",
+  "title": "The Router Already Knows",
+  "abstract": "Mixture-of-experts (MoE) models already make a sparse choice for every token: which experts should process it. We ask whether a sparse dictionary should reuse that choice. NR-SAE gives each routed expert a small dictionary and opens only those the frozen router selects. At block 15 of Gemma 4 26B-A4B, after ten million C4 training tokens and across three seeds, the expert-aligned autoencoder explains 0.518 of the variance in router-weighted expert outputs on a fixed evaluation capture. A rank-addressed control with the same parameters but sixteen times as many candidates reaches 0.481, a candidate-matched control 0.458, and an architecture-matched control with randomized expert identity 0.387. A transcoder variant also leads all three controls: 0.432, against 0.347, 0.371, and 0.118. Part of this advantage is architectural: each expert writes into a subspace of at most a quarter of the model width, so naming the expert names the subspace. How much it explains, we have not measured. At this layer and budget, the router already knows something a dictionary would otherwise have to learn. Our implementation did not train faster, and semantic interpretability, downstream loss, and causal faithfulness remain untested.",
+  "authors": [
+   "Andrew Bistras",
+   "Marty Johnson"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "sae",
+   "circuits"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2610.27790",
+  "title": "Are Linguistic and Arithmetic Circuits Dissociated in LLMs?",
+  "abstract": "Large language models (LLMs) exhibit both knowledge of language, rendered by, for example, grammatical judgment ability, and abilities to perform tasks through language, such as math-word problem solving. Motivated by neurolinguistic studies of their neural dissociation in human brains, in this study, we investigate the overlap of their circuits in large language models (LLMs). Specifically, we examine the overlap and causal effects between the circuits extracted for linguistic and arithmetic tasks, using controlled materials and circuit discovery methods from the mechanistic interpretability field. Our experiments with five LLMs show that circuit similarity is mostly explained by task domains (linguistic vs. arithmetic), rather than by their input and output vocabularies or by the syntactic similarities between natural-language sentences and arithmetic expressions. This finding suggests that LLMs may process linguistic and arithmetic information using largely separate neural circuits, highlighting an ability-based modular organization of circuits within these models.",
+  "authors": [
+   "Riku Kisako",
+   "Tatsuki Kuribayashi",
+   "Ryohei Sasano"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "AACL-IJCNLP 2026 main",
+  "topics": [
+   "circuits",
+   "mech-interp"
+  ],
+  "score": 3.0
+ },
+ {
+  "id": "2610.27446",
+  "title": "Decision Sufficiency of Learned Representation Interfaces for Safe Generative Control",
+  "abstract": "A controller can guide a language model toward safe and useful responses by choosing when to assist, ask for clarification, or refuse. When the controller uses selected internal features, poor performance alone cannot distinguish missing information from limitations of its decision rules or training. We study decision sufficiency: whether the best controller using a representation can match the minimum average loss attainable with full state information, under the same strategies and evaluation criteria. For interfaces with finitely many outputs, we compute the optimal loss exactly and separate the three sources of excess loss. Pairwise checks can miss information loss: states with the same controller input may share an optimal strategy in every pair but not across the whole group. We bound the number of states needed to reveal a conflict and characterize the fewest outputs an unrestricted interface needs to avoid all conflicts. We audit selected features from sparse autoencoders, which encode model activations using relatively few active features, in Qwen2.5, SmolLM2, and Phi. On SmolLM2 responses scored by two human raters, restricting the controller to two selected on/off features increases its minimum average loss by 0.0345--0.1166 relative to full state information, even with the governing policy supplied. Both independently trained autoencoders show the increase on both evaluation sets. The audit identifies decision failures that require changing the controller's input, not merely its architecture or training.",
+  "authors": [
+   "Jipeng Li",
+   "Yanning Shen"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2610.28607",
+  "title": "Benchmarking Arabic Dialects for Math Problems",
+  "abstract": "Mathematical reasoning remains underexplored for low-resource languages, including Dialectal Arabic. To bridge this gap, we introduce the DAR-MGSM (Dialectal Arabic Multilingual Grade School Math) Benchmark, the first manually curated benchmark for evaluating mathematical reasoning in Dialectal Arabic. DAR-MGSM consists of math word problems (MWPs) requiring multi-step reasoning and covers five major Arabic dialects alongside Modern Standard Arabic (MSA). The benchmark comprises two parallel versions: translated-only and translated & culturally localized. The latter version adapts entities and references to regional varieties. We evaluate eleven Arabic-centric and multilingual large language models on DAR-MGSM. The results show that the performance generally declines on the localized version, highlighting the challenges introduced by culturally grounded adaptations. However, the magnitude of this effect varies across models, with Arabic-centric models exhibiting different levels of sensitivity to localization. A mechanistic interpretability analysis shows that translated and localized variants of the same MWPs often induce distinct internal reasoning trajectories, even when aggregate accuracy remains similar. Overall, our results show that mathematical reasoning performance depends on both linguistic variety and cultural context.",
+  "authors": [
+   "Noor Abo Mokh",
+   "Teresa Lynn",
+   "Nizar Habash",
+   "Ahmed Elshabrawy",
+   "Sara Alhajeri",
+   "Alaa Elsetohy",
+   "Preslav Nakov",
+   "Alham Fikri Aji"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ],
+  "comment": "",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2610.28419",
+  "title": "DISTRACT: Degradation-Indexed Study of Textual Reference Across Competing Targets",
+  "abstract": "Vision-language trackers (VLTs) accept descriptions intended to assist tracking, but accepting text does not establish that its content changes tracking decisions, particularly as visual evidence deteriorates. We introduce DISTRACT, a matched-intervention benchmark that holds video, target, and distractor fixed while crossing four text priors with four image degradations along a controlled severity axis. We evaluate five VLTs on four datasets using behavioral contrasts, layerwise representation probes, and activation patching. Molmo2 and JointNLT exhibit directed text use. Some effects contract under degradation, whereas others show no significant endpoint change after multiplicity correction. UVLTrack, MMTrack, and DUTrack respond only weakly to changes in text semantics, with no directed behavioral effect surviving FDR correction in the tested settings. Model-internal analyses reveal that at decision-near states, correct-versus-conflicting text is decodable in Molmo2 and JointNLT but not in the other three systems. In the responsive models, decodability peaks at late states where replacement produces little behavioral change, whereas replacing selected earlier states redirects conflict-associated trajectories toward the target. Because matched-correct donors do not significantly outperform unrelated donors, these interventions identify earlier intervention-sensitive states without establishing target-specific semantic rescue. DISTRACT thus exposes when and where text affects tracking under degraded visual evidence.",
+  "authors": [
+   "Dan Zlotnikov",
+   "Ohad Ben-Shahar"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV",
+   "cs.AI",
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2610.28255",
+  "title": "Convergent Performance, Divergent Mechanisms in LoRA-Adapted Vision Foundation Models for Brain MRI",
+  "abstract": "Adapting Vision Foundation Models (VFMs) to medical imaging via LoRA has become standard practice, yet model selection is guided almost entirely by downstream task metrics, treating backbones with similar performance as interchangeable. We investigate whether equal performance implies equal internal representational shift. We analyse four ViT-B/16 backbones, DINOv3, SigLIP2, MerMED-FM, and BiomedCLIP, pre-trained with different objectives (self-distillation vs. contrastive vision-language) and on different data domains (natural vs. medical images). We adapt each to brain tumour segmentation and evaluate on six datasets covering both segmentation and Alzheimer's disease classification. Using attention divergence, weight-change analysis, and activation patching, we find that the four models converge to similar segmentation performance (mean Dice 78-81%) through markedly different internal dynamics, yet diverge in cross-task transfer: segmentation adaptation improves Alzheimer's disease classification for DINOv3 but degrades it for the other three backbones. We reveal a dissociation between modification magnitude and causal importance: the most heavily modified layers are not the causally relevant ones, with early-to-mid layers identified as sufficient for segmentation recovery. Restricting LoRA to these layers matches or approaches full-layer segmentation while reducing classification degradation in the three affected backbones, providing a mechanistically grounded strategy that is more parameter-efficient and more robust than standard full-layer adaptation.",
+  "authors": [
+   "Cecilia Diana-Albelda",
+   "Fiona Kekwick",
+   "Raghav Mehta",
+   "Aleksandra Kulbaka",
+   "Paul M. Matthews",
+   "Jesus Bescos",
+   "Álvaro García-Martín",
+   "Wenjia Bai",
+   "Bernhard Kainz"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV",
+   "cs.LG"
+  ],
+  "comment": "14 pages, 6 figures, Preprint submitted to Elsevier",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2610.27375",
+  "title": "Shaped SAEs: Expanding the Toolkit for Mechanistic Interpretability",
+  "abstract": "Sparse autoencoders (SAEs) seek to decompose the dense activations of large language models (LLMs) into sparse, potentially interpretable features using a learned overcomplete dictionary. In this work, we ask whether it is possible to enhance the semantic selectivity of the learned dictionary atoms by linearly \\emph{shaping} the dense activations prior to learning an SAE. We explore rank-reducing transformations based on the recently introduced J-space corresponding to the averaged Jacobian from the current layer to the LLM output, projecting activations onto the ``live'' subspace spanned by eigenmodes of the Jacobian with larger singular values (which we expect to be more semantically relevant). We also introduce a new approach for training SAEs in which (a)~an affine shaping transformation is learned along with the dictionary atoms, (b)~the atom selection mechanism is based on the TopK projections along the one-dimensional subspace spanned by the atoms, and (c)~reconstruction is carried out using the same atoms. We call this approach a Matched Filter SAE (MF-SAE) based on analogies with communication theory. The promise of shaping is demonstrated via evaluations against dense activations and state-of-the-art SAEs on benchmarks including SAEBench and SAE Probes.",
+  "authors": [
+   "Oveys Delafrooz Noroozi",
+   "Bhagyashree Puranik",
+   "Upamanyu Madhow"
+  ],
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "sae",
+   "mech-interp"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2610.26994",
+  "title": "How to get the best and fairest performance out of your ASR system using activation steering",
+  "abstract": "Activation steering for ASR systems is an underexplored technique in improving both ASR performance and demographic fairness. We investigate two forms of activation steering: paired activation subtraction, and supervised optimization. We find the former to be ineffective at ameliorating ASR performance whatsoever, while the latter is quite effective at deriving steering vectors (SVs) that improve at once overall ASR performance and demographic fairness along such diverse axes as gender, age, and dialect. We also explore what types of data---from the most to the least personal---are necessary for calculating or training SVs. First, we show significant performance in performance from training SVs using an eclectic group of speakers from the same dataset. Furthermore, we find that vectors trained using acoustically similar speakers leads to ASR performances that are competitive or superior to vectors trained on the same speaker, or speakers from the same labeled demographic group. This finding shows that we can harness activation steering for few-shot adaptation given access to a speaker's demography, or zero-shot adaptation to unseen speakers without the need for any labels at all.",
+  "authors": [
+   "Felix Herron",
+   "Alex Colagrande",
+   "Solange Rossato",
+   "François Portet",
+   "Alexandre Allauzen",
+   "Chuyuan Li"
+  ],
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "",
+  "topics": [
+   "steering"
+  ],
+  "score": 2.0
+ },
+ {
   "id": "2610.25728",
   "title": "No Matter Who You Are: Addressivity and Sycophancy in Large Language Models",
   "abstract": "Sycophancy, where an LLM becomes overly agreeable, deferential, or flattering toward the user, has been identified as a major failure mode. While post-training has been implicated as a cause, how it internally gives rise to sycophantic behavior remains insufficiently understood. Post-training transforms the model's output from text completion into utterances directed toward an addressee, thereby giving the output \\textit{addressivity}. We hypothesize that the accompanying pressure to follow the addressee's instructions and align with their preferences links this addressivity to sycophancy. To test this, we use Sparse Autoencoders to extract addressivity directions from pre-trained and post-trained models and examine their relationship with sycophancy. Steering models with addressivity directions can amplify or suppress sycophancy, and this effect is observed only in post-trained models. Furthermore, comparing the internal mechanisms of both model types confirms that the association between addressivity and sycophancy is strengthened through post-training. Finally, through a controlled post-training experiment, we find that models are sycophantic not toward a specific addressee but toward any recognized addressee, suggesting that the presence of an addressee, rather than the addressee's identity, is what elicits sycophancy.",
@@ -50,6 +238,49 @@
    "sae"
   ],
   "score": 2.0
+ },
+ {
+  "id": "2610.27403",
+  "title": "Steering intonational tunes in text-to-speech synthesis",
+  "abstract": "Text-to-speech systems built on residual vector quantization often generate audio in two stages: a transformer backbone emits the first level of each frame's token stack, and a smaller depth model generates the rest autoregressively. We ask which components of such a model are responsible for prosodic intonation, more precisely for generating the English nuclear tune (for instance, the falling pitch melody that distinguishes an assertion from a question's rising melody), and whether interventions on those components can be used to control intonation. Prompt-based control mostly fails; only a final question mark is a reliable lever. Interchange interventions in CSM and S2 locate the tune: the backbone's hidden state carries it to the waveform through the depth model, and the first level of the stack carries little or none of it. Steering the backbone state with a difference-of-means vector computed on new material generated with a final period or question mark moves the tune, but the push toward an assertion degrades the voice. Steering vectors computed instead from the backbone states associated with human imitations of theoretically-specified tunes, whose text carries no punctuation, and applied inside the generation loop, move most recordings to the other condition in both systems (even when fitted without the speaker being steered), at a small cost in predicted naturalness. These imitation-derived vectors are aligned with the one obtained from the two punctuated conditions far beyond a shuffled-label null, so the backbone state of a punctuated prompt already represents intonation. The steered recordings broadly become falling or rising, according to the intent, but the edge tone moves more coherently than the pitch accent, and the target tune cannot be selected precisely beyond this broad tendency.",
+  "authors": [
+   "Juan Pablo Vigneaux",
+   "Jennifer Cole"
+  ],
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "primary_category": "cs.SD",
+  "categories": [
+   "cs.SD",
+   "cs.CL",
+   "cs.LG"
+  ],
+  "comment": "39 pages, 25 figures, 12 tables (13 pages without appendices)",
+  "topics": [
+   "steering"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2610.27393",
+  "title": "Correcting Attribution Patching with a Few Exact Measurements",
+  "abstract": "Mechanistic interpretability asks which language model components matter for a behavior, and activation patching answers by changing one component's activation and measuring its effect, at a cost growing with components and prompts. Attribution patching estimates these effects from one gradient pass, but its estimates can be far off, and verifying each one restores the cost. Can the structure of these errors reduce this cost? We propose Guided-AP, which uses a few exact measurements to reveal attribution patching's errors and correct unmeasured estimates. On a single prompt, many components' errors share one sign, so a small exact sample yields one correction for the rest. Over many prompts of one task, components are misestimated similarly, so a few measured prompts show what to verify and how to correct each component's average effect. Our analysis shows that choosing what to verify needs error size, while correction also needs sign. On a single prompt, the correction lowers error by up to 26% across three behaviors at the compute of verifying the largest estimates and also on larger models. Over many prompts, learned corrections cut the error of average effects on factual completion by 75% to 79%, repaying their cost in long analyses.",
+  "authors": [
+   "Luyang Zhang",
+   "Minxing Zheng",
+   "Jialu Wang"
+  ],
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
  },
  {
   "id": "2610.26236",

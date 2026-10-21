@@ -262,40 +262,40 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**506 papers** since 1 July 2026 · updated 2026-10-20 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**516 papers** since 1 July 2026 · updated 2026-10-21 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `19` · Polysemanticity `17` · Computation in superposition `4` · Feature geometry `19` |
-| **Recovery methods** | Sparse autoencoders `153` · Dictionary learning `14` · Transcoders and circuits `32` · Parameter decomposition `2` · Absorption and splitting `6` |
-| **Interpretability** | Steering `176` · Mechanistic interpretability `190` |
+| **Recovery methods** | Sparse autoencoders `156` · Dictionary learning `14` · Transcoders and circuits `34` · Parameter decomposition `2` · Absorption and splitting `6` |
+| **Interpretability** | Steering `178` · Mechanistic interpretability `196` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Oct&nbsp;20 | [The Router Already Knows](https://arxiv.org/abs/2610.27421) | <sub>Sparse autoencoders, Transcoders and circuits</sub> |
+| Oct&nbsp;20 | [Are Linguistic and Arithmetic Circuits Dissociated in LLMs?](https://arxiv.org/abs/2610.27790) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
+| Oct&nbsp;20 | [Decision Sufficiency of Learned Representation Interfaces for Safe Generative Control](https://arxiv.org/abs/2610.27446) | <sub>Sparse autoencoders</sub> |
+| Oct&nbsp;20 | [Benchmarking Arabic Dialects for Math Problems](https://arxiv.org/abs/2610.28607) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;20 | [DISTRACT: Degradation-Indexed Study of Textual Reference Across Competing Targets](https://arxiv.org/abs/2610.28419) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;20 | [Convergent Performance, Divergent Mechanisms in LoRA-Adapted Vision Foundation Models for Brain MRI](https://arxiv.org/abs/2610.28255) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;19 | [Shaped SAEs: Expanding the Toolkit for Mechanistic Interpretability](https://arxiv.org/abs/2610.27375) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
 | Oct&nbsp;19 | [No Matter Who You Are: Addressivity and Sycophancy in Large Language Models](https://arxiv.org/abs/2610.25728) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;19 | [From Black Box to Controller: Inference-Time Steering of LLM via Feature Amplification](https://arxiv.org/abs/2610.25700) | <sub>Sparse autoencoders</sub> |
+| Oct&nbsp;19 | [How to get the best and fairest performance out of your ASR system using activation steering](https://arxiv.org/abs/2610.26994) | <sub>Steering</sub> |
 | Oct&nbsp;19 | [Shaping the Document, Not the Model: Optimized Suffixes for Context Following](https://arxiv.org/abs/2610.26236) | <sub>Steering</sub> |
 | Oct&nbsp;19 | [Claim Laundering: When Agent Decision Models Trust Records Over Reality](https://arxiv.org/abs/2610.25947) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;19 | [Steering intonational tunes in text-to-speech synthesis](https://arxiv.org/abs/2610.27403) | <sub>Steering</sub> |
+| Oct&nbsp;19 | [Correcting Attribution Patching with a Few Exact Measurements](https://arxiv.org/abs/2610.27393) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;18 | [On Reasoning Correctness Directions](https://arxiv.org/abs/2610.25464) | <sub>Feature geometry</sub> |
 | Oct&nbsp;18 | [Formally Verified Autoresearch for Analyzing the Expressivity of Multi-Head Attention](https://arxiv.org/abs/2610.25341) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;17 | [Comparing Sparsified MLPs and Transcoders: Many Transcoder Features Are Neurons in Disguise](https://arxiv.org/abs/2610.24521) | <sub>Polysemanticity, Transcoders and circuits</sub> |
 | Oct&nbsp;17 | [A Symmetry-Matching Approach to Blind-Spot Reduction in Sparse Autoencoders](https://arxiv.org/abs/2610.24908) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;17 | [Compositional Activation Steering Across Languages and Behaviors with Contextual Gates](https://arxiv.org/abs/2610.24906) | <sub>Steering</sub> |
 | Oct&nbsp;17 | [From Stories to Features: Scaling Concept Vectors for AI Alignment & Interpretability](https://arxiv.org/abs/2610.24556) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;17 | [WAQS: Weight Absorption for Quadratic Probing and Affine Steering](https://arxiv.org/abs/2610.24367) | <sub>Steering</sub> |
-| Oct&nbsp;16 | [Beyond SAEs: Consistent Concept Discovery with Sparse Coding](https://arxiv.org/abs/2610.23801) | <sub>Sparse autoencoders, Dictionary learning</sub> |
-| Oct&nbsp;16 | [Do LMs Know What Variables Do? Interpreting Code Representations via Variable Roles](https://arxiv.org/abs/2610.24118) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;15 | [Explaining the Roles of Experts in Mixture-of-Experts LLMs for Personalization](https://arxiv.org/abs/2610.22127) | <sub>Polysemanticity, Transcoders and circuits</sub> |
-| Oct&nbsp;15 | [Translation Circuit Discovery and Targeted Optimization for Low-Resource Multilingual Translation](https://arxiv.org/abs/2610.21456) | <sub>Transcoders and circuits</sub> |
-| Oct&nbsp;15 | [Behavioral Compositionality of Sparse Autoencoder Representations](https://arxiv.org/abs/2610.21261) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;15 | [Representation Redistribution in Sparse Autoencoders](https://arxiv.org/abs/2610.21240) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;15 | [Is a Linear Probe Evidence of a Linear Representation?](https://arxiv.org/abs/2610.22655) | <sub>Feature geometry</sub> |
-| Oct&nbsp;15 | [Null Controls Are Necessary but Not Sufficient: Evaluating Acceptance Guards for Scientific Discovery and Interpretability](https://arxiv.org/abs/2610.22445) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;15 | [Measuring Mechanistic Uncertainty in Large Language Models via Causal Robustness](https://arxiv.org/abs/2610.22636) | <sub>Steering</sub> |
 
-<sub>The other 486 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 496 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

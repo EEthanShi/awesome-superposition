@@ -1,5 +1,77 @@
 [
  {
+  "id": "2610.30006",
+  "title": "Building Auditable AI Text Detectors with Sparse Autoencoders",
+  "abstract": "AI-generated text detectors are increasingly deployed in consequential settings---peer review, education, admissions, journalism, and content moderation---where their outputs directly affect individuals. Yet the strongest detectors are fine-tuned neural classifiers whose decisions are opaque, while transparent alternatives (stylometric and linguistic-feature classifiers) underperform them by wide margins. We present a pipeline that converts a fine-tuned neural detector into a classifier that operates on human-readable concepts. We accomplish this by training sparse autoencoders (SAEs) directly on a detector's residual stream, assigning auto-interpretation labels to each SAE feature, and retaining only features whose generated descriptions pass a global fidelity threshold. We then train a lightweight classifier on just the interpretable features. We find that our SAEs recover latent concepts that correspond to highly specific and predictive linguistic \"tells\" of AI-generated text. Classifiers built on these extracted features are not only highly interpretable but exhibit stronger performance on out-of-distribution texts than either neural or stylometric alternatives.",
+  "authors": [
+   "Liam Dugan",
+   "Callum McDougall",
+   "Matthew Denton",
+   "Philip Pham",
+   "Christine Kaeser-Chen",
+   "Chris Callison-Burch"
+  ],
+  "published": "2026-10-21",
+  "updated": "2026-10-21",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ],
+  "comment": "EMNLP 2026",
+  "topics": [
+   "sae"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2610.29697",
+  "title": "Forward-Only Learning for Shared-Kernel Wavelet Neural Networks without Backpropagation",
+  "abstract": "Backpropagation remains the dominant training paradigm, using backward gradients and local updates that can suffer from vanishing or exploding gradients in deep networks. Although the Forward-Forward algorithm avoids conventional backpropagation, it remains mainly local or layer-wise, motivating global whole-network learning using forward evaluations only. For shared-kernel wavelet neural networks, we therefore propose a CMA-ES-based global forward-only learning framework. We further introduce structure-aware parameter decomposition and channel-specific credit assignment, factorizing the search into three subspaces. On BSDS500, our method reduces test MSE from 4.1783 to 4.0130 and improves PSNR from 42.621 to 42.787~dB over Adam/BP without backward propagation. Beyond these gains, training requires only 6 training-set coverages, compared with 1500 epochs for BP. Ablations show that structural decomposition and aligned credit assignment are more important than increasing population size, demonstrating the feasibility of whole-network forward-only learning for compact reconstruction networks. These results suggest a potential route toward forward-only optimization of compact reconstruction models for resource-constrained imaging and edge or near-sensor systems.",
+  "authors": [
+   "Yongfei Guo",
+   "Xuan Sun",
+   "Ang Li",
+   "Zhao Zhang",
+   "Yuanhao Gong"
+  ],
+  "published": "2026-10-21",
+  "updated": "2026-10-21",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV"
+  ],
+  "comment": "",
+  "topics": [
+   "parameter-decomposition"
+  ],
+  "score": 3.0
+ },
+ {
+  "id": "2610.29129",
+  "title": "Mitigating Reward Hacking in Realistic Scenarios Through Representation Engineering",
+  "abstract": "Reward hacking is a major problem in current production machine learning systems, resulting in costly and dangerous failures. Here we study how to monitor for and mitigate reward hacking in realistic settings, including tool calls and long contexts. We apply a dynamic intervention to steering directions obtained by three different methods: difference-in-means vectors from labeled rollouts, gradient optimization-based vectors, and vectors extracted when models reference an anti-reward-hacking model spec. This dynamic intervention perturbs model representations less than uniform steering vector addition to the residual stream, allowing for more precise edits. We find that we are able to cheaply and significantly reduce reward hacking without correspondingly significant costs to model coherence or capability, and that steering vectors originally extracted from coding environments also generalize to reducing reward hacking in other domains. Our results pave the way towards latent space monitoring and control over realistic production systems.",
+  "authors": [
+   "Austin Meek",
+   "Kyle Cox",
+   "Matthew Nguyen",
+   "Austin J. Brockmeier",
+   "Steven Basart"
+  ],
+  "published": "2026-10-21",
+  "updated": "2026-10-21",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ],
+  "comment": "Project page: https://ajmeek.github.io/mitigating_reward_hacking_website/ Code: https://github.com/ajmeek/mitigating_reward_hacking",
+  "topics": [
+   "steering"
+  ],
+  "score": 2.0
+ },
+ {
   "id": "2610.27421",
   "title": "The Router Already Knows",
   "abstract": "Mixture-of-experts (MoE) models already make a sparse choice for every token: which experts should process it. We ask whether a sparse dictionary should reuse that choice. NR-SAE gives each routed expert a small dictionary and opens only those the frozen router selects. At block 15 of Gemma 4 26B-A4B, after ten million C4 training tokens and across three seeds, the expert-aligned autoencoder explains 0.518 of the variance in router-weighted expert outputs on a fixed evaluation capture. A rank-addressed control with the same parameters but sixteen times as many candidates reaches 0.481, a candidate-matched control 0.458, and an architecture-matched control with randomized expert identity 0.387. A transcoder variant also leads all three controls: 0.432, against 0.347, 0.371, and 0.118. Part of this advantage is architectural: each expert writes into a subspace of at most a quarter of the model width, so naming the expert names the subspace. How much it explains, we have not measured. At this layer and budget, the router already knows something a dictionary would otherwise have to learn. Our implementation did not train faster, and semantic interpretability, downstream loss, and causal faithfulness remain untested.",
@@ -45,6 +117,53 @@
   "score": 3.0
  },
  {
+  "id": "2610.28992",
+  "title": "Language Impairment as a Lens onto Large Language Models",
+  "abstract": "Although large language models (LLMs) encode language in highly distributed spaces, they remain vulnerable to focal disruptions---a phenomenon strikingly similar to how localized brain damage causes clinical aphasia in humans. To investigate this theoretical tension, we ask whether LLMs possess a functional structure analogous to the human language system, by introducing a novel mechanistic interpretability framework inspired by aphasia. Through two complementary approaches, classifier-guided lesioning and continuous activation steering, we systematically induce aphasia-like breakdowns in LLMs. We find that language functions can be successfully isolated to discrete structural circuits and continuous representational vectors, yet these functions remain densely entangled with significant circuit overlap and vector similarities across distinct aphasic profiles. Furthermore, while steering generalizes robustly across downstream tasks, structural lesioning remains asymmetrically constrained. By bridging neuropsychology and mechanistic interpretability, we demonstrate that LLMs, functionally analogous to biological brains, rely on a densely entangled architecture that can be systematically mapped through clinically-informed interventions.",
+  "authors": [
+   "Muxuan He",
+   "Wang Bill Zhu",
+   "Yue Chen",
+   "Elsi Kaiser",
+   "Weizhi Du",
+   "Yao Du",
+   "Samuel Nastase",
+   "Yanjun Gao"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "",
+  "topics": [
+   "steering",
+   "mech-interp"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2610.28799",
+  "title": "Where Do Legal Factors Live in LLMs?",
+  "abstract": "In case-based legal reasoning, legal professionals identify legally significant fact patterns in a new dispute and compare them with those of decided cases. In AI & Law, HYPO dimensions and CATO factors represent these patterns symbolically, organizing expert knowledge distilled from case narratives as explicit, structured, interpretable, and auditable legal concepts and relations that support case comparison, legal argument, and precedent-based reasoning. Large language models (LLMs) are increasingly used for legal tasks, yet their internal organization of legal knowledge remains difficult to trace. We investigate whether LLMs form internal representations corresponding to all 26 CATO factors. Two research questions examine linear decodability and sparse localization with sparse autoencoders. Experiments cover three open models, Qwen3-1.7B, Qwen3-8B, and Gemma-2 2B, supported by cross-model comparison and human audit of controlled natural-language passages. Results show that all 26 factors are linearly decodable in all three models. Single-feature sparse readouts cover the complete factor catalog, with best-layer test AUCs ranging from 0.86 to 1.00. Five selected features approach full-vector readout performance. We report 78 model-specific layer-feature coordinates, one for each factor in each model. Together, these results show that information corresponding to expert-defined legal factors can be read from the internal activations of LLMs processing legal narratives. By locating these readouts, our study connects legal language and the symbolic abstractions of HYPO and CATO to learned internal representations.",
+  "authors": [
+   "Li Zhang",
+   "Kevin Ashley"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "12 pages, 3 figures, 2 tables. Accepted at JURIX 2026, the 39th International Conference on Legal Knowledge and Information Systems",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
+ },
+ {
   "id": "2610.27446",
   "title": "Decision Sufficiency of Learned Representation Interfaces for Safe Generative Control",
   "abstract": "A controller can guide a language model toward safe and useful responses by choosing when to assist, ask for clarification, or refuse. When the controller uses selected internal features, poor performance alone cannot distinguish missing information from limitations of its decision rules or training. We study decision sufficiency: whether the best controller using a representation can match the minimum average loss attainable with full state information, under the same strategies and evaluation criteria. For interfaces with finitely many outputs, we compute the optimal loss exactly and separate the three sources of excess loss. Pairwise checks can miss information loss: states with the same controller input may share an optimal strategy in every pair but not across the whole group. We bound the number of states needed to reveal a conflict and characterize the fewest outputs an unrestricted interface needs to avoid all conflicts. We audit selected features from sparse autoencoders, which encode model activations using relatively few active features, in Qwen2.5, SmolLM2, and Phi. On SmolLM2 responses scored by two human raters, restricting the controller to two selected on/off features increases its minimum average loss by 0.0345--0.1166 relative to full state information, even with the governing policy supplied. Both independently trained autoencoders show the increase on both evaluation sets. The audit identifies decision failures that require changing the controller's input, not merely its architecture or training.",
@@ -63,6 +182,29 @@
    "sae"
   ],
   "score": 2.0
+ },
+ {
+  "id": "2610.28982",
+  "title": "Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents",
+  "abstract": "While large language models are increasingly deployed as tool-calling agents, their safety evaluations still focus primarily on their ability to refuse harmful requests in text. We investigate whether the refusal behavior in text transfers to tool use. We construct a benchmark of 2,304 prompts across four domains, consisting of matched triplets that present the same harmful or benign request in text-only, standard tool-enabled, and adversarially framed tool-enabled settings. We then assess tool-call safety using 20 predefined forbidden actions. Testing five models of varying sizes and families, we find that requests refused in text frequently result in unsafe tool calls. Under standard tool-enabled prompting, this divergence occurs for 10-52 percent of harmful requests refused in chat. To mechanistically investigate this gap, we identify a refusal-associated direction in the residual stream of each of the five models. We find that in tool-enabled contexts, the activations along this direction decrease in four of five models. Furthermore, lower activation predicts unsafe tool calls across all five models (AUC 0.76-0.86). However, restoring the signal to the respective text-only value through activation patching only prevents a subset of unsafe calls, primarily by suppressing tool use rather than by producing safer calls. Steering along the refusal direction nearly eliminates unsafe calls only at strengths that also suppress benign tool use or degrade the output quality. Our findings indicate that the identified refusal direction contributes to whether a model acts, but only partially explains the refusal divergence. Therefore, evaluating the safety of tool-calling agents requires directly examining their actions along with their textual responses.",
+  "authors": [
+   "Ekagra Gupta",
+   "Raj Saha",
+   "Aniekan-Abasi Inyang",
+   "Adam Al Gharib"
+  ],
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI",
+   "cs.SE"
+  ],
+  "comment": "Raj Saha and Ekagra Gupta contributed equally and share first authorship",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
  },
  {
   "id": "2610.28607",

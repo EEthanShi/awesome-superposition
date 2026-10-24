@@ -262,7 +262,7 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**528 papers** since 1 July 2026 · updated 2026-10-23 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**528 papers** since 1 July 2026 · updated 2026-10-24 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
@@ -274,9 +274,9 @@ applications). Each entry has one sentence on what the work shows.
 
 | Date | Paper | Topics |
 |:--|:--|:--|
-| Oct&nbsp;22 | [The Geometry of Meaning in Neural Manifolds](https://arxiv.org/abs/2610.30938) | <sub>Steering</sub> |
 | Oct&nbsp;22 | [The Geometry of Metaphor: Probing and Steering Metaphor Representations in Large Language Models](https://arxiv.org/abs/2610.31520) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;22 | [Same Entity, Different Script: Diagnosing Cross-Script Entity Matching Failures in Language Models](https://arxiv.org/abs/2610.31407) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;22 | [The Geometry of Meaning in Neural Manifolds](https://arxiv.org/abs/2610.30938) | <sub>Steering</sub> |
 | Oct&nbsp;22 | [Interpreting Model Reasoning through Behavioral Counterfactuals](https://arxiv.org/abs/2610.30630) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;21 | [Rethinking SAE Evaluation: An Atomic Interpretable Unit Framework Reveals Hidden Polysemanticity and Redundancy](https://arxiv.org/abs/2610.30474) | <sub>Polysemanticity, Sparse autoencoders, Transcoders and circuits</sub> |
 | Oct&nbsp;21 | [Building Auditable AI Text Detectors with Sparse Autoencoders](https://arxiv.org/abs/2610.30006) | <sub>Sparse autoencoders</sub> |

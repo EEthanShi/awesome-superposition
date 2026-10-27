@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-10-26T06:48:20+00:00",
+ "generated_at": "2026-10-27T06:41:26+00:00",
  "site": {
   "title": "Awesome Superposition",
   "tagline": "A curated reading list and a daily feed of new papers on feature superposition and mechanistic interpretability.",
   "repo": "EEthanShi/awesome-superposition",
   "site_url": "https://eethanshi.github.io/awesome-superposition/"
  },
- "total": 534,
+ "total": 538,
  "with_ai": 0,
- "latest_date": "2026-10-23",
+ "latest_date": "2026-10-26",
  "months": [
   {
    "month": "2026-10",
-   "count": 157,
+   "count": 161,
    "file": "papers/2026-10.json"
   },
   {
@@ -32,6 +32,8 @@
   }
  ],
  "days": {
+  "2026-10-26": 3,
+  "2026-10-25": 1,
   "2026-10-23": 6,
   "2026-10-22": 4,
   "2026-10-21": 5,
@@ -196,7 +198,7 @@
    "name": "Feature geometry",
    "description": "The linear representation hypothesis, feature geometry, and feature manifolds.",
    "family": "theory",
-   "count": 19
+   "count": 20
   },
   {
    "slug": "sae-failures",
@@ -210,14 +212,14 @@
    "name": "Steering",
    "description": "Activation steering, steering vectors, and representation engineering.",
    "family": "broader",
-   "count": 183
+   "count": 185
   },
   {
    "slug": "mech-interp",
    "name": "Mechanistic interpretability",
    "description": "Reverse-engineering the computations of trained networks.",
    "family": "broader",
-   "count": 202
+   "count": 203
   }
  ]
 }

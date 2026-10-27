@@ -262,24 +262,28 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**534 papers** since 1 July 2026 · updated 2026-10-26 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**538 papers** since 1 July 2026 · updated 2026-10-27 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
-| **Theory** | Superposition `19` · Polysemanticity `18` · Computation in superposition `4` · Feature geometry `19` |
+| **Theory** | Superposition `19` · Polysemanticity `18` · Computation in superposition `4` · Feature geometry `20` |
 | **Recovery methods** | Sparse autoencoders `163` · Dictionary learning `14` · Transcoders and circuits `35` · Parameter decomposition `3` · Absorption and splitting `6` |
-| **Interpretability** | Steering `183` · Mechanistic interpretability `202` |
+| **Interpretability** | Steering `185` · Mechanistic interpretability `203` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Oct&nbsp;26 | [Do vision models know that three is three?](https://arxiv.org/abs/2610.35857) | <sub>Feature geometry</sub> |
+| Oct&nbsp;26 | [CANS: Capability-Preserving Neuron Steering for Large Language Models](https://arxiv.org/abs/2610.35530) | <sub>Steering</sub> |
+| Oct&nbsp;26 | [Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching](https://arxiv.org/abs/2610.34756) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;25 | [Steering the Teacher: Improving On-Policy Self-Distillation for Thinking Models](https://arxiv.org/abs/2610.34005) | <sub>Steering</sub> |
 | Oct&nbsp;23 | [Concept Acupuncturist: An Efficient and Precise Concept Erasure Method for Diffusion Models via Sparse Autoencoders](https://arxiv.org/abs/2610.32059) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;23 | [MI-MIDI 2: From Observation to Control with Sparse Autoencoders in Text-to-MIDI Generation](https://arxiv.org/abs/2610.32007) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;23 | ["Not" is Not Lost in Translation: A Causal Analysis of Negation Representations in Multilingual LLMs](https://arxiv.org/abs/2610.32281) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;23 | [Do VLAs Know They Will Fail? Interpretable Success and Failure Patterns in Physical AI Systems](https://arxiv.org/abs/2610.32208) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;23 | [Depth-Dependent Safety Geometry in Vision-Language Models: Layer-Wise Localization and Bidirectional Refusal Control](https://arxiv.org/abs/2610.32182) | <sub>Steering</sub> |
 | Oct&nbsp;23 | [Angular Supervision for Visual Object Grounding in Autoregressive Vision-Language Models](https://arxiv.org/abs/2610.32220) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;23 | [Depth-Dependent Safety Geometry in Vision-Language Models: Layer-Wise Localization and Bidirectional Refusal Control](https://arxiv.org/abs/2610.32182) | <sub>Steering</sub> |
 | Oct&nbsp;22 | [The Geometry of Metaphor: Probing and Steering Metaphor Representations in Large Language Models](https://arxiv.org/abs/2610.31520) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;22 | [Same Entity, Different Script: Diagnosing Cross-Script Entity Matching Failures in Language Models](https://arxiv.org/abs/2610.31407) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;22 | [The Geometry of Meaning in Neural Manifolds](https://arxiv.org/abs/2610.30938) | <sub>Steering</sub> |
@@ -290,12 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Oct&nbsp;21 | [Mitigating Reward Hacking in Realistic Scenarios Through Representation Engineering](https://arxiv.org/abs/2610.29129) | <sub>Steering</sub> |
 | Oct&nbsp;21 | [Probing and Steering for Safety-Relevant Behaviours in Large Language Models](https://arxiv.org/abs/2610.30363) | <sub>Steering</sub> |
 | Oct&nbsp;20 | [The Router Already Knows](https://arxiv.org/abs/2610.27421) | <sub>Sparse autoencoders, Transcoders and circuits</sub> |
-| Oct&nbsp;20 | [Are Linguistic and Arithmetic Circuits Dissociated in LLMs?](https://arxiv.org/abs/2610.27790) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
-| Oct&nbsp;20 | [Language Impairment as a Lens onto Large Language Models](https://arxiv.org/abs/2610.28992) | <sub>Steering, Mechanistic interpretability</sub> |
-| Oct&nbsp;20 | [Where Do Legal Factors Live in LLMs?](https://arxiv.org/abs/2610.28799) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;20 | [Decision Sufficiency of Learned Representation Interfaces for Safe Generative Control](https://arxiv.org/abs/2610.27446) | <sub>Sparse autoencoders</sub> |
 
-<sub>The other 514 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 518 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

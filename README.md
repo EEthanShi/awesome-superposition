@@ -262,7 +262,7 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**545 papers** since 1 July 2026 · updated 2026-10-28 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**545 papers** since 1 July 2026 · updated 2026-10-29 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
@@ -280,8 +280,8 @@ applications). Each entry has one sentence on what the work shows.
 | Oct&nbsp;27 | [Mechanistic Failure Modes of Weight Pruning in Transformer Language Models](https://arxiv.org/abs/2610.37126) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;27 | [Language Models Keep Abandoned Analyses: Residue and Adaptation after Garden-Path Sentences](https://arxiv.org/abs/2610.36797) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;26 | [Structure, Not Sequence: Tracking and Validating Folding Mechanisms in ESMFold's Trunk with Sparse Autoencoders](https://arxiv.org/abs/2610.36226) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;26 | [Do vision models know that three is three?](https://arxiv.org/abs/2610.35857) | <sub>Feature geometry</sub> |
 | Oct&nbsp;26 | [Cross-modal Steering Vectors Exist Across Both Image and Text Generation](https://arxiv.org/abs/2610.36269) | <sub>Steering</sub> |
+| Oct&nbsp;26 | [Do vision models know that three is three?](https://arxiv.org/abs/2610.35857) | <sub>Feature geometry</sub> |
 | Oct&nbsp;26 | [CANS: Capability-Preserving Neuron Steering for Large Language Models](https://arxiv.org/abs/2610.35530) | <sub>Steering</sub> |
 | Oct&nbsp;26 | [Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching](https://arxiv.org/abs/2610.34756) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;25 | [Steering the Teacher: Improving On-Policy Self-Distillation for Thinking Models](https://arxiv.org/abs/2610.34005) | <sub>Steering</sub> |

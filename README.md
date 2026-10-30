@@ -262,18 +262,23 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**545 papers** since 1 July 2026 · updated 2026-10-29 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**550 papers** since 1 July 2026 · updated 2026-10-30 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `19` · Polysemanticity `18` · Computation in superposition `4` · Feature geometry `20` |
-| **Recovery methods** | Sparse autoencoders `166` · Dictionary learning `14` · Transcoders and circuits `35` · Parameter decomposition `3` · Absorption and splitting `6` |
-| **Interpretability** | Steering `187` · Mechanistic interpretability `206` |
+| **Recovery methods** | Sparse autoencoders `168` · Dictionary learning `14` · Transcoders and circuits `35` · Parameter decomposition `3` · Absorption and splitting `6` |
+| **Interpretability** | Steering `188` · Mechanistic interpretability `209` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Oct&nbsp;29 | [Reasoning or Pattern Exploitation? Mechanistic Insights from RL-Trained Language Models](https://arxiv.org/abs/2610.39182) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
+| Oct&nbsp;29 | [Discovering Interpretable Acoustic Features in Autoregressive Voice-Cloning TTS Models](https://arxiv.org/abs/2610.40505) | <sub>Sparse autoencoders</sub> |
+| Oct&nbsp;29 | [One Vector or Many? Clustered Optimal-Transport Steering under Quantization](https://arxiv.org/abs/2610.40055) | <sub>Steering</sub> |
+| Oct&nbsp;29 | [world2vec: Mechanistic world models through latent dynamics learning](https://arxiv.org/abs/2610.40637) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;28 | [Can LLMs Faithfully Solve Ontology Engineering Tasks? A Mechanistic Interpretability Study](https://arxiv.org/abs/2610.38326) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;27 | [What Survives Distillation? A Mechanistic Interpretability Study of GPT-2 and DistilGPT-2](https://arxiv.org/abs/2610.37157) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
 | Oct&nbsp;27 | [The Vocabulary Is Already Here: Adapting Pretrained Interpretable Features for Generative Recommendation](https://arxiv.org/abs/2610.36763) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;27 | [Orthogonal and Parametrized Multi-Attribute Steering of LLMs](https://arxiv.org/abs/2610.37517) | <sub>Steering</sub> |
@@ -289,13 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Oct&nbsp;23 | [MI-MIDI 2: From Observation to Control with Sparse Autoencoders in Text-to-MIDI Generation](https://arxiv.org/abs/2610.32007) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;23 | ["Not" is Not Lost in Translation: A Causal Analysis of Negation Representations in Multilingual LLMs](https://arxiv.org/abs/2610.32281) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;23 | [Do VLAs Know They Will Fail? Interpretable Success and Failure Patterns in Physical AI Systems](https://arxiv.org/abs/2610.32208) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;23 | [Angular Supervision for Visual Object Grounding in Autoregressive Vision-Language Models](https://arxiv.org/abs/2610.32220) | <sub>Mechanistic interpretability</sub> |
-| Oct&nbsp;23 | [Depth-Dependent Safety Geometry in Vision-Language Models: Layer-Wise Localization and Bidirectional Refusal Control](https://arxiv.org/abs/2610.32182) | <sub>Steering</sub> |
-| Oct&nbsp;22 | [The Geometry of Metaphor: Probing and Steering Metaphor Representations in Large Language Models](https://arxiv.org/abs/2610.31520) | <sub>Mechanistic interpretability</sub> |
-| Oct&nbsp;22 | [Same Entity, Different Script: Diagnosing Cross-Script Entity Matching Failures in Language Models](https://arxiv.org/abs/2610.31407) | <sub>Mechanistic interpretability</sub> |
-| Oct&nbsp;22 | [The Geometry of Meaning in Neural Manifolds](https://arxiv.org/abs/2610.30938) | <sub>Steering</sub> |
 
-<sub>The other 525 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 530 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

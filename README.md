@@ -262,7 +262,7 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**550 papers** since 1 July 2026 · updated 2026-10-30 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**550 papers** since 1 July 2026 · updated 2026-10-31 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
@@ -276,8 +276,8 @@ applications). Each entry has one sentence on what the work shows.
 |:--|:--|:--|
 | Oct&nbsp;29 | [Reasoning or Pattern Exploitation? Mechanistic Insights from RL-Trained Language Models](https://arxiv.org/abs/2610.39182) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
 | Oct&nbsp;29 | [Discovering Interpretable Acoustic Features in Autoregressive Voice-Cloning TTS Models](https://arxiv.org/abs/2610.40505) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;29 | [One Vector or Many? Clustered Optimal-Transport Steering under Quantization](https://arxiv.org/abs/2610.40055) | <sub>Steering</sub> |
 | Oct&nbsp;29 | [world2vec: Mechanistic world models through latent dynamics learning](https://arxiv.org/abs/2610.40637) | <sub>Mechanistic interpretability</sub> |
+| Oct&nbsp;29 | [One Vector or Many? Clustered Optimal-Transport Steering under Quantization](https://arxiv.org/abs/2610.40055) | <sub>Steering</sub> |
 | Oct&nbsp;28 | [Can LLMs Faithfully Solve Ontology Engineering Tasks? A Mechanistic Interpretability Study](https://arxiv.org/abs/2610.38326) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;27 | [What Survives Distillation? A Mechanistic Interpretability Study of GPT-2 and DistilGPT-2](https://arxiv.org/abs/2610.37157) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
 | Oct&nbsp;27 | [The Vocabulary Is Already Here: Adapting Pretrained Interpretable Features for Generative Recommendation](https://arxiv.org/abs/2610.36763) | <sub>Sparse autoencoders</sub> |

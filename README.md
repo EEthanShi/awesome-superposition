@@ -262,18 +262,21 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**550 papers** since 1 July 2026 · updated 2026-11-01 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**553 papers** since 1 July 2026 · updated 2026-11-02 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `19` · Polysemanticity `18` · Computation in superposition `4` · Feature geometry `20` |
-| **Recovery methods** | Sparse autoencoders `168` · Dictionary learning `14` · Transcoders and circuits `35` · Parameter decomposition `3` · Absorption and splitting `6` |
-| **Interpretability** | Steering `188` · Mechanistic interpretability `209` |
+| **Recovery methods** | Sparse autoencoders `169` · Dictionary learning `14` · Transcoders and circuits `35` · Parameter decomposition `3` · Absorption and splitting `6` |
+| **Interpretability** | Steering `189` · Mechanistic interpretability `211` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Oct&nbsp;30 | [Mechanistic Interpretability for End-to-End Self-Driving](https://arxiv.org/abs/2610.41185) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
+| Oct&nbsp;30 | [When Steering Shifts Discourse: Identifying and Intervening on Discourse-Level Changes due to Activation Steering in LLMs](https://arxiv.org/abs/2610.41661) | <sub>Steering</sub> |
+| Oct&nbsp;30 | [From Representation to Readout: Mechanistic Analysis of Membership Signals in Language Models](https://arxiv.org/abs/2610.41445) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;29 | [Reasoning or Pattern Exploitation? Mechanistic Insights from RL-Trained Language Models](https://arxiv.org/abs/2610.39182) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
 | Oct&nbsp;29 | [Discovering Interpretable Acoustic Features in Autoregressive Voice-Cloning TTS Models](https://arxiv.org/abs/2610.40505) | <sub>Sparse autoencoders</sub> |
 | Oct&nbsp;29 | [world2vec: Mechanistic world models through latent dynamics learning](https://arxiv.org/abs/2610.40637) | <sub>Mechanistic interpretability</sub> |
@@ -291,11 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Oct&nbsp;26 | [Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching](https://arxiv.org/abs/2610.34756) | <sub>Mechanistic interpretability</sub> |
 | Oct&nbsp;25 | [Steering the Teacher: Improving On-Policy Self-Distillation for Thinking Models](https://arxiv.org/abs/2610.34005) | <sub>Steering</sub> |
 | Oct&nbsp;23 | [Concept Acupuncturist: An Efficient and Precise Concept Erasure Method for Diffusion Models via Sparse Autoencoders](https://arxiv.org/abs/2610.32059) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;23 | [MI-MIDI 2: From Observation to Control with Sparse Autoencoders in Text-to-MIDI Generation](https://arxiv.org/abs/2610.32007) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;23 | ["Not" is Not Lost in Translation: A Causal Analysis of Negation Representations in Multilingual LLMs](https://arxiv.org/abs/2610.32281) | <sub>Sparse autoencoders</sub> |
-| Oct&nbsp;23 | [Do VLAs Know They Will Fail? Interpretable Success and Failure Patterns in Physical AI Systems](https://arxiv.org/abs/2610.32208) | <sub>Sparse autoencoders</sub> |
 
-<sub>The other 530 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 533 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

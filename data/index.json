@@ -1,18 +1,23 @@
 {
- "generated_at": "2026-11-02T08:07:04+00:00",
+ "generated_at": "2026-11-03T08:26:21+00:00",
  "site": {
   "title": "Awesome Superposition",
   "tagline": "A curated reading list and a daily feed of new papers on feature superposition and mechanistic interpretability.",
   "repo": "EEthanShi/awesome-superposition",
   "site_url": "https://eethanshi.github.io/awesome-superposition/"
  },
- "total": 553,
+ "total": 568,
  "with_ai": 0,
- "latest_date": "2026-10-30",
+ "latest_date": "2026-11-02",
  "months": [
   {
+   "month": "2026-11",
+   "count": 9,
+   "file": "papers/2026-11.json"
+  },
+  {
    "month": "2026-10",
-   "count": 176,
+   "count": 182,
    "file": "papers/2026-10.json"
   },
   {
@@ -32,6 +37,9 @@
   }
  ],
  "days": {
+  "2026-11-02": 6,
+  "2026-11-01": 3,
+  "2026-10-31": 6,
   "2026-10-30": 3,
   "2026-10-29": 4,
   "2026-10-28": 1,
@@ -160,7 +168,7 @@
    "name": "Polysemanticity",
    "description": "Neurons and units that respond to several features.",
    "family": "theory",
-   "count": 18
+   "count": 19
   },
   {
    "slug": "computation",
@@ -174,21 +182,21 @@
    "name": "Sparse autoencoders",
    "description": "Sparse autoencoders and their variants for recovering features.",
    "family": "recovery",
-   "count": 169
+   "count": 174
   },
   {
    "slug": "dictionary",
    "name": "Dictionary learning",
    "description": "Sparse coding and dictionary learning on network activations.",
    "family": "recovery",
-   "count": 14
+   "count": 15
   },
   {
    "slug": "circuits",
    "name": "Transcoders and circuits",
    "description": "Transcoders, crosscoders, attribution graphs, and circuit discovery.",
    "family": "recovery",
-   "count": 35
+   "count": 36
   },
   {
    "slug": "parameter-decomposition",
@@ -216,14 +224,14 @@
    "name": "Steering",
    "description": "Activation steering, steering vectors, and representation engineering.",
    "family": "broader",
-   "count": 189
+   "count": 196
   },
   {
    "slug": "mech-interp",
    "name": "Mechanistic interpretability",
    "description": "Reverse-engineering the computations of trained networks.",
    "family": "broader",
-   "count": 211
+   "count": 217
   }
  ]
 }

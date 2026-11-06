@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-05T08:20:47+00:00",
+ "generated_at": "2026-11-06T08:23:39+00:00",
  "site": {
   "title": "Awesome Superposition",
   "tagline": "A curated reading list and a daily feed of new papers on feature superposition and mechanistic interpretability.",
   "repo": "EEthanShi/awesome-superposition",
   "site_url": "https://eethanshi.github.io/awesome-superposition/"
  },
- "total": 584,
+ "total": 590,
  "with_ai": 0,
- "latest_date": "2026-11-04",
+ "latest_date": "2026-11-05",
  "months": [
   {
    "month": "2026-11",
-   "count": 25,
+   "count": 31,
    "file": "papers/2026-11.json"
   },
   {
@@ -37,6 +37,7 @@
   }
  ],
  "days": {
+  "2026-11-05": 6,
   "2026-11-04": 4,
   "2026-11-03": 9,
   "2026-11-02": 9,
@@ -163,14 +164,14 @@
    "name": "Superposition",
    "description": "More features than dimensions: geometry, capacity, interference, toy models.",
    "family": "theory",
-   "count": 21
+   "count": 22
   },
   {
    "slug": "polysemanticity",
    "name": "Polysemanticity",
    "description": "Neurons and units that respond to several features.",
    "family": "theory",
-   "count": 19
+   "count": 20
   },
   {
    "slug": "computation",
@@ -184,21 +185,21 @@
    "name": "Sparse autoencoders",
    "description": "Sparse autoencoders and their variants for recovering features.",
    "family": "recovery",
-   "count": 181
+   "count": 186
   },
   {
    "slug": "dictionary",
    "name": "Dictionary learning",
    "description": "Sparse coding and dictionary learning on network activations.",
    "family": "recovery",
-   "count": 15
+   "count": 16
   },
   {
    "slug": "circuits",
    "name": "Transcoders and circuits",
    "description": "Transcoders, crosscoders, attribution graphs, and circuit discovery.",
    "family": "recovery",
-   "count": 36
+   "count": 37
   },
   {
    "slug": "parameter-decomposition",
@@ -219,21 +220,21 @@
    "name": "Absorption and splitting",
    "description": "Feature absorption, feature splitting, and dark matter in dictionaries.",
    "family": "recovery",
-   "count": 6
+   "count": 7
   },
   {
    "slug": "steering",
    "name": "Steering",
    "description": "Activation steering, steering vectors, and representation engineering.",
    "family": "broader",
-   "count": 201
+   "count": 202
   },
   {
    "slug": "mech-interp",
    "name": "Mechanistic interpretability",
    "description": "Reverse-engineering the computations of trained networks.",
    "family": "broader",
-   "count": 220
+   "count": 222
   }
  ]
 }

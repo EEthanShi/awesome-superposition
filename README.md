@@ -262,18 +262,24 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**584 papers** since 1 July 2026 · updated 2026-11-05 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**590 papers** since 1 July 2026 · updated 2026-11-06 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
-| **Theory** | Superposition `21` · Polysemanticity `19` · Computation in superposition `4` · Feature geometry `20` |
-| **Recovery methods** | Sparse autoencoders `181` · Dictionary learning `15` · Transcoders and circuits `36` · Parameter decomposition `3` · Absorption and splitting `6` |
-| **Interpretability** | Steering `201` · Mechanistic interpretability `220` |
+| **Theory** | Superposition `22` · Polysemanticity `20` · Computation in superposition `4` · Feature geometry `20` |
+| **Recovery methods** | Sparse autoencoders `186` · Dictionary learning `16` · Transcoders and circuits `37` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `202` · Mechanistic interpretability `222` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;5 | [User Embeddings are Superpositions of Interpretable Behavioral Modes](https://arxiv.org/abs/2611.08487) | <sub>Superposition, Sparse autoencoders, Dictionary learning</sub> |
+| Nov&nbsp;5 | [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438) | <sub>Polysemanticity, Transcoders and circuits, Mechanistic interpretability</sub> |
+| Nov&nbsp;5 | [Scaling Laws for SAE Training Data](https://arxiv.org/abs/2611.07756) | <sub>Sparse autoencoders, Absorption and splitting</sub> |
+| Nov&nbsp;5 | [SAE Interprets MoE: Sparse AutoEncoders Reveal That MoE Experts Exhibit Human-Interpretable Fine-Grained Specialization](https://arxiv.org/abs/2611.08089) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;5 | [Encoding and Propagation of Grammatical Number in Large Language Models](https://arxiv.org/abs/2611.07283) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
+| Nov&nbsp;5 | [Towards interpreting any residual stream direction by scaling activation inversion](https://arxiv.org/abs/2611.08465) | <sub>Sparse autoencoders, Steering</sub> |
 | Nov&nbsp;4 | [Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs](https://arxiv.org/abs/2611.06848) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;4 | [Don't Replace, Complement: A Detector-Agnostic Subspace Signal for Near-OOD Detection](https://arxiv.org/abs/2611.06688) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;4 | [How Far Can You Steer? Behavior-Capability Frontiers in Contrastive Activation Addition](https://arxiv.org/abs/2611.06001) | <sub>Steering</sub> |
@@ -288,14 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;3 | [Sparse Internal Control of Language Models](https://arxiv.org/abs/2611.04349) | <sub>Steering</sub> |
 | Nov&nbsp;3 | [Co-Occurrence Priors Override Visual Spatial Evidence: Understanding False Alarms in Vision-Language Models for Construction Struck-By Hazard Detection](https://arxiv.org/abs/2611.04112) | <sub>Steering</sub> |
 | Nov&nbsp;2 | [Follow the Features: SAE Feature-Guided Data-Efficient Instruction-Tuning of Large Language Models](https://arxiv.org/abs/2611.04085) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;2 | [Fly Whiskers Meet LiDAR: Robust Navigation under Sensor Failure](https://arxiv.org/abs/2611.03897) | <sub>Superposition</sub> |
-| Nov&nbsp;2 | [Dr. No: Feature Steering for Abstention in Vision-Language Models](https://arxiv.org/abs/2611.03862) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;2 | [VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations](https://arxiv.org/abs/2611.03518) | <sub>Steering</sub> |
-| Nov&nbsp;2 | [Playing Dumb: How a Chess Transformer Simulates Users Across Skill Levels](https://arxiv.org/abs/2611.03439) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;2 | [Towards Multi-Value Alignment via Value Localization in LLMs](https://arxiv.org/abs/2611.02503) | <sub>Steering, Mechanistic interpretability</sub> |
-| Nov&nbsp;2 | [Four Bridges: Measuring Deception Propensity in a Multi-Agent Game](https://arxiv.org/abs/2611.03600) | <sub>Steering</sub> |
 
-<sub>The other 564 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 570 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

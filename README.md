@@ -262,7 +262,7 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**590 papers** since 1 July 2026 · updated 2026-11-06 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**590 papers** since 1 July 2026 · updated 2026-11-07 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
@@ -278,8 +278,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;5 | [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438) | <sub>Polysemanticity, Transcoders and circuits, Mechanistic interpretability</sub> |
 | Nov&nbsp;5 | [Scaling Laws for SAE Training Data](https://arxiv.org/abs/2611.07756) | <sub>Sparse autoencoders, Absorption and splitting</sub> |
 | Nov&nbsp;5 | [SAE Interprets MoE: Sparse AutoEncoders Reveal That MoE Experts Exhibit Human-Interpretable Fine-Grained Specialization](https://arxiv.org/abs/2611.08089) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;5 | [Encoding and Propagation of Grammatical Number in Large Language Models](https://arxiv.org/abs/2611.07283) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
 | Nov&nbsp;5 | [Towards interpreting any residual stream direction by scaling activation inversion](https://arxiv.org/abs/2611.08465) | <sub>Sparse autoencoders, Steering</sub> |
+| Nov&nbsp;5 | [Encoding and Propagation of Grammatical Number in Large Language Models](https://arxiv.org/abs/2611.07283) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
 | Nov&nbsp;4 | [Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs](https://arxiv.org/abs/2611.06848) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;4 | [Don't Replace, Complement: A Detector-Agnostic Subspace Signal for Near-OOD Detection](https://arxiv.org/abs/2611.06688) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;4 | [How Far Can You Steer? Behavior-Capability Frontiers in Contrastive Activation Addition](https://arxiv.org/abs/2611.06001) | <sub>Steering</sub> |

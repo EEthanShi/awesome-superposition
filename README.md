@@ -262,18 +262,22 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**590 papers** since 1 July 2026 · updated 2026-11-08 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**594 papers** since 1 July 2026 · updated 2026-11-09 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `22` · Polysemanticity `20` · Computation in superposition `4` · Feature geometry `20` |
-| **Recovery methods** | Sparse autoencoders `186` · Dictionary learning `16` · Transcoders and circuits `37` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `202` · Mechanistic interpretability `222` |
+| **Recovery methods** | Sparse autoencoders `188` · Dictionary learning `17` · Transcoders and circuits `39` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `202` · Mechanistic interpretability `223` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;6 | [Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders](https://arxiv.org/abs/2611.09233) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
+| Nov&nbsp;6 | [Calibrated concept profiles: making the reading of a model's neurons a measurement](https://arxiv.org/abs/2611.09196) | <sub>Sparse autoencoders, Transcoders and circuits</sub> |
+| Nov&nbsp;6 | [Glyph: An Interpretability Engine for AI-Driven Scientific Discovery in Clinical Data](https://arxiv.org/abs/2611.08922) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;6 | [Multimodal Training with Knowledge Traction for Video Anomaly Detection](https://arxiv.org/abs/2611.09536) | <sub>Dictionary learning</sub> |
 | Nov&nbsp;5 | [User Embeddings are Superpositions of Interpretable Behavioral Modes](https://arxiv.org/abs/2611.08487) | <sub>Superposition, Sparse autoencoders, Dictionary learning</sub> |
 | Nov&nbsp;5 | [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438) | <sub>Polysemanticity, Transcoders and circuits, Mechanistic interpretability</sub> |
 | Nov&nbsp;5 | [Scaling Laws for SAE Training Data](https://arxiv.org/abs/2611.07756) | <sub>Sparse autoencoders, Absorption and splitting</sub> |
@@ -290,12 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;3 | [Reducing Logprob Without Causal Verification: Diagnosing SAE-Based PII Suppression in LLMs](https://arxiv.org/abs/2611.04782) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;3 | [A Circuit for In-Context Learning](https://arxiv.org/abs/2611.05344) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;3 | [Whose Effect Is It? How Objectives Inflate Learned Subspace Interventions](https://arxiv.org/abs/2611.05033) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;3 | [When Should an LLM Steering Edit Depend on the Input?](https://arxiv.org/abs/2611.04757) | <sub>Steering</sub> |
-| Nov&nbsp;3 | [Sparse Internal Control of Language Models](https://arxiv.org/abs/2611.04349) | <sub>Steering</sub> |
-| Nov&nbsp;3 | [Co-Occurrence Priors Override Visual Spatial Evidence: Understanding False Alarms in Vision-Language Models for Construction Struck-By Hazard Detection](https://arxiv.org/abs/2611.04112) | <sub>Steering</sub> |
-| Nov&nbsp;2 | [Follow the Features: SAE Feature-Guided Data-Efficient Instruction-Tuning of Large Language Models](https://arxiv.org/abs/2611.04085) | <sub>Sparse autoencoders</sub> |
 
-<sub>The other 570 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 574 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

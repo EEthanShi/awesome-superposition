@@ -1,5 +1,112 @@
 [
  {
+  "id": "2611.09233",
+  "title": "Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders",
+  "abstract": "Cross-Layer Transcoders (CLTs) decompose the activations of large language models into human-interpretable features and trace how these features interact across layers to form circuits, making them a key tool for mechanistic interpretability. However, training CLTs effectively and efficiently is hard. Beyond the usual trade-off between sparsity and reconstruction quality, a CLT has to model all layers at once, which adds a further challenge. The common JumpReLU recipe controls sparsity only indirectly through a penalty, while the direct extension of TopK selects a fixed number of latents in every layer. Yet reconstruction difficulty differs widely across layers, and intermediate layers are much harder than others, so giving every layer the same budget is suboptimal. We propose Cross-Layer TopK, which sets a single L0 budget for the whole model and dynamically allocates it across layers during training. In a comparison with JumpReLU and other TopK variants on Qwen3-8B-Base, this gives lower FVU while using 20% fewer active latents than JumpReLU. The better reconstruction carries over to circuit tracing, yielding more complete circuits with higher replacement and completeness scores. The fixed per-token budget of Cross-Layer TopK also makes it easy to pair with sparse decoding, which cuts both computation and communication and gives a 2.9x speedup per training step. We further show that Cross-Layer TopK follows scaling laws in both latent size and sparsity. We have open-sourced the weights of our CLT at https://huggingface.co/ByteDance-Seed/Cross-Layer-TopK-CLT.",
+  "authors": [
+   "Anyuan Zhuo",
+   "Shaohua Zhang",
+   "Tianle Li",
+   "Yuan Lin",
+   "Diandian Gu",
+   "Jun Wang",
+   "Pinyan Lu"
+  ],
+  "published": "2026-11-06",
+  "updated": "2026-11-06",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "circuits",
+   "mech-interp"
+  ],
+  "score": 5.0
+ },
+ {
+  "id": "2611.09196",
+  "title": "Calibrated concept profiles: making the reading of a model's neurons a measurement",
+  "abstract": "Interpretability has largely moved from reading a model's neurons directly to reading a second model trained on the first: a probe, a sparse autoencoder, a crosscoder. The move answered real faults -- mixed meanings, thresholds without a unit, readings that did not transfer from one study to the next -- but gave up what a direct reading alone provides: nothing trained in between, the neurons themselves named, and a reading that can be repeated and compared. Here the direct reading is made a measurement. A neuron's activation varies with the prompt, so its reading is a distribution over a population of stimuli. We declare that population: every factor around a target construct is drawn at its rate in a reference corpus and logged. From the declared distribution we generate a battery of prompts, and draw it twice. From the battery we compute the calibrated concept profile, one number per neuron, stated in units of the neuron's own spread on ordinary input; the two draws give every number a noise unit. Before the profile is read, a fixed set of checks licenses the battery on the model, and the smallest change the profile can resolve across training checkpoints is measured. Realised for Python on OpenCoder-1.5B and followed across checkpoints spanning two trillion training tokens, the profile gives what the alternatives do not report: a unit on every number, a chance level for every comparison, and which neurons carry a construct at every checkpoint. The battery, the code and the data behind every result are released.",
+  "authors": [
+   "Piotr Wilam"
+  ],
+  "published": "2026-11-06",
+  "updated": "2026-11-06",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ],
+  "comment": "25 pages, 5 figures, 11 tables. Dataset: AtlasOpenCoder, tag v1, doi:10.57967/hf/11472. Code: https://github.com/piotrwilam/AtlasCalibratedConceptProfiles",
+  "topics": [
+   "sae",
+   "circuits"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2611.09536",
+  "title": "Multimodal Training with Knowledge Traction for Video Anomaly Detection",
+  "abstract": "The task of weakly supervised video anomaly detection is challenging. Existing approaches mainly model video frame features and determine whether anomalies are present based on their magnitudes. In this work, we propose a novel method that incorporates external knowledge into training to improve model performance, robustness, and generalization. We leverage textual prompts and a large language model (LLM) to establish prior information for the specific task, and employ dictionary learning to normalize and compress this information. Moreover, during experiments, we observed inconsistencies in the textual descriptions extracted from similar video frames by image caption models. To address this, we devise a method that leverages an LLM and auxiliary information to ensure consistency in the textual descriptions of similar frames within a video. Finally, we introduce a feature processing approach that incorporates prior knowledge and cross-modal attention mechanisms. This approach learns the relationships and characteristics among different modalities to construct more accurate and reliable feature representations, thereby improving the accuracy and stability of downstream tasks. Experimental results demonstrate that our method surpasses other state-of-the-art approaches.",
+  "authors": [
+   "Xiao Tan"
+  ],
+  "published": "2026-11-06",
+  "updated": "2026-11-06",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV",
+   "cs.AI"
+  ],
+  "comment": "15 pages, 10 figures, 8 tables",
+  "topics": [
+   "dictionary"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.08922",
+  "title": "Glyph: An Interpretability Engine for AI-Driven Scientific Discovery in Clinical Data",
+  "abstract": "Automated scientific discovery has the potential to advance understanding of disease mechanisms and accelerate identification of early disease markers. Manual data annotation is infeasible at population scale, motivating methods that automatically extract pre-defined phenotypes in multimodal and unstructured clinical data. Such pre-defined feature sets determine and limit which associations these approaches can discover. This limitation extends to agentic AI systems that use these tools to query population-scale data. In contrast, foundation models (FMs) trained on large volumes of clinical data can perform tasks beyond their training objectives. This suggests their latent embeddings may represent novel or unexplored features that could yield insights into disease mechanisms, yet such latent features remain difficult to interpret. To address this challenge, we introduce Glyph, an automated multistage framework that extracts features from multimodal and unstructured clinical data using FMs and sparse autoencoders, interprets them as coded clinical concepts, and evaluates their value for clinical scientific discovery. We applied Glyph to abdominal CT volumes, CT radiology reports and laboratory measurements from 41,628 patients across different institutions. We identified 397 predictive concepts supported by 4,463 Bonferroni-significant associations. Moreover, a majority of discovered associations were automatically reproducible in held-out cohorts across different sites. Glyph concepts provided complementary associations to literature-derived markers, leading to gains in predictive power. We envision that interpretability can extend beyond a mechanistic understanding of neural networks to connecting implicitly learned features with clinical knowledge and establishing their significance for patient outcomes. We release Glyph at https://github.com/StanfordMIMI/Glyph.",
+  "authors": [
+   "Robbie Holland",
+   "Ashwin Kumar",
+   "Mateus A. Esmeraldo",
+   "David Le",
+   "Andrea Fisher",
+   "Jiazhen Pan",
+   "Louisa Fay",
+   "Magdalini Paschali",
+   "Vasiliki Sideri-Lampretsa",
+   "Ates Fettahoglu",
+   "Stefania Moroianu",
+   "Philipp Wesp",
+   "Ivan Lopez",
+   "Tom Nuno Wolf",
+   "McKenzie S. White",
+   "Eduardo Pontes Reis",
+   "Fatima Rodriguez",
+   "Curtis P. Langlotz",
+   "Vasilis Syrgkanis",
+   "Imon Banerjee",
+   "Akshay S. Chaudhari",
+   "Sergios Gatidis"
+  ],
+  "published": "2026-11-06",
+  "updated": "2026-11-06",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
+ },
+ {
   "id": "2611.08487",
   "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
   "abstract": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approximately to deep-learning representations by the superposition hypothesis. Superimposed modes can naturally be recovered by sparse dictionary learning methods, such as sparse autoencoders (SAEs), and recovered modes can be automatically named and queried in natural language. We validate mode recovery against known ground truth on synthetic data, where SAEs recover modes better than classical sparse baselines, including on transformer-encoded embeddings. We then apply the method to classical and transformer-based user embeddings from two real-world datasets. We also show how the corresponding natural-language labels enable zero-shot audience retrieval and characterization over embeddings never trained on text. The framework is post-hoc and model-agnostic, requiring no modification to the upstream embedding system.",

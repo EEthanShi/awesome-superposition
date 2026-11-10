@@ -1,5 +1,303 @@
 [
  {
+  "id": "2611.12675",
+  "title": "Interpretability Is Not Model-Specific",
+  "abstract": "Interpretability tools are usually built for one model at a time: a refusal direction, a truthfulness probe, or a steering vector is found with labeled data inside the model it explains. We ask whether such tools can be carried to other models through a map between residual streams fit only on unlabeled prompts. We transfer a refusal direction, tested causally by addition and ablation, and two read-out tools, a correctness direction and a sentiment probe, across 110 pairs of models from five families and 1B to 72B parameters and between base and instruction-tuned models, with controls for specificity and five seeds. How much transfers depends on what the map was fit on. A map fit on ordinary questions recovers 54\\% of the target's own refusal steering and 16\\% to 77\\% of its correctness gain; adding unlabeled prompts from the region where the tool operates raises these to 102\\% and 88\\% to 98\\%, while control directions recover at most 1\\%. We prove that a linear map behaves this way whenever two models correspond linearly on the data it covers, and a label-free coverage score derived from this result tracks recovery across more than 16,000 runs and explains earlier reports that maps between models fail across domains. Carried read-out tools outperform anything the target's unlabeled representations yield. Interpretability results, once found, can be reused across models at the cost of a few unlabeled prompts.",
+  "authors": [
+   "Marcus Armstrong",
+   "Navid Ayoobi",
+   "Pradham Mummaleti",
+   "Alexander Chulzhanov",
+   "Arjun Mukherjee"
+  ],
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "",
+  "topics": [
+   "steering"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.12206",
+  "title": "A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone",
+  "abstract": "Transformers are built with continuous symmetries in the attention mechanism. We derive $ρ$, a scalar invariant that measures each head's capacity to couple to rotary positional encodings. This framework allows us to analyze heads without forward passes, opening a new research direction into data-independent analysis of modern LLMs. Empirically, we find that $ρ$ predicts induction heads, the most-studied circuit type in mechanistic interpretability, with Spearman correlation between $-0.55$ and $-0.74$ across four bias-free RoPE models spanning $135$M to $7$B parameters. As a preliminary proof of concept, we use $ρ$ to apply YaRN to only the top-50% positional heads, which degrades perplexity less than uniform application. Code is available at https://github.com/MPedraBento/rho-invariant.",
+  "authors": [
+   "Miguel P. Bento"
+  ],
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ],
+  "comment": "Accepted as an extended abstract at the Symmetry and Geometry in Neural Representations Workshop (NeurReps), NeurIPS 2026",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.11398",
+  "title": "Decomposing Earth Embeddings with Sparse Autoencoders",
+  "abstract": "Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them difficult to interpret and their robustness hard to assess. Here, we propose sparse autoencoders (SAEs) as a principled way to decompose Earth embeddings into sparse, approximately monosemantic features over an overcomplete dictionary. Because LLM judges of interpretations do not transfer to satellite pixels, and spatial autocorrelation matters, we introduce a tailored evaluation protocol. It scores any SAE on reconstruction at matched sparsity, alignment with reference concepts, and spatial scale, each against baselines that include an SAE whose decoder is a frozen random dictionary. On this protocol, SAEs reconstruct AlphaEarth and Tessera embeddings better than every baseline at matched sparsity. Their features align with far fewer reference concepts than raw embedding dimensions (on AlphaEarth, 88% align with at most one of 20 concept groups, most with none, against a median of 12 per raw dimension). They also carry more of their variance at fine spatial scales (23 to 32% within a 640 m patch for BatchTopK and Matryoshka, against 9%). An SAE with a frozen random decoder shares both properties, which therefore follow from sparsity, whereas only a learned dictionary reconstructs the embedding accurately: on AlphaEarth, trained SAEs leave eight times less variance unexplained. We test the sparse code on two applications, discovering land-cover sub-concepts and detecting out-of-distribution pixels by area-of-applicability estimation. Both indicate how sparse features could be used, but neither is yet reliable enough for practical use. Together, these results are a step toward Earth observation models whose features can be inspected.",
+  "authors": [
+   "Vitus Benson",
+   "Fanny Yang",
+   "Markus Reichstein"
+  ],
+  "published": "2026-11-08",
+  "updated": "2026-11-08",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.CV",
+   "physics.geo-ph"
+  ],
+  "comment": "Accepted at NeurIPS 2026. Code: https://github.com/EarthyScience/geosae",
+  "topics": [
+   "polysemanticity",
+   "sae"
+  ],
+  "score": 7.0
+ },
+ {
+  "id": "2611.11209",
+  "title": "Viscot-steer: Disentangling and Transferring Visual Chain-of-Thought via Activation Steering",
+  "abstract": "Visual chain-of-thought (visual-CoT), also known as \"thinking with images\", equips LVLMs with the ability to locate and use key visual evidence for reasoning. However, acquiring such visual-CoT capabilities requires costly post-training and tightly couples them to a specific backbone, making transfer to other LVLMs difficult. Existing cross-model transfer methods typically treat visual-CoT as a monolithic capability, using a unified representation that ignores the functional distinction between grounding and reasoning and introduces stage-irrelevant interventions. To address this problem, we propose Viscot-steer, a training-free activation steering framework for transferring visual-CoT capabilities across heterogeneous LVLMs. Specifically, Viscot-steer first disentangles visual-CoT into grounding and reasoning vectors and extracts them from the source-model layers associated with the corresponding capabilities. It then aligns the vectors with the activation space of the target model and steers the grounding and reasoning layers during bounding-box prediction and reasoning-trace generation, respectively. Across benchmarks covering high-resolution visual understanding, general visual perception and reasoning, and mathematical visual reasoning, Viscot-steer transfers capabilities from different visual-CoT models to architecturally diverse LVLMs and outperforms the strongest capability-transfer baseline by an average of 1.86 percentage points on the primary evaluation metrics.",
+  "authors": [
+   "Ningning Wang",
+   "Beier Zhu",
+   "Xingyu Zhu",
+   "Kaiyun Yang",
+   "Xun Yang"
+  ],
+  "published": "2026-11-08",
+  "updated": "2026-11-08",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV",
+   "cs.AI"
+  ],
+  "comment": "Project page: https://nn-wang.github.io/viscot-steer/",
+  "topics": [
+   "steering"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.11035",
+  "title": "Room to Reconsider: Reply Length Decides Whether Pushback Makes Language Models Sycophantic or Self-Correcting",
+  "abstract": "Language models often abandon a correct answer when a user pushes back without giving a reason, and this behavior is usually studied as sycophancy to be suppressed. The same pushback, however, also leads models to revisit and sometimes repair a wrong answer. We measure both effects on multiple-choice questions from MMLU and ARC-Challenge with four open models from two families (Qwen3 1.7B, 4B and 8B, and OLMo-2 7B), reading the final answer exactly from option logits after a free-form reply. The reply budget changes the verdict. When Qwen3-4B may answer the challenge in at most 96 tokens, pushback leaves accuracy unchanged or slightly lower; with 1,024 tokens, it corrects 43% of its wrong answers and pushback raises accuracy by 5.7 points. Whether pushback helps overall follows a simple break-even rule in the cave and correction rates. Inside the model, caving can be partly predicted before the challenge: hidden states add about 0.04-0.06 AUROC over turn-1 confidence in three of our four probing runs. A probe trained only on self-correction cases predicts caving beyond confidence when replies are truncated, but not when the model can finish its reasoning. Activation steering never reduced caving selectively: where it worked, it suppressed self-correction as well. We conclude that sycophancy evaluations should allow full replies and report self-correction alongside caving.",
+  "authors": [
+   "Ook Lee"
+  ],
+  "published": "2026-11-08",
+  "updated": "2026-11-08",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ],
+  "comment": "10 pages, 5 figures, 2 tables. Code: https://doi.org/10.5281/zenodo.24045308",
+  "topics": [
+   "steering"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.10503",
+  "title": "Learning a Unified Cross-Model Semantic Dictionary via Gated Bottleneck Sparse Autoencoders",
+  "abstract": "Foundation models pretrained on similar data distributions tend to learn overlapping semantic structure, but their representations are distinct due to different model architecture, pretraining objectives and protocols. This prevents unified interpretability and cross-model feature reuse. Existing approaches extract interpretable concepts from individual models and align these concepts in a shared coordinate system using cross-reconstruction objectives, but the alignment only applies to latent coordinates while the concepts themselves remain model-specific and cannot be shared or reused. This paper introduces the Gated Bottleneck Sparse Autoencoder (GB-SAE), which casts unified cross-model interpretability as a representation factorization problem and solves it by simultaneously learning a unified shared dictionary and multiple private model-specific dictionaries via a gated bottleneck sparse autoencoder framework. The shared dictionary encodes the cross-model common semantic structure in unified concepts that are reusable across all participating models (and beyond), while each private dictionary comprises residual concepts that capture model-specific biases. We evaluate GB-SAE with distinct foundation models including ViT, SigLIP, DINOv2, and ConvNeXt. GB-SAE demonstrates superior reconstruction capability, unified and faithful interpretability, strong reusability and generalization to unseen models and downstream tasks. The code is available at https://github.com/trustAIoT/GB-SAE_NeurIPS.",
+  "authors": [
+   "Jinchi Zhu",
+   "Tie Luo"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CV"
+  ],
+  "comment": "The 40th Annual Conference on Neural Information Processing Systems (NeurIPS 2026)",
+  "topics": [
+   "sae"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2611.10974",
+  "title": "SWEET: Mitigating Spurious Feature Reliance in LLM Reasoning via Weight Editing",
+  "abstract": "Reasoning in large language models can be disrupted by simple input perturbations (e.g. adding irrelevant distractors), suggesting reliance on spurious correlations. Identifying and suppressing the spurious features involved in long chain-of-thought reasoning remains challenging. We introduce Spurious-feature WEight EdiTing (SWEET), a training-free method that combines counterfactual interventions with mechanistic interpretability to identify and suppress spurious-features. SWEET extracts token- and sequence-level behavioral directions from activation contrasts between original problems and their counterfactual variants - capturing local and global patterns of spurious reasoning. It then localizes the responsible MLP neurons and attention heads and suppresses their contributions along these directions through weight edits. Using only 20 original-counterfactual pairs for direction extraction, SWEET improves accuracy by an average of 11.8 percentage points on perturbed inputs and 2 points on original inputs across five open-weight reasoning models and five reasoning benchmarks. It also reduces the relative gap between original and perturbed accuracies from 17.6% to 2.5%. Analyses identify two recurring forms of spurious reasoning, i.e. over-integrating irrelevant conditions and overthinking, and provide mechanistic evidence that SWEET improves reasoning robustness by suppressing both behavioral directions.",
+  "authors": [
+   "Zhizhang Fu",
+   "Lucas Zhao",
+   "Michalis Korakakis",
+   "Mengru Ding",
+   "Lukasz Szpruch",
+   "Yue Zhang"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.10936",
+  "title": "Can small transformers learn the language of Coxeter groups?",
+  "abstract": "The field of mechanistic interpretability is well-suited to collaborative projects between mathematicians and AI researchers. This work describes one such project. We trained a small transformer to learn the language of the Coxeter group affine A2, best known as the symmetries of the tiling of the Euclidean plane by equilateral triangles. We then formulated and proved a word-theoretic conjecture about affine A2 after observing the attention patterns of the trained model.",
+  "authors": [
+   "J. Elisenda Grigsby",
+   "Yiyao Huang",
+   "Arushi Katyal",
+   "Ryan Lin",
+   "Pranav Ramakrishnan",
+   "Weiya Wang"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.LG",
+   "math.GR",
+   "math.RT"
+  ],
+  "comment": "13 pages, 13 figures, accepted as a poster at the 6th workshop on Mathematical Reasoning and AI; NeurIPS 2026, Atlanta; This version is updated from the camera-ready version which can be found at https://mathai-2026.github.io/cfp/ and https://openreview.net/forum?id=lYImtIt4tA",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.10760",
+  "title": "ConwayNet: Interpretability, Activation Coherence, and Noise Resilience via a Game-of-Life-Inspired Lateral Inhibition in Artificial Neural Networks",
+  "abstract": "Deep neural networks achieve universal function approximation by stacking interconnected nonlinearities, but as a consequence they are sensitive to noise and resist mechanistic interpretation. In contrast, the local update rules of cellular automata, such as Conway's Game of Life, give rise to not merely interpretable but programmable dynamics. We explore a bridge between these worlds: a lateral inhibition in neural networks based on continuous Game-of-Life rules that derives inhibitory and excitatory responses from the layer input and blends them into the activation map in a state-conditioned way. The mechanism is differentiable and architecture-agnostic, and its regulation is imposed rather than learned: the rule's parameters are fixed and are not optimised, while the rule's values and derivatives shape training throughout the network. Wired into fully connected, convolutional, wide-residual and graph convolutional networks, it gives rise to several properties. Activation maps become coherent across space, depth and seeds, with coarse structure persisting through depth while fine detail is renewed at every layer. The co-activation graph of the hidden units departs from an Erdős--Rényi random graph: it is laid out on the image and its giant component grows in steps, as in a spatial graph. Networks started from nearly identical initialisations, under label noise, disagree on thirty times fewer test images. Saliency maps rest on the object rather than the background, and resilience to pixel noise not seen in training is substantially improved.",
+  "authors": [
+   "Yair Cohen",
+   "Scott M. Gilmore"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.10720",
+  "title": "Locating and Repairing Domain Shift in VLM Trajectory Planning",
+  "abstract": "Vision-Language Models (VLMs) are increasingly adopted as end-to-end driving planners, yet they suffer from cross-city domain shift. Existing methods treat this shift as a single quantity addressed by uniform alignment or single-site editing. We challenge this view on two counts: (i) domain shift in VLM trajectory planners is inherently structured across modality and layer, and (ii) a locate-then-repair recipe matched to this structure outperforms every uniform-objective baseline. We analyse domain shift via activation patching and uncover two regularities. (F1) Modality axis. Image and text tokens exhibit distinct shift patterns in each VLM. (F2) Layer axis. The layer-wise shift partition is architecture-dependent and dataset-stable. These findings recast domain shift as a two-dimensional tensor indexed by modality (image vs. text tokens) and layer, motivating a simple principle: locate where shift occurs, and repair only there. We instantiate this principle in MoLaRx (Modality-Layer Repair), a locate-then-repair framework. The Causal Importance Score (CIS) estimates the domain shift as a modality-layer tensor and partitions the layers into functional zones. CIS-Guided Selective Repair (CISR) then applies a matched operator (Maximum Mean Discrepancy (MMD) / low-rank adaptation (LoRA) / freezing) to repair each zone, with the composition adapting automatically to each architecture. We evaluate MoLaRx on three architecturally distinct VLMs (LFM2-VL-1.6B, Qwen2-VL-2B, and PaliGemma2-3B) across two cross-city benchmarks (nuScenes and Argoverse 2). MoLaRx attains the lowest cross-city trajectory-error gap among adaptation methods in all six main-table settings, while using 50-60% fewer trainable parameters and 8.4-10.9 ms lower inference latency. In contrast, uniform MMD-only adaptation collapses in all six settings, highlighting the importance of structure-guided repair.",
+  "authors": [
+   "Zhihong Cui",
+   "Hengyu Liu",
+   "Michael Alexander Riegler",
+   "Guandong Xu",
+   "Amir Taherkordi",
+   "Tor Skeie"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV",
+   "cs.RO"
+  ],
+  "comment": "Accepted at NeurIPS 2026 (Main Track). 30 pages, 7 figures, 16 tables. Code: https://github.com/ZhihongCui/MoLaRx",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.10552",
+  "title": "Seeing Isn't Enough: Unlocking Visual Reasoning by Bridging the Reasoning-Access Gap with TIGER",
+  "abstract": "Multimodal Large Language Models (MLLMs) inherit strong textual reasoning capabilities from their language backbones and text pretraining, but often fail to apply the same level of competency to visual inputs. We show that this degradation cannot be attributed to only perception failures, by evaluating models on semantically-equivalent text and rendered-text image inputs: models can accurately read text in the images and recover near-text performance when provided their own transcriptions, but just cannot reason well on the images directly. We characterize this discrepancy as a modality reasoning-access gap, where models fail to route perceived visual content into existing reasoning machinery accessible with text. To bridge this, we propose TIGER (Text-to-Image Gap-targeted training for Enhanced Reasoning), which first mines synthetic modality counterfactuals where a model succeeds on a text problem but fails when provided the corresponding rendered image, and post-trains the model on the image input via Group Relative Policy Optimization (GRPO), along with SFT and DPO variants. Importantly, although trained exclusively on synthetic rendered-text images with no multimodal annotations, TIGER results in model performance improvements across diverse real-world visual benchmarks including geometric diagrams (MathVerse), multi-disciplinary sciences (EMMA, MMMU), complex charts (ChartQAPro), and embodied spatial reasoning (RoboSpatial-Home). TIGER also complements existing state-of-the-art RLVR visual reasoning methods, yielding further performance gains. Analysis involving reasoning-subspace activation and activation patching provide support indicating that TIGER helps to align visual-to-reasoning pathways toward text reasoning states. Our implementation is available at https://github.com/minhngh/Tiger.",
+  "authors": [
+   "Gregory Kang Ruey Lau",
+   "Minh Huynh Nguyen",
+   "Bryan Kian Hsiang Low"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI",
+   "cs.CV",
+   "cs.LG"
+  ],
+  "comment": "Accepted at NeurIPS 2026",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.10528",
+  "title": "PrivMark: Pixel-Space Steering against Privacy Leakage in Vision-Language Models",
+  "abstract": "Vision-language models (VLMs) routinely disclose soft-biometric attributes such as age, gender, and race in their text outputs, exposing demographic information from uploaded images to any downstream API user. Existing privacy defenses do not fit this setting: face de-identification leaves distributed soft-biometric cues intact, classifier-targeted adversarial perturbations do not transfer to open-ended generation, and stronger VLM-specific methods require retraining or runtime activation access unavailable to downstream APIs. We propose PrivMark, a framework that suppresses biometric leakage at the image level. By analyzing VLM activations, we identify two weakly aligned steering vector directions in hidden-state space, each tied to a distinct leakage behavior --- one corresponding to incidental attribute disclosure under open-ended descriptions, the other to compliance with direct biometric probes instead of refusal --- and encode both directions into a single bounded pixel perturbation, so the protected image alone enforces privacy with no invasive access to model internals at deployment. To support evaluation, we assemble BioleakBench, $1{,}600$ VQA pairs covering biometric privacy attributes under both free-form description and direct-probe protocols. Across three white-box source models, PrivMark achieves up to $85.9\\%$ biometric suppression while retaining $75\\%$ of clean OK-VQA utility, up to $1.4\\times$ the privacy-utility tradeoff of the strongest pixel-only baseline. The same one-shot perturbations transfer consistently to seven unseen VLMs including closed-source APIs.",
+  "authors": [
+   "Ruofan Xing",
+   "Arman Akbari",
+   "Weikai Lin",
+   "Yuhao Zhu",
+   "Xuan Zhang"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV"
+  ],
+  "comment": "33 pages, 12 figures",
+  "topics": [
+   "steering"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.10457",
+  "title": "Represented but Not Used: Value-Policy Dissociation in LLM Agents",
+  "abstract": "Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those consequences or failed to use them. Mechanistic interpretability has studied internal representations of environment state and plans, but sequential decision making also requires evaluating how candidate actions change future outcomes. Reinforcement learning formalizes this as action value. We study this computation in Qwen2.5-7B-Instruct, Qwen2.5-32B-Instruct, and GPT-OSS-20B across a partially observed Grid environment and WebShop, a simulated web shopping environment. We find that the relative values of candidate actions are linearly decodable from intermediate hidden states, including at states where the policy prefers a worse action. We call this gap between value representation and policy choice value-policy dissociation. To investigate how represented value relates to action selection, we compare direct interventions along the value readout direction with Natural Value Transport (NVT), a transformation learned from hidden state changes that naturally result from differences in action value. While readout-direction interventions have limited and inconsistent effects, NVT more consistently influences action preferences, particularly at later layers. We also test a closed-loop controller that uses the value readout as a sensor and NVT as an actuator, observing improvements in task outcomes. These results suggest that LLM agents can represent useful prospective value without reliably translating it into policy choice.",
+  "authors": [
+   "Yuzhang Luo",
+   "Mohamed Aghzal",
+   "Liangming Pan",
+   "Ziyu Yao"
+  ],
+  "published": "2026-11-07",
+  "updated": "2026-11-07",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "19 pages, 5 figures",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
   "id": "2611.09233",
   "title": "Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders",
   "abstract": "Cross-Layer Transcoders (CLTs) decompose the activations of large language models into human-interpretable features and trace how these features interact across layers to form circuits, making them a key tool for mechanistic interpretability. However, training CLTs effectively and efficiently is hard. Beyond the usual trade-off between sparsity and reconstruction quality, a CLT has to model all layers at once, which adds a further challenge. The common JumpReLU recipe controls sparsity only indirectly through a penalty, while the direct extension of TopK selects a fixed number of latents in every layer. Yet reconstruction difficulty differs widely across layers, and intermediate layers are much harder than others, so giving every layer the same budget is suboptimal. We propose Cross-Layer TopK, which sets a single L0 budget for the whole model and dynamically allocates it across layers during training. In a comparison with JumpReLU and other TopK variants on Qwen3-8B-Base, this gives lower FVU while using 20% fewer active latents than JumpReLU. The better reconstruction carries over to circuit tracing, yielding more complete circuits with higher replacement and completeness scores. The fixed per-token budget of Cross-Layer TopK also makes it easy to pair with sparse decoding, which cuts both computation and communication and gives a 2.9x speedup per training step. We further show that Cross-Layer TopK follows scaling laws in both latent size and sparsity. We have open-sourced the weights of our CLT at https://huggingface.co/ByteDance-Seed/Cross-Layer-TopK-CLT.",

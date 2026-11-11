@@ -262,40 +262,40 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**607 papers** since 1 July 2026 · updated 2026-11-10 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**612 papers** since 1 July 2026 · updated 2026-11-11 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
-| **Theory** | Superposition `22` · Polysemanticity `21` · Computation in superposition `4` · Feature geometry `20` |
-| **Recovery methods** | Sparse autoencoders `190` · Dictionary learning `17` · Transcoders and circuits `39` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `206` · Mechanistic interpretability `230` |
+| **Theory** | Superposition `22` · Polysemanticity `22` · Computation in superposition `4` · Feature geometry `21` |
+| **Recovery methods** | Sparse autoencoders `191` · Dictionary learning `17` · Transcoders and circuits `39` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `206` · Mechanistic interpretability `233` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;10 | [Representational Atoms in Neural Networks](https://arxiv.org/abs/2611.14168) | <sub>Polysemanticity, Sparse autoencoders</sub> |
+| Nov&nbsp;10 | [Mechanistic Interpretability Needs a Logic of Inference](https://arxiv.org/abs/2611.14483) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;10 | [Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives](https://arxiv.org/abs/2611.13868) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;9 | [Enforcing Axioms for AI Alignment under Loss-Based Rules](https://arxiv.org/abs/2611.13369) | <sub>Feature geometry</sub> |
 | Nov&nbsp;9 | [Interpretability Is Not Model-Specific](https://arxiv.org/abs/2611.12675) | <sub>Steering</sub> |
 | Nov&nbsp;9 | [A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone](https://arxiv.org/abs/2611.12206) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;9 | [MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses](https://arxiv.org/abs/2611.13322) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;8 | [Decomposing Earth Embeddings with Sparse Autoencoders](https://arxiv.org/abs/2611.11398) | <sub>Polysemanticity, Sparse autoencoders</sub> |
 | Nov&nbsp;8 | [Viscot-steer: Disentangling and Transferring Visual Chain-of-Thought via Activation Steering](https://arxiv.org/abs/2611.11209) | <sub>Steering</sub> |
 | Nov&nbsp;8 | [Room to Reconsider: Reply Length Decides Whether Pushback Makes Language Models Sycophantic or Self-Correcting](https://arxiv.org/abs/2611.11035) | <sub>Steering</sub> |
 | Nov&nbsp;7 | [Learning a Unified Cross-Model Semantic Dictionary via Gated Bottleneck Sparse Autoencoders](https://arxiv.org/abs/2611.10503) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;7 | [PrivMark: Pixel-Space Steering against Privacy Leakage in Vision-Language Models](https://arxiv.org/abs/2611.10528) | <sub>Steering</sub> |
 | Nov&nbsp;7 | [SWEET: Mitigating Spurious Feature Reliance in LLM Reasoning via Weight Editing](https://arxiv.org/abs/2611.10974) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;7 | [Can small transformers learn the language of Coxeter groups?](https://arxiv.org/abs/2611.10936) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;7 | [ConwayNet: Interpretability, Activation Coherence, and Noise Resilience via a Game-of-Life-Inspired Lateral Inhibition in Artificial Neural Networks](https://arxiv.org/abs/2611.10760) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;7 | [Locating and Repairing Domain Shift in VLM Trajectory Planning](https://arxiv.org/abs/2611.10720) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;7 | [Seeing Isn't Enough: Unlocking Visual Reasoning by Bridging the Reasoning-Access Gap with TIGER](https://arxiv.org/abs/2611.10552) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;7 | [PrivMark: Pixel-Space Steering against Privacy Leakage in Vision-Language Models](https://arxiv.org/abs/2611.10528) | <sub>Steering</sub> |
 | Nov&nbsp;7 | [Represented but Not Used: Value-Policy Dissociation in LLM Agents](https://arxiv.org/abs/2611.10457) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;6 | [Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders](https://arxiv.org/abs/2611.09233) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
 | Nov&nbsp;6 | [Calibrated concept profiles: making the reading of a model's neurons a measurement](https://arxiv.org/abs/2611.09196) | <sub>Sparse autoencoders, Transcoders and circuits</sub> |
-| Nov&nbsp;6 | [Multimodal Training with Knowledge Traction for Video Anomaly Detection](https://arxiv.org/abs/2611.09536) | <sub>Dictionary learning</sub> |
-| Nov&nbsp;6 | [Glyph: An Interpretability Engine for AI-Driven Scientific Discovery in Clinical Data](https://arxiv.org/abs/2611.08922) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;5 | [User Embeddings are Superpositions of Interpretable Behavioral Modes](https://arxiv.org/abs/2611.08487) | <sub>Superposition, Sparse autoencoders, Dictionary learning</sub> |
-| Nov&nbsp;5 | [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438) | <sub>Polysemanticity, Transcoders and circuits, Mechanistic interpretability</sub> |
-| Nov&nbsp;5 | [Scaling Laws for SAE Training Data](https://arxiv.org/abs/2611.07756) | <sub>Sparse autoencoders, Absorption and splitting</sub> |
 
-<sub>The other 587 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 592 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

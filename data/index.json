@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-10T08:44:57+00:00",
+ "generated_at": "2026-11-11T08:10:50+00:00",
  "site": {
   "title": "Awesome Superposition",
   "tagline": "A curated reading list and a daily feed of new papers on feature superposition and mechanistic interpretability.",
   "repo": "EEthanShi/awesome-superposition",
   "site_url": "https://eethanshi.github.io/awesome-superposition/"
  },
- "total": 607,
+ "total": 612,
  "with_ai": 0,
- "latest_date": "2026-11-09",
+ "latest_date": "2026-11-10",
  "months": [
   {
    "month": "2026-11",
-   "count": 48,
+   "count": 53,
    "file": "papers/2026-11.json"
   },
   {
@@ -37,7 +37,8 @@
   }
  ],
  "days": {
-  "2026-11-09": 2,
+  "2026-11-10": 3,
+  "2026-11-09": 4,
   "2026-11-08": 3,
   "2026-11-07": 8,
   "2026-11-06": 4,
@@ -175,7 +176,7 @@
    "name": "Polysemanticity",
    "description": "Neurons and units that respond to several features.",
    "family": "theory",
-   "count": 21
+   "count": 22
   },
   {
    "slug": "computation",
@@ -189,7 +190,7 @@
    "name": "Sparse autoencoders",
    "description": "Sparse autoencoders and their variants for recovering features.",
    "family": "recovery",
-   "count": 190
+   "count": 191
   },
   {
    "slug": "dictionary",
@@ -217,7 +218,7 @@
    "name": "Feature geometry",
    "description": "The linear representation hypothesis, feature geometry, and feature manifolds.",
    "family": "theory",
-   "count": 20
+   "count": 21
   },
   {
    "slug": "sae-failures",
@@ -238,7 +239,7 @@
    "name": "Mechanistic interpretability",
    "description": "Reverse-engineering the computations of trained networks.",
    "family": "broader",
-   "count": 230
+   "count": 233
   }
  ]
 }

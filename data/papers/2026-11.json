@@ -1,5 +1,121 @@
 [
  {
+  "id": "2611.14168",
+  "title": "Representational Atoms in Neural Networks",
+  "abstract": "Understanding the internal representations of neural networks and characterizing their relationship with human conceptual structure are two critical questions for elucidating model mechanisms. The former reveals how learned knowledge is organized in internal representations, whereas the latter provides a basis for interpreting these representations through human conceptual structure. Here, we formally define fundamental representational units (FRUs) and establish two evaluation criteria: fidelity and stability. We further prove that threshold-activated sparse autoencoders (TSAEs) can identify FRUs with high fidelity and stability under appropriate conditions, and validate this result through large-scale experiments. Further analyses reveal that FRUs with higher stability exhibit greater monosemanticity and can be composed across layers to recover semantic organization corresponding to human conceptual structure. These results provide a unified framework for defining, evaluating and identifying FRUs in neural networks, and establish a foundation for characterizing the relationship between neural network representations and human conceptual structure.",
+  "authors": [
+   "Chenhui Hu",
+   "Pengfei Cao",
+   "Kang Liu",
+   "Jun Zhao"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ],
+  "comment": "",
+  "topics": [
+   "polysemanticity",
+   "sae"
+  ],
+  "score": 5.0
+ },
+ {
+  "id": "2611.14483",
+  "title": "Mechanistic Interpretability Needs a Logic of Inference",
+  "abstract": "Neural networks are increasingly studied not merely as predictive systems, but as complex systems whose internal computations are themselves objects of scientific inquiry. Recent progress in mechanistic interpretability (MI) has made it possible to identify neurons, features, circuits, population structures, and dynamical patterns associated with model behavior. As these tools improve, attention is shifting from what can be observed inside a model to how those observations support mechanistic explanations. We examine the parallel efforts of neuroscience and MI to address this question and identify recurring inferential bottlenecks when inferring mechanisms from complex neural systems. We propose five principles and organize them into a recursive logic for a more rigorous procedure of mechanistic inference. These principles provide a framework that supports scientific discovery in two senses: it helps turn local interpretability findings into cumulative knowledge of mechanisms within models, and it makes those mechanisms sufficiently precise to generate testable hypotheses about domains beyond the models. Evidence beyond MI is ultimately required to establish what model mechanisms reveal about the world.",
+  "authors": [
+   "Zhimin Hu",
+   "Chen Jiang",
+   "Hanbo Xie",
+   "N. Apurva Ratan Murty",
+   "Sashank Varma"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.CV"
+  ],
+  "comment": "NeurIPS 2026 Interp4Discovery (Oral)",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.13868",
+  "title": "Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives",
+  "abstract": "Deep neural networks underpin fundamental tasks in a wide range of signal domains, such as image, audio, and language processing. However, their internal mechanisms are notably difficult to interpret. Internal activations are structured signals transformed across layers that may encode a multitude of interdependent relationships, as individual neurons frequently represent multiple underlying concepts. Mechanistic interpretability aims to uncover the internal mechanisms of neural networks by identifying components whose activations are causally responsible for specific behaviors. In such a context, this article provides an overview of advances in mechanistic interpretability for the analysis of causal inference in deep neural networks.",
+  "authors": [
+   "Lorenzo Cirillo",
+   "Irene Amerini",
+   "Andrea Cavallaro"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CV"
+  ],
+  "comment": "",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.13369",
+  "title": "Enforcing Axioms for AI Alignment under Loss-Based Rules",
+  "abstract": "Many alignment methods, most notably reinforcement learning from human feedback (RLHF), train reward models by minimizing a loss on pairwise comparisons of model responses. Inspired by principle-guided methods such as Constitutional AI, we treat each principle as a voter that compares responses according to that principle, for example, preferring the more helpful or less toxic response. We represent these voters as linear directions in a fixed embedding space, a simplifying assumption motivated by the Linear Representation Hypothesis. In this linear social choice model, Ge et al. (2024) showed that an optimal linear reward model can violate Pareto optimality (PO): From the principles-as-voters lens, this means a response A can be less helpful and more toxic than B, yet still receive a higher reward. We ask whether richer reward models or changes to comparison data can recover PO within loss-based training. We show that PO can still fail for polynomials of any fixed degree and one-hidden-layer ReLU multilayer perceptrons (MLPs) of any fixed width $ d\\ge 2 $ with suitable finite parameter bounds. We then recover PO for loss-based training of linear rewards under suitable assumptions in an idealized setting with uniform comparison directions and equal comparison lengths. These results motivate dataset design as an approach to recovering PO in constitutional-style alignment while retaining loss-based training.",
+  "authors": [
+   "Alexandros Hollender",
+   "Sonja Kraiczy"
+  ],
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "primary_category": "cs.GT",
+  "categories": [
+   "cs.GT",
+   "cs.AI",
+   "cs.LG"
+  ],
+  "comment": "Published in the Proceedings of ICLR 2026",
+  "topics": [
+   "geometry"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.13322",
+  "title": "MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses",
+  "abstract": "Lenses that decode hidden states into words are a popular way to look inside language models, but a heatmap of decoded words only shows what a vector reads as and cannot distinguish whether, or how much, the model uses the information. We present an interactive viewer that puts reading, tracing and editing on the same layers-by-tokens grid of the residual stream. In the viewer, every cell can be decoded with two lenses, the logit lens and the Jacobian lens (J-lens), traced back to the tokens it drew from, and edited, with the rest of the model rerun on the spot. We demonstrate three usage scenarios on Gemma-3-4B-it, backed by sweeps over a few hundred prompts, to show what this tool can discover. First, the two lenses give different directions to write with, each suiting a different edit: the logit lens's word direction sets what a token outputs, while the J-lens's direction changes what later tokens read. Second, in two-hop trivia questions (the capital of the state or country containing a given city), the state or country is readable at the city token from as early as layer 7, and swapping it there can redirect the answer 92-98% of the time; however, at the answer position, the state or country information is not used. Third, when a chat model answers questions with a step-by-step reasoning prompt, the correct answer is often already the top word in the residual stream before any reasoning is written: for 89-92% of retrieval questions and 39-63% of multi-hop and serial ones, far above their respective distractors (at most 5%). However, ordering puzzles are an exception, as the model works them out only once it writes its final reasoning steps. Furthermore, for answers that are visible in the residual stream, the J-lens reads them a layer or two earlier than the logit lens across the different types of question.",
+  "authors": [
+   "Nika Zahedi",
+   "Fangyi Zhu",
+   "Anna Wu"
+  ],
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.CL",
+   "cs.HC"
+  ],
+  "comment": "9 pages, 11 figures. Code: https://github.com/Ni2002ka/residual_stream_vis/tree/v1.0-pacificvis",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
   "id": "2611.12675",
   "title": "Interpretability Is Not Model-Specific",
   "abstract": "Interpretability tools are usually built for one model at a time: a refusal direction, a truthfulness probe, or a steering vector is found with labeled data inside the model it explains. We ask whether such tools can be carried to other models through a map between residual streams fit only on unlabeled prompts. We transfer a refusal direction, tested causally by addition and ablation, and two read-out tools, a correctness direction and a sentiment probe, across 110 pairs of models from five families and 1B to 72B parameters and between base and instruction-tuned models, with controls for specificity and five seeds. How much transfers depends on what the map was fit on. A map fit on ordinary questions recovers 54\\% of the target's own refusal steering and 16\\% to 77\\% of its correctness gain; adding unlabeled prompts from the region where the tool operates raises these to 102\\% and 88\\% to 98\\%, while control directions recover at most 1\\%. We prove that a linear map behaves this way whenever two models correspond linearly on the data it covers, and a label-free coverage score derived from this result tracks recovery across more than 16,000 runs and explains earlier reports that maps between models fail across domains. Carried read-out tools outperform anything the target's unlabeled representations yield. Interpretability results, once found, can be reused across models at the cost of a few unlabeled prompts.",

@@ -262,7 +262,7 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**612 papers** since 1 July 2026 · updated 2026-11-11 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**612 papers** since 1 July 2026 · updated 2026-11-12 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
@@ -278,9 +278,9 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;10 | [Mechanistic Interpretability Needs a Logic of Inference](https://arxiv.org/abs/2611.14483) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;10 | [Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives](https://arxiv.org/abs/2611.13868) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;9 | [Enforcing Axioms for AI Alignment under Loss-Based Rules](https://arxiv.org/abs/2611.13369) | <sub>Feature geometry</sub> |
+| Nov&nbsp;9 | [MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses](https://arxiv.org/abs/2611.13322) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;9 | [Interpretability Is Not Model-Specific](https://arxiv.org/abs/2611.12675) | <sub>Steering</sub> |
 | Nov&nbsp;9 | [A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone](https://arxiv.org/abs/2611.12206) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;9 | [MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses](https://arxiv.org/abs/2611.13322) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;8 | [Decomposing Earth Embeddings with Sparse Autoencoders](https://arxiv.org/abs/2611.11398) | <sub>Polysemanticity, Sparse autoencoders</sub> |
 | Nov&nbsp;8 | [Viscot-steer: Disentangling and Transferring Visual Chain-of-Thought via Activation Steering](https://arxiv.org/abs/2611.11209) | <sub>Steering</sub> |
 | Nov&nbsp;8 | [Room to Reconsider: Reply Length Decides Whether Pushback Makes Language Models Sycophantic or Self-Correcting](https://arxiv.org/abs/2611.11035) | <sub>Steering</sub> |

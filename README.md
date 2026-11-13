@@ -262,18 +262,24 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**612 papers** since 1 July 2026 · updated 2026-11-12 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**618 papers** since 1 July 2026 · updated 2026-11-13 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `22` · Polysemanticity `22` · Computation in superposition `4` · Feature geometry `21` |
-| **Recovery methods** | Sparse autoencoders `191` · Dictionary learning `17` · Transcoders and circuits `39` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `206` · Mechanistic interpretability `233` |
+| **Recovery methods** | Sparse autoencoders `193` · Dictionary learning `17` · Transcoders and circuits `39` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `208` · Mechanistic interpretability `235` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;12 | [When can an interpretability claim be trusted? Stability and certification of feature dimensionality, ridge leverage and the feature recovery rate](https://arxiv.org/abs/2611.16190) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;12 | [Data-Efficient LLM Safety Alignment Guided by Interpretable Features](https://arxiv.org/abs/2611.16183) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;12 | [Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation](https://arxiv.org/abs/2611.16315) | <sub>Steering</sub> |
+| Nov&nbsp;11 | [A Mechanistic Interpretability Study of an Astronomy Foundation Model](https://arxiv.org/abs/2611.15653) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;11 | [MAST: Medoid-Anchored Subspace Steering for Visual Grounding in Multimodal LLMs](https://arxiv.org/abs/2611.15168) | <sub>Steering</sub> |
+| Nov&nbsp;11 | [Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs](https://arxiv.org/abs/2611.15735) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;10 | [Representational Atoms in Neural Networks](https://arxiv.org/abs/2611.14168) | <sub>Polysemanticity, Sparse autoencoders</sub> |
 | Nov&nbsp;10 | [Mechanistic Interpretability Needs a Logic of Inference](https://arxiv.org/abs/2611.14483) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;10 | [Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives](https://arxiv.org/abs/2611.13868) | <sub>Mechanistic interpretability</sub> |
@@ -288,14 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;7 | [SWEET: Mitigating Spurious Feature Reliance in LLM Reasoning via Weight Editing](https://arxiv.org/abs/2611.10974) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;7 | [Can small transformers learn the language of Coxeter groups?](https://arxiv.org/abs/2611.10936) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;7 | [ConwayNet: Interpretability, Activation Coherence, and Noise Resilience via a Game-of-Life-Inspired Lateral Inhibition in Artificial Neural Networks](https://arxiv.org/abs/2611.10760) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;7 | [Locating and Repairing Domain Shift in VLM Trajectory Planning](https://arxiv.org/abs/2611.10720) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;7 | [Seeing Isn't Enough: Unlocking Visual Reasoning by Bridging the Reasoning-Access Gap with TIGER](https://arxiv.org/abs/2611.10552) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;7 | [PrivMark: Pixel-Space Steering against Privacy Leakage in Vision-Language Models](https://arxiv.org/abs/2611.10528) | <sub>Steering</sub> |
-| Nov&nbsp;7 | [Represented but Not Used: Value-Policy Dissociation in LLM Agents](https://arxiv.org/abs/2611.10457) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;6 | [Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders](https://arxiv.org/abs/2611.09233) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
-| Nov&nbsp;6 | [Calibrated concept profiles: making the reading of a model's neurons a measurement](https://arxiv.org/abs/2611.09196) | <sub>Sparse autoencoders, Transcoders and circuits</sub> |
 
-<sub>The other 592 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 598 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

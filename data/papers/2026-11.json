@@ -1,5 +1,146 @@
 [
  {
+  "id": "2611.16190",
+  "title": "When can an interpretability claim be trusted? Stability and certification of feature dimensionality, ridge leverage and the feature recovery rate",
+  "abstract": "Interpretability tools increasingly support safety claims, such as that a sparse dictionary has recovered most of a model's features. Such claims rest on measurements with arbitrary thresholds, and small changes to the model weights, a different training seed or a different threshold can reverse them. We study two widely used measurements in toy models and synthetic dictionaries with known ground truth: the feature dimensionality of Elhage et al. and the feature recovery rate (FRR) with a cosine threshold. We characterize exactly where feature dimensionality is discontinuous and replace it with a regularized (ridge) version with sharp stability bounds: the ridge leverage score changes by at most $3\\sqrt{3}/(8\\sqrtλ)$ times the operator-norm change of the weights, and this constant cannot be improved; for the regularized dimensionality the stability constant grows like $ρ/4$ in the scale $ρ=R/\\sqrtλ$, with explicit upper and lower bounds. We also prove certificates stating when a claim \"feature $i$ is recovered\" must survive a given change of the dictionary. The certificates held in every test and are informative for small perturbations, but certify no feature non-trivially across independently trained dictionaries; at the standard threshold, whether a feature counts as recovered changed with the training seed for 55 percent of features. Experiments use toy models only. The proofs, code and text were drafted by AI agents directed by the authors and checked by an independent blind AI reviewer and by numerical tests; the authors take full responsibility for the content.",
+  "authors": [
+   "Ali Tajfar",
+   "Behnam Tajfar"
+  ],
+  "published": "2026-11-12",
+  "updated": "2026-11-12",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ],
+  "comment": "70 pages. Also archived at https://doi.org/10.5281/zenodo.23842568. The AI use statement is in the paper",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.16183",
+  "title": "Data-Efficient LLM Safety Alignment Guided by Interpretable Features",
+  "abstract": "Existing large language models typically rely on massive fine-tuning datasets for safety alignment, which results in higher costs for safety alignment and often leads to the problem of over-refusal. We propose Less is Safer (LIS), a compact yet highly effective dataset for safety alignment, constructed through interpretable feature-guided selection and adversarial synthesis. Specifically, we leverage Sparse Autoencoder (SAE) activations to efficiently select prompts that cover diverse and interpretable safety features. Then, we employ a multi-agent adversarial synthesis framework to generate harmless prompts that nevertheless elicit unnecessary refusals. LIS contains only 2.4K samples, yet outperforms much larger datasets, e.g., TRIDENT-Core (26K), TRIDENT-Edge (19K) and WildJailbreak (262K), in overall performance on four safety and five over-refusal benchmarks. Through ablation experiments, we demonstrate that neither safety data nor over-refusal data alone can achieve optimal results. We also used safety features from SAE, annotated by an LLM, for data filtering, but the results were inferior to those obtained using the pipeline proposed in this paper.",
+  "authors": [
+   "Hongyu Li",
+   "Zhan Yu",
+   "Zhe Zhao",
+   "Kimmo Yan",
+   "Xiong Kuang",
+   "Renfen Hu"
+  ],
+  "published": "2026-11-12",
+  "updated": "2026-11-12",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ],
+  "comment": "36 pages, 16 figures",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.16315",
+  "title": "Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation",
+  "abstract": "Multi-agent systems of language models are often motivated by an averaging argument: if the agents' errors are unbiased and independent, the error of an aggregate of N answers falls as 1/sqrt(N). Fermi estimation, whose continuous answers are aggregated on the logarithmic scale, permits a direct test. We decompose the log10 error of each answer into the mean error of its model on the item, common to all its draws on the item, and a residual, and estimate both from 2.51M answers given before any communication by 15 open-weight models (3B-72B) on realFP, with replication under a single prompt pair on realFP, Science Olympiad Fermi questions and a guesstimation set. Given the item, teammates' errors are uncorrelated and teams behave as independent draws, but the item-level component accounts for a median 0.906 of the error variance over items. Teams of thirty therefore reduce a single agent's error by a median 1.7% (at most 5.4%), whereas draws that were also unbiased on each item would reduce it by 74-79%. All models compress their estimates toward about 10^6; this trend explains a median 17% of the item-level component, and a cross-validated linear recalibration on labelled items removes the overall bias but not that component. Three rounds of debate reduce within-team dispersion by 93% and leave the item-level component unchanged; revision without peers attains the same small gain. Mixing five models of similar accuracy reduces error by 6.6% relative to their own homogeneous teams, but no mixture improves on the most accurate model. Higher sampling temperature changes team error by about 1% at most, and contrastive activation steering not detectably; per-agent scaffold prompts (not significant after multiplicity correction) and skipping one layer in a single-model screen improve it. The results are conditional on the models, benchmarks, prompts and settings tested.",
+  "authors": [
+   "Carolina Fortuna",
+   "Blaz Bertalanic"
+  ],
+  "published": "2026-11-12",
+  "updated": "2026-11-12",
+  "primary_category": "cs.MA",
+  "categories": [
+   "cs.MA",
+   "cs.AI"
+  ],
+  "comment": "21 pages, 2 figures, 17 tables",
+  "topics": [
+   "steering"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.15653",
+  "title": "A Mechanistic Interpretability Study of an Astronomy Foundation Model",
+  "abstract": "Foundation models are increasingly used across the sciences, but whether their internal computations correspond to known scientific operations or proceed through different mechanisms remains unclear. Understanding these mechanisms is essential for assessing reliability, identifying failure modes, and learning new science from the models. We present, to our knowledge, the first causal mechanistic interpretability study of an astronomy foundation model, AION-1, focusing on its multimodal advantage in redshift prediction, where combining imaging with photometry outperforms photometry alone. We find that this advantage is largest for spatially extended and dust-attenuated galaxies, and that most of it is localized to the first of the encoder's twelve blocks. Within that block, how well a property is linearly decodable does not predict whether it can be localized. Spatial extent is causally used, and one attention head dominates linear probing for it, yet ablating that head has negligible effect on redshift prediction: the information is distributed across heads and is decodable again one layer after we erase it. Dust attenuation shows the opposite pattern: it is only weakly decodable anywhere in the encoder, yet a single head is necessary for most of the multimodal advantage, particularly for the most dust-attenuated galaxies, and keeping that head as the only active head in its block preserves nearly all of the advantage. None of the astrophysically motivated operations we tested explains what this head computes. Whether this reflects a limitation of current interpretability methods or a computation that does not correspond to any known astrophysical operation remains open, and resolving it is a prerequisite for using interpretability as a tool for scientific discovery.",
+  "authors": [
+   "Rachel C. Zhang",
+   "Alberto Bietti",
+   "Wes Gurnee",
+   "Alessandro Favero",
+   "Miles Cranmer"
+  ],
+  "published": "2026-11-11",
+  "updated": "2026-11-11",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "astro-ph.IM"
+  ],
+  "comment": "Accepted at NeurIPS 2026. A condensed version was selected for an oral presentation at the NeurIPS 2026 Workshop on Interpretability for Discovery",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.15735",
+  "title": "Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs",
+  "abstract": "Knowing when a large language model's (LLM's) response can be trusted is critical for its safe use. Uncertainty quantification (UQ) can help LLMs recognize if their responses may be unreliable. Existing taxonomies organize UQ methods by uncertainty source or estimation mechanism. They leave unresolved the question of where uncertainty is observed in the model's computation. The answer matters because the observation point determines whether an estimator has access to enough information to recover a given target, and how well it can recover it. Drawing on mechanistic interpretability, we define four mechanistic observation lenses: the structural lens observes component updates, the representational lens observes hidden states, the distributional lens observes token probabilities, and the semantical lens observes distributions over meanings. We relate these lenses through the residual stream and order them by the information they carry, which gives a principle for selecting UQ methods for different targets. We survey existing methods through the four lenses. Furthermore, we distinguish evaluation targets, criteria, and metrics to clarify different UQ evaluation protocols. Finally, we identify open problems and research directions to connect uncertainty estimation to the internal computation and downstream use of LLMs.",
+  "authors": [
+   "Xiaoyu Liang",
+   "Virginia Ceccatelli",
+   "Aliai Eusebi",
+   "Tobias Braun",
+   "Nils Loose",
+   "Carlo Malagnino",
+   "Lorenzo Cavallaro"
+  ],
+  "published": "2026-11-11",
+  "updated": "2026-11-11",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.15168",
+  "title": "MAST: Medoid-Anchored Subspace Steering for Visual Grounding in Multimodal LLMs",
+  "abstract": "Existing activation steering methods for multimodal large language models (MLLMs) use the global activation mean as the steering vector, which tends to cause cross-task interference and unstable performance. We trace this failure to the multi-centered geometry of task activations. The global mean lands in the empty region between clusters and is faithful to no single task. Moreover, the steering signal in each task-pure local cluster is low-rank, and different query tasks benefit from emphasizing different families of local-basis directions under the shared routing protocol. To address this, we propose MAST (Medoid-Anchored Subspace Steering), a training-free, input-adaptive activation steering framework. MAST groups samples by task, performs multi-center clustering within each group, and selects one representative medoid per cluster. At inference time, each query is routed to multiple representative medoids. For each matched cluster, a low-rank local steering direction is extracted and aggregated across clusters to produce the final steering vector. Building on MAST, MAST-PR (Probe-Reweighted) uses a lightweight task-aware probe to reweight task-specialized local-direction families, yielding a further average improvement of +8.09 points over MAST.",
+  "authors": [
+   "Zhitao Chen",
+   "Zhenxin Cai",
+   "Jingyuan Li",
+   "Jin Sha"
+  ],
+  "published": "2026-11-11",
+  "updated": "2026-11-11",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV",
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "steering"
+  ],
+  "score": 1.0
+ },
+ {
   "id": "2611.14168",
   "title": "Representational Atoms in Neural Networks",
   "abstract": "Understanding the internal representations of neural networks and characterizing their relationship with human conceptual structure are two critical questions for elucidating model mechanisms. The former reveals how learned knowledge is organized in internal representations, whereas the latter provides a basis for interpreting these representations through human conceptual structure. Here, we formally define fundamental representational units (FRUs) and establish two evaluation criteria: fidelity and stability. We further prove that threshold-activated sparse autoencoders (TSAEs) can identify FRUs with high fidelity and stability under appropriate conditions, and validate this result through large-scale experiments. Further analyses reveal that FRUs with higher stability exhibit greater monosemanticity and can be composed across layers to recover semantic organization corresponding to human conceptual structure. These results provide a unified framework for defining, evaluating and identifying FRUs in neural networks, and establish a foundation for characterizing the relationship between neural network representations and human conceptual structure.",

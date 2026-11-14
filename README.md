@@ -262,7 +262,7 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**618 papers** since 1 July 2026 · updated 2026-11-13 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**618 papers** since 1 July 2026 · updated 2026-11-14 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
@@ -278,8 +278,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;12 | [Data-Efficient LLM Safety Alignment Guided by Interpretable Features](https://arxiv.org/abs/2611.16183) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;12 | [Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation](https://arxiv.org/abs/2611.16315) | <sub>Steering</sub> |
 | Nov&nbsp;11 | [A Mechanistic Interpretability Study of an Astronomy Foundation Model](https://arxiv.org/abs/2611.15653) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;11 | [MAST: Medoid-Anchored Subspace Steering for Visual Grounding in Multimodal LLMs](https://arxiv.org/abs/2611.15168) | <sub>Steering</sub> |
 | Nov&nbsp;11 | [Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs](https://arxiv.org/abs/2611.15735) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;11 | [MAST: Medoid-Anchored Subspace Steering for Visual Grounding in Multimodal LLMs](https://arxiv.org/abs/2611.15168) | <sub>Steering</sub> |
 | Nov&nbsp;10 | [Representational Atoms in Neural Networks](https://arxiv.org/abs/2611.14168) | <sub>Polysemanticity, Sparse autoencoders</sub> |
 | Nov&nbsp;10 | [Mechanistic Interpretability Needs a Logic of Inference](https://arxiv.org/abs/2611.14483) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;10 | [Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives](https://arxiv.org/abs/2611.13868) | <sub>Mechanistic interpretability</sub> |

@@ -262,18 +262,27 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**618 papers** since 1 July 2026 · updated 2026-11-15 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**627 papers** since 1 July 2026 · updated 2026-11-16 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `22` · Polysemanticity `22` · Computation in superposition `4` · Feature geometry `21` |
-| **Recovery methods** | Sparse autoencoders `193` · Dictionary learning `17` · Transcoders and circuits `39` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `208` · Mechanistic interpretability `235` |
+| **Recovery methods** | Sparse autoencoders `196` · Dictionary learning `17` · Transcoders and circuits `40` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `212` · Mechanistic interpretability `238` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;13 | [Right Token, Right Time: From Per-Token Gating to Trajectory-Aware Activation Steering](https://arxiv.org/abs/2611.18274) | <sub>Sparse autoencoders, Steering</sub> |
+| Nov&nbsp;13 | [Explanations that Transfer: Interpreting Medical Retrieval with Sparse AutoEncoders](https://arxiv.org/abs/2611.18179) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;13 | [Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination](https://arxiv.org/abs/2611.18514) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
+| Nov&nbsp;13 | [DECODE: Diagnosing Interpretability Failures in Automated Interpretation Process](https://arxiv.org/abs/2611.17856) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;13 | [Activation Steering the Nan-Shan in Typhoon](https://arxiv.org/abs/2611.17768) | <sub>Steering</sub> |
+| Nov&nbsp;13 | [AmbiSteer: Selectively Eliciting Ambiguity-Aware Responses in Vision-Language Models](https://arxiv.org/abs/2611.17900) | <sub>Steering</sub> |
+| Nov&nbsp;13 | [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](https://arxiv.org/abs/2611.17772) | <sub>Steering</sub> |
+| Nov&nbsp;13 | [Dancing Tokens on the Vocabulary Network from LLM Generation](https://arxiv.org/abs/2611.18248) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;13 | [Vision-Language Models Reproduce a Human Mental-Extrapolation Bias in the Watanabe Illusion](https://arxiv.org/abs/2611.17741) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;12 | [When can an interpretability claim be trusted? Stability and certification of feature dimensionality, ridge leverage and the feature recovery rate](https://arxiv.org/abs/2611.16190) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;12 | [Data-Efficient LLM Safety Alignment Guided by Interpretable Features](https://arxiv.org/abs/2611.16183) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;12 | [Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation](https://arxiv.org/abs/2611.16315) | <sub>Steering</sub> |
@@ -285,17 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;10 | [Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives](https://arxiv.org/abs/2611.13868) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;9 | [Enforcing Axioms for AI Alignment under Loss-Based Rules](https://arxiv.org/abs/2611.13369) | <sub>Feature geometry</sub> |
 | Nov&nbsp;9 | [MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses](https://arxiv.org/abs/2611.13322) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;9 | [Interpretability Is Not Model-Specific](https://arxiv.org/abs/2611.12675) | <sub>Steering</sub> |
-| Nov&nbsp;9 | [A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone](https://arxiv.org/abs/2611.12206) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;8 | [Decomposing Earth Embeddings with Sparse Autoencoders](https://arxiv.org/abs/2611.11398) | <sub>Polysemanticity, Sparse autoencoders</sub> |
-| Nov&nbsp;8 | [Viscot-steer: Disentangling and Transferring Visual Chain-of-Thought via Activation Steering](https://arxiv.org/abs/2611.11209) | <sub>Steering</sub> |
-| Nov&nbsp;8 | [Room to Reconsider: Reply Length Decides Whether Pushback Makes Language Models Sycophantic or Self-Correcting](https://arxiv.org/abs/2611.11035) | <sub>Steering</sub> |
-| Nov&nbsp;7 | [Learning a Unified Cross-Model Semantic Dictionary via Gated Bottleneck Sparse Autoencoders](https://arxiv.org/abs/2611.10503) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;7 | [SWEET: Mitigating Spurious Feature Reliance in LLM Reasoning via Weight Editing](https://arxiv.org/abs/2611.10974) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;7 | [Can small transformers learn the language of Coxeter groups?](https://arxiv.org/abs/2611.10936) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;7 | [ConwayNet: Interpretability, Activation Coherence, and Noise Resilience via a Game-of-Life-Inspired Lateral Inhibition in Artificial Neural Networks](https://arxiv.org/abs/2611.10760) | <sub>Mechanistic interpretability</sub> |
 
-<sub>The other 598 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 607 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

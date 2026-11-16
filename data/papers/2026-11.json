@@ -1,5 +1,210 @@
 [
  {
+  "id": "2611.18514",
+  "title": "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
+  "abstract": "Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challenges MI tools face when applied to realistic agentic failures. We focus on one such failure: web agents hallucinating actions that are not available on a website. We apply a series of mechanistic analyzes to Qwen2.5-7B-Instruct as it interacts with live websites. We find that a linear probe trained on the last prompt token can predict hallucinations before generation begins (0.80 AUC) and steering along a probe direction corrects 85\\% of hallucinations, but disrupts 7\\% of valid actions. However, these results only provide a partial explanation of why the agent hallucinates. The probe direction is sensitive to prompt formatting, losing much of its steering effect after a minor change to how actions are represented. Additionally, circuit identification can be difficult as the computation is distributed across multiple components and positions, and the information the agent relies on varies across examples. We discuss how these observations challenge the assumptions underlying standard MI methods for circuit discovery and feature identification, and outline future directions for making these methods better suited to explain failures in LLM-based agents.",
+  "authors": [
+   "Mohamed Aghzal",
+   "Mor Geva",
+   "Gregory J. Stein",
+   "Ziyu Yao"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ],
+  "comment": "",
+  "topics": [
+   "circuits",
+   "mech-interp"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2611.18274",
+  "title": "Right Token, Right Time: From Per-Token Gating to Trajectory-Aware Activation Steering",
+  "abstract": "Activation steering via sparse autoencoders (SAEs) enables behavioral control of large language models without task-specific fine-tuning. Yet, standard methods apply the steering signal at every generated token, displacing representations from the distribution the model was trained on and eroding generation quality. We show that \\emph{when} along a generation the intervention is applied is a decisive axis of control. We cast steering as a per-token allocation problem under a fixed budget of steerable tokens, so that methods differ only in which tokens they select, making allocation the sole variable. Within this framework we introduce two gates. The first, Contrastive Feature Projection (CFP), is memoryless and selects the tokens least aligned with the target behavior through a sparse, interpretable feature projection. The second, Closed-Loop Adaptive Bernoulli Steering (CLABS), is trajectory aware. It treats allocation as closed-loop feedback control, tracking the alignment a generation has accumulated so far and spending budget where the trajectory falls behind. On a linear steering-response model we derive an explicit gain region that guarantees closed-loop stability of CLABS and show that its integral term reduces the steady-state tracking offset. Empirically, CFP and CLABS achieve the largest behavioral shift among budgeted gates at matched budgets, with CLABS strongest under the tight budgets where allocation matters most, while best preserving fluency.",
+  "authors": [
+   "Nima Eshraghi",
+   "Lovedeep Gondara",
+   "Sagarika Suresh",
+   "Xiaotong Xu",
+   "Jithin Pradeep",
+   "Fanny Chevalier"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ],
+  "comment": "",
+  "topics": [
+   "sae",
+   "steering"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2611.18179",
+  "title": "Explanations that Transfer: Interpreting Medical Retrieval with Sparse AutoEncoders",
+  "abstract": "Medical AI systems that answer users' queries rely on retrieving medical knowledge from large document collections. In this context, finetuning general models on medical datasets can improve retrieval relevance. Yet the dense embeddings underlying modern retrieval systems remain largely opaque, making it difficult to understand the mechanics behind their results. Moreover, adapting to a specific medical dataset risks losing transferability to new clinical corpora. In this work, we tackle these issues by applying Sparse Autoencoders (SAEs) to medical information retrieval, transforming dense text embeddings into semantically interpretable representations. To do so, our model combines a reconstruction objective with an InfoNCE contrastive loss that directly preserves query-document relevance. We evaluate three embedding models across six medical retrieval datasets, both in-domain and out-of-domain. Trained on a medical corpus, our sparse codes improve in-domain retrieval over the original embeddings, and lose less out-of-domain performance than their dense counterparts, especially when the target corpus is distant from the training one. Importantly, our experiments show that the method yields interpretable features whose semantic content can be inferred from the queries and documents that activate them most strongly. The interpretation of these features sheds light on why a particular document was retrieved, and transfers beyond the training distribution.",
+  "authors": [
+   "Diane Bouchacourt",
+   "Gaëtan Brison"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "cs.IR",
+  "categories": [
+   "cs.IR",
+   "cs.LG"
+  ],
+  "comment": "Proceedings of Machine Learning Research 346, 2026 (Machine Learning for Health, ML4H 2026). Code: https://github.com/doctolib-lab/medsae",
+  "topics": [
+   "sae"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2611.17856",
+  "title": "DECODE: Diagnosing Interpretability Failures in Automated Interpretation Process",
+  "abstract": "Tools for interpreting the internal representations of Large Language Models (LLMs) increasingly rely on LLMs themselves to both generate and evaluate explanations, creating a self-referential automated interpretation process with minimal human oversight. This automation raises significant reliability concerns, which are exacerbated by the absence of ground truth. In practice, it is difficult to validate explanations or to attribute interpretability failures to their source -- whether they originate from the tool's extracted representations or from the LLM used in the process. To address these challenges, we present DECODE, a visual analytics system that reintroduces human oversight into the automated interpretation process. Our approach decomposes the diagnostic workflow into three progressive stages, isolating failure sources ranging from structural defects to explanation-level misalignments. Drawing inspiration from inter-coder consensus in qualitative analysis, we utilize consensus among independently generated explanations and their evaluation metrics as a proxy for reliability. To further scale human inspection, we employ a three-phase active seeding protocol that strategically recommends high-priority instances for manual review. Finally, we demonstrate the effectiveness of our approach through a case study on 16,384 Sparse Autoencoder features, showing that it can efficiently identify and attribute interpretability failures at scale.",
+  "authors": [
+   "Dohyun Kim",
+   "Jaeung Lee",
+   "Donghee Hong",
+   "Jaemin Jo"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI",
+   "cs.HC"
+  ],
+  "comment": "",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.17768",
+  "title": "Activation Steering the Nan-Shan in Typhoon",
+  "abstract": "Typhoon is an audiovisual installation based on Joseph Conrad's novella, in which Captain MacWhirr steers the steamer Nan-Shan directly into and through a catastrophic storm. The novella is a study of what happens when the scale of a phenomenon exceeds the practical and conceptual frameworks available to comprehend it and of the paralysis that sometimes follows a demand for action in such overwhelming circumstances. We chose the text of Typhoon to reflect on human culture's current AI moment. We prompt a large language model, seeded with Conrad's original language, to feed endlessly on its own output, and explore when and how the text becomes increasingly alien and unwieldy as time progresses, including deviations from the narrative, digressions into the model's own instructions and thinking, and long periods of incoherent rumination. We employ methods from activation steering, including a novel adaptive steering method we introduce, to control the rhythm of the narrative and the model's digressions over long stretches of generation. The simultaneous efficacy and unpredictability of this steering showcases the tension between the perceived interpretability of AI, and the reality of a system that remains outside our comprehension and control.",
+  "authors": [
+   "Megan Wei",
+   "Damon Pham",
+   "John Cayley",
+   "Ellie Pavlick"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG",
+   "cs.SD"
+  ],
+  "comment": "Accepted to NeurIPS Creative AI Track 2026. Website: https://stormhelm.net/",
+  "topics": [
+   "steering"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.18248",
+  "title": "Dancing Tokens on the Vocabulary Network from LLM Generation",
+  "abstract": "Large language models (LLMs) generate text one token at a time, yet how a particular generation relates to the geometry learned in pre-training remains unclear. The fundamental explainability of LLMs is elusive. Here, we build a similarity network from the input embeddings of six open LLMs and map generation onto it. The token-embedding network is scale-free while heavy-tailed, as are random embeddings with matched covariance, but far more fragmented. Distillation barely changes this topology because input embeddings are largely inherited. The knowledge space is thus deterministic from pre-training. Consecutive generated tokens are rarely graph neighbours and, in most models, no more often than in shuffled order, so generation is not a walk on the predefined network, although the tokens it visits are concentrated within it. Through the logit lens in a layer- wise manner, tokens settle late in depth in most models, and repetitive models remain confined to small domain-specific sub-graphs. These observables could serve as inference-time monitors of degeneration. We thus provide a fresh perspective on understanding LLM generation in the microscopic way from node or link prediction by graph learning.",
+  "authors": [
+   "Yuan-Chao Hu"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI",
+   "cond-mat.dis-nn"
+  ],
+  "comment": "24 pages, 6 figures",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.17900",
+  "title": "AmbiSteer: Selectively Eliciting Ambiguity-Aware Responses in Vision-Language Models",
+  "abstract": "Vision-language models (VLMs) often exhibit overconfidence, providing firm answers even when visual evidence is insufficient. A prominent case is referential ambiguity in Visual Question Answering (VQA), where multiple entities in an image are plausible referents of a question. Addressing such cases requires recognizing when ambiguity is present: ambiguous questions can be handled by asking for clarification or enumerating plausible referents, while unambiguous questions should receive a direct answer. Current VLMs struggle with this distinction, often defaulting to a single interpretation. To investigate whether activation steering can serve as an inference-time mechanism to elicit such behaviors, we introduce AmbiSteer, a lightweight framework to selectively elicit ambiguity-aware behavior. Across three VLMs, we find that steering alone has limited and model-dependent effects, while prompting is generally more effective. Combining prompting and steering substantially increases clarification and enumeration behaviors, but also elicits them on unambiguous cases. AmbiSteer addresses this using a linear classifier to predict input ambiguity and condition the steering direction accordingly, increasing the proportion of inputs handled appropriately from 59.0% to 77.0% on average across models. Our work sets the ground for lightweight approaches to reduce model overconfidence in uncertain multimodal settings.",
+  "authors": [
+   "Monica Riedler",
+   "Samuele Antonelli",
+   "Barbara Plank",
+   "Raffaella Bernardi"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV",
+   "cs.CL"
+  ],
+  "comment": "23 pages, 23 figures",
+  "topics": [
+   "steering"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.17772",
+  "title": "Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption",
+  "abstract": "Knowledge distillation (KD) is a highly effective paradigm for transferring capabilities from large language models (LLMs) to smaller, more specialized student models. In commercial deployment where frontier models are restricted behind black-box APIs, sequence-level distillation remains a potent vector for competitors to clone proprietary capabilities at a fraction of the development cost. Existing defenses mostly rely on surrogate models to manipulate next-token sampling, which increases computational overhead and real-time inference latency. In this work, we propose a lightweight defense that dynamically injects style-steering vectors into the teacher model's activations upon malicious queries. This framework offers exceptional flexibility, allowing hosts to customize target defensive styles and dynamically blend them to maximize stylistic variance. Crucially, this inference-time intervention preserves semantic utility and fluency during malicious queries, misleading adversaries into believing that they are extracting pristine teacher outputs, while standard consumers continue to receive original, unmodified responses. Our experiments demonstrate that this framework successfully disrupts student learning, achieving substantial anti-distillation performance while incurring negligible overhead and preserving text naturalness. Our code is available at https://anonymous.4open.science/r/distill-resist-38C6/.",
+  "authors": [
+   "Anh Tu Ngo",
+   "Anupam Chattopadhyay"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "Accepted to Findings of EACL 2027",
+  "topics": [
+   "steering"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.17741",
+  "title": "Vision-Language Models Reproduce a Human Mental-Extrapolation Bias in the Watanabe Illusion",
+  "abstract": "Vision-language models (VLMs) are increasingly used for visual judgments, yet whether they share human perceptual biases, and where in the model such biases arise, is unclear. We addressed this with the Watanabe Illusion, a stimulus not previously studied quantitatively: an oblique segment inside a circle whose extension geometrically hits the topmost of 11 dots, yet human observers (n = 131) reported a dot near the middle of the column. Five VLMs (Qwen2.5-VL-32B and 7B, Claude Sonnet 4.6, GPT-5.5 Instant, Gemini 3.5 Flash), given the identical stimulus and wording, all deviated in the same direction. In the open-weight Qwen2.5-VL-32B, linear probes on the vision encoder recovered the line angle and the target dot six to eight times more accurately than its behavioral responses. A layer-wise logit lens showed that the correct answer dominates in the middle layers of the language model and is overwritten in late layers only under a visual-judgment frame. Naming the illusion, requesting suppression of prior knowledge, forcing a visual chain of thought, and 390 semantic preambles left the response center unchanged; only disclosing the correct answer moved it. VLMs may therefore carry human perceptual biases at the language-generation stage, where they resist declarative correction.",
+  "authors": [
+   "Eiji Watanabe",
+   "Kyohei Ueda",
+   "Kagayaki Kato",
+   "Masaki Watabe",
+   "Akiyoshi Kitaoka"
+  ],
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "primary_category": "q-bio.NC",
+  "categories": [
+   "q-bio.NC"
+  ],
+  "comment": "44 pages, 4 figures, 4 appendices. Code and data: https://doi.org/10.5281/zenodo.23096369",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
   "id": "2611.16190",
   "title": "When can an interpretability claim be trusted? Stability and certification of feature dimensionality, ridge leverage and the feature recovery rate",
   "abstract": "Interpretability tools increasingly support safety claims, such as that a sparse dictionary has recovered most of a model's features. Such claims rest on measurements with arbitrary thresholds, and small changes to the model weights, a different training seed or a different threshold can reverse them. We study two widely used measurements in toy models and synthetic dictionaries with known ground truth: the feature dimensionality of Elhage et al. and the feature recovery rate (FRR) with a cosine threshold. We characterize exactly where feature dimensionality is discontinuous and replace it with a regularized (ridge) version with sharp stability bounds: the ridge leverage score changes by at most $3\\sqrt{3}/(8\\sqrtλ)$ times the operator-norm change of the weights, and this constant cannot be improved; for the regularized dimensionality the stability constant grows like $ρ/4$ in the scale $ρ=R/\\sqrtλ$, with explicit upper and lower bounds. We also prove certificates stating when a claim \"feature $i$ is recovered\" must survive a given change of the dictionary. The certificates held in every test and are informative for small perturbations, but certify no feature non-trivially across independently trained dictionaries; at the standard threshold, whether a feature counts as recovered changed with the training seed for 55 percent of features. Experiments use toy models only. The proofs, code and text were drafted by AI agents directed by the authors and checked by an independent blind AI reviewer and by numerical tests; the authors take full responsibility for the content.",

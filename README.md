@@ -262,40 +262,40 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**627 papers** since 1 July 2026 · updated 2026-11-16 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**635 papers** since 1 July 2026 · updated 2026-11-17 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `22` · Polysemanticity `22` · Computation in superposition `4` · Feature geometry `21` |
-| **Recovery methods** | Sparse autoencoders `196` · Dictionary learning `17` · Transcoders and circuits `40` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `212` · Mechanistic interpretability `238` |
+| **Recovery methods** | Sparse autoencoders `200` · Dictionary learning `17` · Transcoders and circuits `40` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `213` · Mechanistic interpretability `242` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;16 | [Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering](https://arxiv.org/abs/2611.21586) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;16 | [Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis](https://arxiv.org/abs/2611.21348) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;16 | [Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment](https://arxiv.org/abs/2611.20441) | <sub>Steering, Mechanistic interpretability</sub> |
+| Nov&nbsp;16 | [Interpretable deep concepts of organoid morphology](https://arxiv.org/abs/2611.20840) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;16 | [Counterfactual Feature Steering for Adjacency-Preserving Identity Unlearning](https://arxiv.org/abs/2611.20637) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;16 | [Pretty Linear Liars: Unregularized Probes Favor Intervention-Unfaithful Features](https://arxiv.org/abs/2611.20371) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;15 | [Event-based object detection under adverse lighting and motion: lessons for construction sites](https://arxiv.org/abs/2611.19746) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;14 | [Before the Word: Name Information in Description-Derived States of Small Language Models, With and Without Naming Failure](https://arxiv.org/abs/2611.19609) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;13 | [Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination](https://arxiv.org/abs/2611.18514) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
 | Nov&nbsp;13 | [Right Token, Right Time: From Per-Token Gating to Trajectory-Aware Activation Steering](https://arxiv.org/abs/2611.18274) | <sub>Sparse autoencoders, Steering</sub> |
 | Nov&nbsp;13 | [Explanations that Transfer: Interpreting Medical Retrieval with Sparse AutoEncoders](https://arxiv.org/abs/2611.18179) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;13 | [Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination](https://arxiv.org/abs/2611.18514) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
 | Nov&nbsp;13 | [DECODE: Diagnosing Interpretability Failures in Automated Interpretation Process](https://arxiv.org/abs/2611.17856) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;13 | [Activation Steering the Nan-Shan in Typhoon](https://arxiv.org/abs/2611.17768) | <sub>Steering</sub> |
+| Nov&nbsp;13 | [Dancing Tokens on the Vocabulary Network from LLM Generation](https://arxiv.org/abs/2611.18248) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;13 | [AmbiSteer: Selectively Eliciting Ambiguity-Aware Responses in Vision-Language Models](https://arxiv.org/abs/2611.17900) | <sub>Steering</sub> |
 | Nov&nbsp;13 | [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](https://arxiv.org/abs/2611.17772) | <sub>Steering</sub> |
-| Nov&nbsp;13 | [Dancing Tokens on the Vocabulary Network from LLM Generation](https://arxiv.org/abs/2611.18248) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;13 | [Vision-Language Models Reproduce a Human Mental-Extrapolation Bias in the Watanabe Illusion](https://arxiv.org/abs/2611.17741) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;12 | [When can an interpretability claim be trusted? Stability and certification of feature dimensionality, ridge leverage and the feature recovery rate](https://arxiv.org/abs/2611.16190) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;12 | [Data-Efficient LLM Safety Alignment Guided by Interpretable Features](https://arxiv.org/abs/2611.16183) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;12 | [Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation](https://arxiv.org/abs/2611.16315) | <sub>Steering</sub> |
-| Nov&nbsp;11 | [A Mechanistic Interpretability Study of an Astronomy Foundation Model](https://arxiv.org/abs/2611.15653) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;11 | [Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs](https://arxiv.org/abs/2611.15735) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;11 | [MAST: Medoid-Anchored Subspace Steering for Visual Grounding in Multimodal LLMs](https://arxiv.org/abs/2611.15168) | <sub>Steering</sub> |
-| Nov&nbsp;10 | [Representational Atoms in Neural Networks](https://arxiv.org/abs/2611.14168) | <sub>Polysemanticity, Sparse autoencoders</sub> |
-| Nov&nbsp;10 | [Mechanistic Interpretability Needs a Logic of Inference](https://arxiv.org/abs/2611.14483) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;10 | [Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives](https://arxiv.org/abs/2611.13868) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;9 | [Enforcing Axioms for AI Alignment under Loss-Based Rules](https://arxiv.org/abs/2611.13369) | <sub>Feature geometry</sub> |
-| Nov&nbsp;9 | [MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses](https://arxiv.org/abs/2611.13322) | <sub>Mechanistic interpretability</sub> |
 
-<sub>The other 607 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 615 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

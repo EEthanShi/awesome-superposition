@@ -1,5 +1,177 @@
 [
  {
+  "id": "2611.21586",
+  "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
+  "abstract": "Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their work and industry applications, we design and compare two methods based on deep learning and transformer representations using 36,081 early-career job postings collected from LinkedIn in the United States between December 2025 and October 2026. We first apply PERC, short for Preprocessing (P), Embedding (E), Dimensionality Reduction (R) and Clustering (C). We employ GPT-6 Luna to classify job description passages into Team context, Role task and Qualifications. We then create combinations of these sections and examine whether embedding and clustering the segmented passages produce meaningful semantic clusters about different job roles. We use Maximum Mean Discrepancy (MMD) to rank observed differences between embedding distributions and employ a pretrained sparse autoencoder (SAE) to extract features from layer-19 representations of Llama-3.1-8B-Instruct. Lastly, we employ GPT-6 Luna to come up with hypotheses about job roles' feature patterns, and GPT-6.1 Terra to investigate whether those patterns exist in held-out job descriptions from unseen companies. Some example findings include Data Scientist advertisements placing more emphasis on machine learning model development, Data Analyst advertisements on reporting business performance, and Machine Learning Engineer advertisements on applying developed models in real-world settings. We also observe differences in the applications described by Data Analyst and Business Analyst advertisements across selected months, although our dataset's scale and uneven coverage limit their interpretation. Overall, we present a realistic application of SAEs and PERC to unstructured textual data and examine how automated insight extraction could support manual analysis of job descriptions.",
+  "authors": [
+   "Yisong Cao",
+   "Leah Kim",
+   "Brian Wright",
+   "Ali Rivera"
+  ],
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "",
+  "topics": [
+   "sae"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2611.21348",
+  "title": "Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis",
+  "abstract": "Large language models are increasingly exposed to model-generated text, raising the possibility that future models will be trained recursively on the outputs of their predecessors. Prior work on such self-consuming training loops has largely focused on output quality and downstream performance, leaving their effects on internal representations poorly understood. We study how representations evolve across five generations of self-consumption and whether sparse autoencoders (SAEs) remain reliable under this shift. At each generation, we compare a lineage trained on synthetic data with a matched control trained on real data under the same training settings. We evaluate how well SAEs trained before self-consumption transfer to later generations, measuring reconstruction and sparsity across SAE widths, architectures, and model layers. We then fine-tune the original SAE on each generation and use sparse probing to test whether task-relevant information remains concentrated in a small number of latents or becomes more distributed across the representation. We find that zero-shot SAE performance degrades progressively under self-consumption, with growing reconstruction and sparsity gaps that vary substantially across layers. Fine-tuning largely restores reconstruction, but not feature-level usefulness: task-relevant information remains accessible in the full latent space while becoming less concentrated in individual features. These results show that self-consumption induces representational drift and that reconstruction fidelity alone is insufficient to establish that an adapted SAE remains equally useful for interpretation.",
+  "authors": [
+   "Suchit Gupte",
+   "Zhongteng Cai",
+   "Xueru Zhang",
+   "Mohammad Mahdi Khalili"
+  ],
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ],
+  "comment": "",
+  "topics": [
+   "sae"
+  ],
+  "score": 4.0
+ },
+ {
+  "id": "2611.20441",
+  "title": "Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment",
+  "abstract": "Abstention, the withholding of a response by a large language model (LLM) under uncertainty or safety risks, is essential for trustworthy models. The causes of abstention fall into three perspectives: ambiguity in the Query (Q), limits of Model Knowledge (MK), and misalignment with Human Values (HV). However, prior analyses of internal representations have focused on HV, using a refusal direction computed from harmful and harmless queries. No study has analyzed the three perspectives jointly. We therefore extend the refusal direction framework to all three perspectives. Specifically, for each perspective, we construct counterfactual pairs that share a template and differ only in the abstention-inducing factor, and compute an abstention direction by normalizing the difference in mean activations between the two polarities. Activation steering experiments show that intervening in middle layers increases or decreases abstention across all three perspectives. Moreover, steering yields cross-perspective effects, indicating that the abstention directions share a common directional component.",
+  "authors": [
+   "Koki Itai",
+   "Jun Hirako",
+   "Hiroaki Yamagiwa"
+  ],
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "",
+  "topics": [
+   "steering",
+   "mech-interp"
+  ],
+  "score": 3.0
+ },
+ {
+  "id": "2611.20840",
+  "title": "Interpretable deep concepts of organoid morphology",
+  "abstract": "Image-based classification of organoid morphologies can indicate drug response, viability, or successful differentiation. In recent work, learned representations outperform handcrafted features as the basis for downstream classifiers. However, their black-box nature hides the morphological cues a classifier relies on. Based on the foundation models DINOv3 (general-purpose) and ViTAMIn-O (organoid-specific), we train sparse autoencoders (SAEs) to learn interpretable concepts related to distinct organoid morphologies. We annotate concepts with spatial labels (organoid, organoid wall, background) and compute their dataset specificity and task relevance across five tasks. The spatial labels of DINOv3 concepts yield coarse organoid segmentations on out-of-domain datasets. Filtering concepts by spatial label in the DINOv3-SAE improves downstream AUROC for three of the five tasks. Qualitative analysis of the most relevant concepts further reveals a confounding factor introduced by our preprocessing in one task. Through such insights, interpretable concepts could help improve the reliability of classifiers and guide the future development of organoid representation models. The trained SAEs will be made available upon publication.",
+  "authors": [
+   "Lion Jasper Gleiter",
+   "Tingying Peng"
+  ],
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV"
+  ],
+  "comment": "",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.20637",
+  "title": "Counterfactual Feature Steering for Adjacency-Preserving Identity Unlearning",
+  "abstract": "Identity unlearning in text-to-image diffusion models is increasingly important for privacy, safety, and ethical deployment, as it aims to remove the model's ability to generate specific individuals. In this work, we study identity unlearning with \\emph{adjacency preservation}, where the goal is to remove a target individual's identity while preserving related non-target identities. We propose Counterfactual Feature Steering (CFS), a method requiring one-time SAE training that performs bounded inference-time concept editing in the latent space of a sparse autoencoder attached to the text encoder. CFS derives a target direction by contrasting forget and retain distributions, then applies a per-token projection proportional to each token's current alignment with this direction, yielding counterfactual representations that suppress the target while limiting collateral damage. To evaluate adjacency preservation, we introduce the Adjacency-Weighted Unlearning Score (AWUS), which measures the tradeoff between target erasure and collateral damage, and extend it to face-specific identity similarity using ArcFace. Across 4,000 prompts derived from Celeb-100, spanning 100 celebrity identities, CFS achieves the strongest evaluated tradeoff between identity erasure of target identities and preservation of adjacent and generic concepts, while remaining stable across intervention strengths where other steering-based methods degrade. Independent ArcFace evaluation and a 10,000-caption COCO study further examine identity and general preservation. Quantitative nudity-suppression benchmarks and qualitative artistic-style examples provide evidence of transfer beyond identities on SD~1.4.",
+  "authors": [
+   "FNU Shivam",
+   "Layth Sliman",
+   "Ramana Reddy",
+   "Donald Adjeroh",
+   "Binod Bhattarai",
+   "Prashnna Gyawali"
+  ],
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV"
+  ],
+  "comment": "",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.20371",
+  "title": "Pretty Linear Liars: Unregularized Probes Favor Intervention-Unfaithful Features",
+  "abstract": "Linear probing is a common technique in mechanistic interpretability despite the fact that the decodability of a given feature does not necessarily imply the network uses that feature. Intervention faithfulness, not merely decodability, is the appropriate criterion for whether a feature serves a defined active role in the model. Meanwhile, probe regularization has been used for feature discovery, but the impact of regularization on feature causality remains unclear. We study probe regularization systematically, starting with unregularized ordinary least squares (OLS) regression and considering increasing amounts of regularization via ridge regression. We show theoretically that OLS probes amplify low-variance directions in activation space that have spurious correlations with the target feature, whereas regularization reduces influence from these directions. Empirically, we find in a toy transformer and Llama-2-7B that intervention faithfulness increases up to a point, and then decreases again, and that the optimal regularization strength leads to features bearing striking similarity (in both direction and variance) to those learned by optimizing for intervention outcomes directly. Together, these results provide mechanistic justification for regularizing regression probes.",
+  "authors": [
+   "Karl Vilhelmsson Emneby",
+   "Julian Yocum",
+   "Cameron Allen"
+  ],
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ],
+  "comment": "13 pages, 9 figures. Accepted at the NeurIPS 2026 Workshop on Interpretability as a Science (InterpScience)",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.19746",
+  "title": "Event-based object detection under adverse lighting and motion: lessons for construction sites",
+  "abstract": "Vision-based monitoring on construction sites fails at night, at dawn and dusk, in tunnels and under floodlights, when conventional RGB cameras under- or over-expose. Event cameras record per-pixel brightness changes with microsecond latency and over 120 dB of dynamic range, but their benefit for site-relevant object detection has not been quantified on real data. We compare three recent event-based detectors (SMamba, SATE and EvRT-DETR) with an RGB detector trained on the same data, using the pixel-aligned PEOD dataset. On low-light frames (70% of the test set) the best event detector reaches 27.2 AP against 21.3 AP for RGB, and a training-free late fusion of both sensors is the best option in every lighting condition (33.3 AP). An object-level analysis of 53,091 objects shows that brightness has little effect on event detectors, whereas fast motion matters: above 20 pixels per frame RGB finds 11-19% of medium-size objects and EvRT-DETR 39-60%. Activation patching locates the damage caused by losing events at the 1/16-resolution features, with small objects depending on the finest scale, and shows that event detectors fail when few signal events meet added noise. A model-agnostic pruning study keeps about 95% of accuracy with 60% of the input but halves small-object recall. On rendered construction sites, used zero-shot, dimming the floodlights drops RGB to near zero while the event detector keeps most of its AP50. We close with camera-placement guidance for construction sites.",
+  "authors": [
+   "Zhuoran Feng",
+   "Xiaoshan Zhou"
+  ],
+  "published": "2026-11-15",
+  "updated": "2026-11-15",
+  "primary_category": "cs.CV",
+  "categories": [
+   "cs.CV"
+  ],
+  "comment": "15 pages, 12 figures, 9 tables",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
+  "id": "2611.19609",
+  "title": "Before the Word: Name Information in Description-Derived States of Small Language Models, With and Without Naming Failure",
+  "abstract": "The tip-of-the-tongue (TOT) state, knowing an object but not its name, motivates this study as an analogy only. We ask whether small language models form a name-predictive state from a name-free description, and whether it differs when naming fails but description selection succeeds. In an internally pre-registered study (a frozen document, no external registry) of Qwen2-0.5B, SmolLM2-1.7B and Phi-3-mini with 200 items, we combine a similarity read-out, a Patchscopes-style read-out and activation patching with matched controls. H1 (name information in the state) was supported in all nine model-by-description-type combinations; the agreement rule was met by the similarity measure together with patching, while Patchscopes stayed near chance. Post-hoc robustness checks after internal review (logit lens, single-position patch, manipulation check) temper this reading: name information in middle layers is clearest under the multi-position patch and the similarity measure, and weak under single-position patching at 50% depth. H2' (description-paraphrase consistency of name-free states not lower in failure items) is mixed: the SmolLM2 deficit test is significant under the pre-registered specification but not robust; Phi-3 non-inferiority holds across margins and a word-overlap covariate, although its bootstrap interval includes zero; Qwen2-0.5B is inconclusive. A capacity explanation remains untested. We report vehicle-level signals only, not meaning.",
+  "authors": [
+   "Fernando Cardenas Piepereit"
+  ],
+  "published": "2026-11-14",
+  "updated": "2026-11-14",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "22 pages, 9 tables. Code and data: https://doi.org/10.5281/zenodo.24228887",
+  "topics": [
+   "mech-interp"
+  ],
+  "score": 1.0
+ },
+ {
   "id": "2611.18514",
   "title": "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
   "abstract": "Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challenges MI tools face when applied to realistic agentic failures. We focus on one such failure: web agents hallucinating actions that are not available on a website. We apply a series of mechanistic analyzes to Qwen2.5-7B-Instruct as it interacts with live websites. We find that a linear probe trained on the last prompt token can predict hallucinations before generation begins (0.80 AUC) and steering along a probe direction corrects 85\\% of hallucinations, but disrupts 7\\% of valid actions. However, these results only provide a partial explanation of why the agent hallucinates. The probe direction is sensitive to prompt formatting, losing much of its steering effect after a minor change to how actions are represented. Additionally, circuit identification can be difficult as the computation is distributed across multiple components and positions, and the information the agent relies on varies across examples. We discuss how these observations challenge the assumptions underlying standard MI methods for circuit discovery and feature identification, and outline future directions for making these methods better suited to explain failures in LLM-based agents.",

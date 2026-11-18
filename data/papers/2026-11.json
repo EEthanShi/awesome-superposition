@@ -1,5 +1,45 @@
 [
  {
+  "id": "2611.23124",
+  "title": "Get Hint-Augmented GRPO Done Right Through Activation Steering",
+  "abstract": "GRPO has become the dominant reinforcement learning method for eliciting reasoning capability in LLMs using verifiable rewards. However, it suffers from a fundamental failure mode: when a training question exceeds the base model's current capability, all generated responses fail and receive zero reward, yielding no gradient signal and stalling further capability expansion. An emerging class of GRPO extensions, termed Hint-Augmented GRPO (HA-GRPO), adds a \"hint\" to the context to reduce the difficulty of the question, thereby producing a usable gradient signal. Nevertheless, existing HA-GRPO methods share a key issue: no hint is available at inference time to append to the question, creating a training-inference context mismatch that leads to inconsistent performance gains. In this work, we reinterpret the function of hinting -- not as reducing question difficulty, but as steering model behavior -- and propose ASH (Activation Steering for Hinting), a novel HA-GRPO method built on this view. During training, the model is presented with both hinted and plain questions, while a trainable steering vector is optimized to widen the margins between the model's generation probabilities for responses to the hinted version relative to the plain version, thereby capturing the question-agnostic component of the behavioral shift induced by the hint. During inference, the trained steering vector is directly injected into the model's activation, reproducing the hint-conditioned behavior without requiring any hint in the context. Experiments with four LLMs (Qwen3-1.7B/4B-Base, Llama-3.2-1B/3B-Instruct) show that ASH consistently improves pass@$k$ on competition-level mathematics benchmarks (AMC, OlympiadBench, AIME24, AIME25) and out-of-distribution benchmarks (Minerva, GPQA-Diamond). Notably, it improves average pass@8 of Qwen3-1.7B-Base and Qwen3-4B-Base by \\textbf{2.60}\\% and \\textbf{2.21}\\%.",
+  "authors": [
+   "Khiem Le",
+   "Ting Hua",
+   "Nitesh V. Chawla"
+  ],
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "primary_category": "cs.LG",
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "steering"
+  ],
+  "score": 2.0
+ },
+ {
+  "id": "2611.22738",
+  "title": "Can Activation Steering Substitute for Prompt-Based Affective Priming in LLM Digital Twins?",
+  "abstract": "Affective priming -- asking participants to write about a recalled event, such as a time they felt grateful or lacked control, and then measuring the induced state and its spillover onto related judgments -- is a standard way to manipulate emotion in the social sciences, and it also shifts the responses of LLM-based digital twins. The writing task, however, requires generating a full text. We test whether activation steering can replace it. Using Llama-3.1-8B-Instruct on 100 personas in two domains (gratitude, lack of control), we compare a real-prompt path replicating the original Twin-2K-500 Mega Study (J2) with an injection path that skips the writing and adds a mean-difference direction, extracted from human writing, to the residual stream at varying strengths. The real-prompt effects fall between the original human and digital-twin effects in 5 of 6 comparisons. Injection shifts the manipulation check in a dose-dependent way and matches the real-prompt effect at one strength in the gratitude domain (beta ~ 2.7), but overshoots beyond it, on the proximal measure as well, and asymmetrically across the two directions. A structure-matched No-Injection baseline separates two sources of difference: omitting the writing task raises the proximal measure in both domains, whereas the injected direction itself moves a distal measure in the lack-of-control domain. Substitution is therefore measure-dependent: validity established for one way of inducing a state does not carry over uniformly to another.",
+  "authors": [
+   "Junyi Fan"
+  ],
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "primary_category": "cs.AI",
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "Code, generation logs and analysis scripts: https://github.com/JunyiTim/twin-activation-injection",
+  "topics": [
+   "steering"
+  ],
+  "score": 2.0
+ },
+ {
   "id": "2611.21586",
   "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
   "abstract": "Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their work and industry applications, we design and compare two methods based on deep learning and transformer representations using 36,081 early-career job postings collected from LinkedIn in the United States between December 2025 and October 2026. We first apply PERC, short for Preprocessing (P), Embedding (E), Dimensionality Reduction (R) and Clustering (C). We employ GPT-6 Luna to classify job description passages into Team context, Role task and Qualifications. We then create combinations of these sections and examine whether embedding and clustering the segmented passages produce meaningful semantic clusters about different job roles. We use Maximum Mean Discrepancy (MMD) to rank observed differences between embedding distributions and employ a pretrained sparse autoencoder (SAE) to extract features from layer-19 representations of Llama-3.1-8B-Instruct. Lastly, we employ GPT-6 Luna to come up with hypotheses about job roles' feature patterns, and GPT-6.1 Terra to investigate whether those patterns exist in held-out job descriptions from unseen companies. Some example findings include Data Scientist advertisements placing more emphasis on machine learning model development, Data Analyst advertisements on reporting business performance, and Machine Learning Engineer advertisements on applying developed models in real-world settings. We also observe differences in the applications described by Data Analyst and Business Analyst advertisements across selected months, although our dataset's scale and uneven coverage limit their interpretation. Overall, we present a realistic application of SAEs and PERC to unstructured textual data and examine how automated insight extraction could support manual analysis of job descriptions.",
@@ -65,6 +105,29 @@
    "mech-interp"
   ],
   "score": 3.0
+ },
+ {
+  "id": "2611.21705",
+  "title": "Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models",
+  "abstract": "Interpretability methods can locate the attention heads and sparse autoencoder (SAE) features that change the answer a language model gives to a moral prompt, e.g., whether \"Stealing medicine for a dying child is morally\" continues with \"justified\" or \"wrong\". Such a component could respond to moral content, to the judgment of conduct by any norm, or to the word \"morally\" in the prompt. We built 227 minimal pairs of short phrases, validated by five annotators, whose two versions differ in a moral standard, in another kind of norm (prudence, etiquette, aesthetics or evidence) or in a descriptive quality, and showed them to 14 open-weight models (Llama, Gemma and Qwen, 1B to 14B, base and instruction-tuned), with and without the word \"morally\". In every model, the heads that change the moral answer belong to an evaluation circuit the models use for every kind of normative judgment we tested: these heads carry the same share of the effect for moral as for other normative pairs (pooled ratio 1.00, 97.5% confidence interval [0.92, 1.07], with the word; 0.90, [0.84, 0.96], without it), and the models need them as much for both. The models need these heads also when nothing in the prompt asks for a judgment, and on 400 scenarios of the ETHICS benchmark, where removing them takes away 37 to 39% of the difference between acceptable and unacceptable scenarios, against 1 to 3% for ten random heads. The SAE features we located respond mostly to the word \"morally\" rather than to what the phrase is about. The models represent the category of a pair (the standard the annotators assigned to it): it can be read from their hidden states, and, in the eight models we tested, removing the direction that carries it weakens the moral verdict by a few percent, and more than the other verdicts in seven of them. We release the pairs, the ratings, the code, the trained SAE dictionaries and the result files.",
+  "authors": [
+   "Davide Liga",
+   "Liuwen Yu",
+   "Matteo Magnini"
+  ],
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "primary_category": "cs.CL",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ],
+  "comment": "",
+  "topics": [
+   "sae"
+  ],
+  "score": 2.0
  },
  {
   "id": "2611.20840",

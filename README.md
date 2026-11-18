@@ -262,23 +262,26 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**635 papers** since 1 July 2026 · updated 2026-11-17 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**638 papers** since 1 July 2026 · updated 2026-11-18 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `22` · Polysemanticity `22` · Computation in superposition `4` · Feature geometry `21` |
-| **Recovery methods** | Sparse autoencoders `200` · Dictionary learning `17` · Transcoders and circuits `40` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `213` · Mechanistic interpretability `242` |
+| **Recovery methods** | Sparse autoencoders `201` · Dictionary learning `17` · Transcoders and circuits `40` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `215` · Mechanistic interpretability `242` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;17 | [Get Hint-Augmented GRPO Done Right Through Activation Steering](https://arxiv.org/abs/2611.23124) | <sub>Steering</sub> |
+| Nov&nbsp;17 | [Can Activation Steering Substitute for Prompt-Based Affective Priming in LLM Digital Twins?](https://arxiv.org/abs/2611.22738) | <sub>Steering</sub> |
 | Nov&nbsp;16 | [Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering](https://arxiv.org/abs/2611.21586) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis](https://arxiv.org/abs/2611.21348) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment](https://arxiv.org/abs/2611.20441) | <sub>Steering, Mechanistic interpretability</sub> |
 | Nov&nbsp;16 | [Interpretable deep concepts of organoid morphology](https://arxiv.org/abs/2611.20840) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Counterfactual Feature Steering for Adjacency-Preserving Identity Unlearning](https://arxiv.org/abs/2611.20637) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;16 | [Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models](https://arxiv.org/abs/2611.21705) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Pretty Linear Liars: Unregularized Probes Favor Intervention-Unfaithful Features](https://arxiv.org/abs/2611.20371) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;15 | [Event-based object detection under adverse lighting and motion: lessons for construction sites](https://arxiv.org/abs/2611.19746) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;14 | [Before the Word: Name Information in Description-Derived States of Small Language Models, With and Without Naming Failure](https://arxiv.org/abs/2611.19609) | <sub>Mechanistic interpretability</sub> |
@@ -291,11 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;13 | [AmbiSteer: Selectively Eliciting Ambiguity-Aware Responses in Vision-Language Models](https://arxiv.org/abs/2611.17900) | <sub>Steering</sub> |
 | Nov&nbsp;13 | [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](https://arxiv.org/abs/2611.17772) | <sub>Steering</sub> |
 | Nov&nbsp;13 | [Vision-Language Models Reproduce a Human Mental-Extrapolation Bias in the Watanabe Illusion](https://arxiv.org/abs/2611.17741) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;12 | [When can an interpretability claim be trusted? Stability and certification of feature dimensionality, ridge leverage and the feature recovery rate](https://arxiv.org/abs/2611.16190) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;12 | [Data-Efficient LLM Safety Alignment Guided by Interpretable Features](https://arxiv.org/abs/2611.16183) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;12 | [Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation](https://arxiv.org/abs/2611.16315) | <sub>Steering</sub> |
 
-<sub>The other 615 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 618 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

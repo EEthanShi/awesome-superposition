@@ -262,26 +262,31 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**638 papers** since 1 July 2026 · updated 2026-11-18 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**643 papers** since 1 July 2026 · updated 2026-11-19 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `22` · Polysemanticity `22` · Computation in superposition `4` · Feature geometry `21` |
-| **Recovery methods** | Sparse autoencoders `201` · Dictionary learning `17` · Transcoders and circuits `40` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `215` · Mechanistic interpretability `242` |
+| **Recovery methods** | Sparse autoencoders `203` · Dictionary learning `18` · Transcoders and circuits `41` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `215` · Mechanistic interpretability `244` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;18 | [Harmonic Circuit: Chord Progression Lies in a Sparse Principal Information Flow in Symbolic Music Models](https://arxiv.org/abs/2611.24453) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
+| Nov&nbsp;18 | [GateWatch: Low-Overhead LLM Monitoring with Boolean Circuits](https://arxiv.org/abs/2611.24619) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;18 | [Transferable Named Sparse Features for Morphology-based Gleason Grading](https://arxiv.org/abs/2611.24363) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;18 | [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) | <sub>Dictionary learning</sub> |
 | Nov&nbsp;17 | [Get Hint-Augmented GRPO Done Right Through Activation Steering](https://arxiv.org/abs/2611.23124) | <sub>Steering</sub> |
 | Nov&nbsp;17 | [Can Activation Steering Substitute for Prompt-Based Affective Priming in LLM Digital Twins?](https://arxiv.org/abs/2611.22738) | <sub>Steering</sub> |
+| Nov&nbsp;17 | [Tracking Representations in LLM Reasoning Traces for Iterated Games](https://arxiv.org/abs/2611.23403) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;16 | [Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering](https://arxiv.org/abs/2611.21586) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis](https://arxiv.org/abs/2611.21348) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment](https://arxiv.org/abs/2611.20441) | <sub>Steering, Mechanistic interpretability</sub> |
+| Nov&nbsp;16 | [Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models](https://arxiv.org/abs/2611.21705) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Interpretable deep concepts of organoid morphology](https://arxiv.org/abs/2611.20840) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Counterfactual Feature Steering for Adjacency-Preserving Identity Unlearning](https://arxiv.org/abs/2611.20637) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;16 | [Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models](https://arxiv.org/abs/2611.21705) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Pretty Linear Liars: Unregularized Probes Favor Intervention-Unfaithful Features](https://arxiv.org/abs/2611.20371) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;15 | [Event-based object detection under adverse lighting and motion: lessons for construction sites](https://arxiv.org/abs/2611.19746) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;14 | [Before the Word: Name Information in Description-Derived States of Small Language Models, With and Without Naming Failure](https://arxiv.org/abs/2611.19609) | <sub>Mechanistic interpretability</sub> |
@@ -289,13 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;13 | [Right Token, Right Time: From Per-Token Gating to Trajectory-Aware Activation Steering](https://arxiv.org/abs/2611.18274) | <sub>Sparse autoencoders, Steering</sub> |
 | Nov&nbsp;13 | [Explanations that Transfer: Interpreting Medical Retrieval with Sparse AutoEncoders](https://arxiv.org/abs/2611.18179) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;13 | [DECODE: Diagnosing Interpretability Failures in Automated Interpretation Process](https://arxiv.org/abs/2611.17856) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;13 | [Activation Steering the Nan-Shan in Typhoon](https://arxiv.org/abs/2611.17768) | <sub>Steering</sub> |
-| Nov&nbsp;13 | [Dancing Tokens on the Vocabulary Network from LLM Generation](https://arxiv.org/abs/2611.18248) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;13 | [AmbiSteer: Selectively Eliciting Ambiguity-Aware Responses in Vision-Language Models](https://arxiv.org/abs/2611.17900) | <sub>Steering</sub> |
-| Nov&nbsp;13 | [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](https://arxiv.org/abs/2611.17772) | <sub>Steering</sub> |
-| Nov&nbsp;13 | [Vision-Language Models Reproduce a Human Mental-Extrapolation Bias in the Watanabe Illusion](https://arxiv.org/abs/2611.17741) | <sub>Mechanistic interpretability</sub> |
 
-<sub>The other 618 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 623 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

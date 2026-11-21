@@ -262,7 +262,7 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**648 papers** since 1 July 2026 · updated 2026-11-20 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**648 papers** since 1 July 2026 · updated 2026-11-21 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
@@ -279,10 +279,10 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;19 | [The Depth of a Prediction: Where Language Models Resolve a Word Predicts Human Reading Time](https://arxiv.org/abs/2611.25970) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;18 | [Separating Interpretability and Reconstruction in Sparse Autoencoders](https://arxiv.org/abs/2611.25165) | <sub>Polysemanticity, Sparse autoencoders, Mechanistic interpretability</sub> |
 | Nov&nbsp;18 | [Harmonic Circuit: Chord Progression Lies in a Sparse Principal Information Flow in Symbolic Music Models](https://arxiv.org/abs/2611.24453) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
+| Nov&nbsp;18 | [Auditing Learned Dynamics in Weather Models](https://arxiv.org/abs/2611.25119) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;18 | [GateWatch: Low-Overhead LLM Monitoring with Boolean Circuits](https://arxiv.org/abs/2611.24619) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;18 | [Transferable Named Sparse Features for Morphology-based Gleason Grading](https://arxiv.org/abs/2611.24363) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;18 | [PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362) | <sub>Dictionary learning</sub> |
-| Nov&nbsp;18 | [Auditing Learned Dynamics in Weather Models](https://arxiv.org/abs/2611.25119) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;17 | [Get Hint-Augmented GRPO Done Right Through Activation Steering](https://arxiv.org/abs/2611.23124) | <sub>Steering</sub> |
 | Nov&nbsp;17 | [Can Activation Steering Substitute for Prompt-Based Affective Priming in LLM Digital Twins?](https://arxiv.org/abs/2611.22738) | <sub>Steering</sub> |
 | Nov&nbsp;17 | [Tracking Representations in LLM Reasoning Traces for Iterated Games](https://arxiv.org/abs/2611.23403) | <sub>Mechanistic interpretability</sub> |

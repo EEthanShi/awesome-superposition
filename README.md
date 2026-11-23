@@ -262,18 +262,23 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**648 papers** since 1 July 2026 · updated 2026-11-22 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**653 papers** since 1 July 2026 · updated 2026-11-23 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
 | **Theory** | Superposition `22` · Polysemanticity `23` · Computation in superposition `4` · Feature geometry `21` |
-| **Recovery methods** | Sparse autoencoders `205` · Dictionary learning `18` · Transcoders and circuits `41` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `216` · Mechanistic interpretability `247` |
+| **Recovery methods** | Sparse autoencoders `208` · Dictionary learning `18` · Transcoders and circuits `41` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `217` · Mechanistic interpretability `249` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;20 | [ESSI: Computationally Efficient Semantic Search for Sparse Autoencoder Concepts](https://arxiv.org/abs/2611.27921) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;20 | [Auditing Post-Training Unlearning in Diffusion Language Models using Sparse Autoencoders](https://arxiv.org/abs/2611.27652) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;20 | [Weight-space programming and mechanistic interpretability for model editing in particle physics](https://arxiv.org/abs/2611.27079) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
+| Nov&nbsp;20 | [Disentangling Verbalized Evaluation Awareness and Refusal through Neuron-Level Intervention](https://arxiv.org/abs/2611.27032) | <sub>Steering</sub> |
+| Nov&nbsp;20 | [WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection](https://arxiv.org/abs/2611.27353) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;19 | [RL Post-Training in Diffusion Transformers Is Activation Steering](https://arxiv.org/abs/2611.26627) | <sub>Steering</sub> |
 | Nov&nbsp;19 | [Who Moved My $Z$ Boson? Revealing Resonance Features Inside a Neural Network](https://arxiv.org/abs/2611.26291) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;19 | [The Depth of a Prediction: Where Language Models Resolve a Word Predicts Human Reading Time](https://arxiv.org/abs/2611.25970) | <sub>Mechanistic interpretability</sub> |
@@ -289,13 +294,8 @@ applications). Each entry has one sentence on what the work shows.
 | Nov&nbsp;16 | [Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering](https://arxiv.org/abs/2611.21586) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis](https://arxiv.org/abs/2611.21348) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;16 | [Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment](https://arxiv.org/abs/2611.20441) | <sub>Steering, Mechanistic interpretability</sub> |
-| Nov&nbsp;16 | [Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models](https://arxiv.org/abs/2611.21705) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;16 | [Interpretable deep concepts of organoid morphology](https://arxiv.org/abs/2611.20840) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;16 | [Counterfactual Feature Steering for Adjacency-Preserving Identity Unlearning](https://arxiv.org/abs/2611.20637) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;16 | [Pretty Linear Liars: Unregularized Probes Favor Intervention-Unfaithful Features](https://arxiv.org/abs/2611.20371) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;15 | [Event-based object detection under adverse lighting and motion: lessons for construction sites](https://arxiv.org/abs/2611.19746) | <sub>Mechanistic interpretability</sub> |
 
-<sub>The other 628 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 633 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

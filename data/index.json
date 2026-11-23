@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-22T08:38:49+00:00",
+ "generated_at": "2026-11-23T09:37:00+00:00",
  "site": {
   "title": "Awesome Superposition",
   "tagline": "A curated reading list and a daily feed of new papers on feature superposition and mechanistic interpretability.",
   "repo": "EEthanShi/awesome-superposition",
   "site_url": "https://eethanshi.github.io/awesome-superposition/"
  },
- "total": 648,
+ "total": 653,
  "with_ai": 0,
- "latest_date": "2026-11-19",
+ "latest_date": "2026-11-20",
  "months": [
   {
    "month": "2026-11",
-   "count": 89,
+   "count": 94,
    "file": "papers/2026-11.json"
   },
   {
@@ -37,6 +37,7 @@
   }
  ],
  "days": {
+  "2026-11-20": 5,
   "2026-11-19": 3,
   "2026-11-18": 6,
   "2026-11-17": 3,
@@ -199,7 +200,7 @@
    "name": "Sparse autoencoders",
    "description": "Sparse autoencoders and their variants for recovering features.",
    "family": "recovery",
-   "count": 205
+   "count": 208
   },
   {
    "slug": "dictionary",
@@ -241,14 +242,14 @@
    "name": "Steering",
    "description": "Activation steering, steering vectors, and representation engineering.",
    "family": "broader",
-   "count": 216
+   "count": 217
   },
   {
    "slug": "mech-interp",
    "name": "Mechanistic interpretability",
    "description": "Reverse-engineering the computations of trained networks.",
    "family": "broader",
-   "count": 247
+   "count": 249
   }
  ]
 }

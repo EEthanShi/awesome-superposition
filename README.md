@@ -262,40 +262,40 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**665 papers** since 1 July 2026 · updated 2026-11-25 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**670 papers** since 1 July 2026 · updated 2026-11-26 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
-| **Theory** | Superposition `22` · Polysemanticity `23` · Computation in superposition `4` · Feature geometry `21` |
-| **Recovery methods** | Sparse autoencoders `213` · Dictionary learning `18` · Transcoders and circuits `42` · Parameter decomposition `3` · Absorption and splitting `7` |
-| **Interpretability** | Steering `219` · Mechanistic interpretability `254` |
+| **Theory** | Superposition `23` · Polysemanticity `24` · Computation in superposition `4` · Feature geometry `21` |
+| **Recovery methods** | Sparse autoencoders `215` · Dictionary learning `18` · Transcoders and circuits `42` · Parameter decomposition `3` · Absorption and splitting `7` |
+| **Interpretability** | Steering `220` · Mechanistic interpretability `255` |
 
 ### Latest papers
 
 | Date | Paper | Topics |
 |:--|:--|:--|
+| Nov&nbsp;25 | [A gene informed benchmark for BioScoring of pathology foundation models](https://arxiv.org/abs/2611.34930) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;25 | [Sparse-to-Sparse Feature Learning for Cross-Layer Analysis and Steering](https://arxiv.org/abs/2611.33640) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;25 | [TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination](https://arxiv.org/abs/2611.34762) | <sub>Steering</sub> |
+| Nov&nbsp;25 | [Interpreting Speckle Effects Through Neuron Interventions](https://arxiv.org/abs/2611.33632) | <sub>Mechanistic interpretability</sub> |
+| Nov&nbsp;24 | [MonoQPM: Splitting Features into Concepts for Inherent Interpretability and Predictive Performance](https://arxiv.org/abs/2611.33252) | <sub>Superposition, Polysemanticity</sub> |
 | Nov&nbsp;24 | [Social Bias Neurons in Multilingual Language Models: A Mechanistic Interpretability Analysis](https://arxiv.org/abs/2611.32685) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;24 | [Tokenization and Architecture Jointly Allocate Component Roles in Time Series Transformers](https://arxiv.org/abs/2611.31730) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;23 | [Beyond Patching: Consistent Circuit Discovery via Gradient Spectral Analysis](https://arxiv.org/abs/2611.30939) | <sub>Transcoders and circuits, Mechanistic interpretability</sub> |
 | Nov&nbsp;23 | [What Remains After Concept Erasure? Sparse Autoencoder Probes for Auditing Diffusion Models](https://arxiv.org/abs/2611.30117) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;23 | [Reward Basis Decomposition for Interpreting Preference Heterogeneity](https://arxiv.org/abs/2611.31640) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;23 | [SAEPO: Sparse-Autoencoder-Guided Credit Assignment for Policy Optimization](https://arxiv.org/abs/2611.29936) | <sub>Sparse autoencoders</sub> |
+| Nov&nbsp;23 | [Can Latent Reasoning Drive LLM Outputs Without a Trace?](https://arxiv.org/abs/2611.31015) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;23 | [Optimistic Online Learning for Coding Agents with Aggregate Feedback](https://arxiv.org/abs/2611.30405) | <sub>Steering</sub> |
 | Nov&nbsp;23 | [Training-Free Interventions for Hallucination in Large Language Models](https://arxiv.org/abs/2611.29909) | <sub>Steering</sub> |
-| Nov&nbsp;23 | [Can Latent Reasoning Drive LLM Outputs Without a Trace?](https://arxiv.org/abs/2611.31015) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;22 | [SAE-Audit: Clinical-Trial Prediction via Inference-Time Optimization of Black-Box LLMs Audited by Sparse Autoencoder Evidence](https://arxiv.org/abs/2611.29368) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;22 | [From States to Dynamics: Detecting Rule Violations in OthelloGPT](https://arxiv.org/abs/2611.29715) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;22 | [Compared to What? Calibrating Machine-Unlearning Diagnostics with Present, Absent and Suppressed Anchors](https://arxiv.org/abs/2611.29285) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;20 | [ESSI: Computationally Efficient Semantic Search for Sparse Autoencoder Concepts](https://arxiv.org/abs/2611.27921) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;20 | [Auditing Post-Training Unlearning in Diffusion Language Models using Sparse Autoencoders](https://arxiv.org/abs/2611.27652) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;20 | [Weight-space programming and mechanistic interpretability for model editing in particle physics](https://arxiv.org/abs/2611.27079) | <sub>Sparse autoencoders, Mechanistic interpretability</sub> |
-| Nov&nbsp;20 | [WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection](https://arxiv.org/abs/2611.27353) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;20 | [Disentangling Verbalized Evaluation Awareness and Refusal through Neuron-Level Intervention](https://arxiv.org/abs/2611.27032) | <sub>Steering</sub> |
-| Nov&nbsp;19 | [RL Post-Training in Diffusion Transformers Is Activation Steering](https://arxiv.org/abs/2611.26627) | <sub>Steering</sub> |
-| Nov&nbsp;19 | [Who Moved My $Z$ Boson? Revealing Resonance Features Inside a Neural Network](https://arxiv.org/abs/2611.26291) | <sub>Mechanistic interpretability</sub> |
-| Nov&nbsp;19 | [The Depth of a Prediction: Where Language Models Resolve a Word Predicts Human Reading Time](https://arxiv.org/abs/2611.25970) | <sub>Mechanistic interpretability</sub> |
 
-<sub>The other 645 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
+<sub>The other 650 papers are on [the website](https://eethanshi.github.io/awesome-superposition/), with search and topic filters.</sub>
 <!-- DAILY:END -->
 
 ## How the daily feed works

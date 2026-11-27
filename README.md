@@ -262,7 +262,7 @@ applications). Each entry has one sentence on what the work shows.
 ## New papers, updated daily
 
 <!-- DAILY:START -->
-**670 papers** since 1 July 2026 · updated 2026-11-26 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
+**670 papers** since 1 July 2026 · updated 2026-11-27 · [search and filter them on the website](https://eethanshi.github.io/awesome-superposition/) · [RSS](https://eethanshi.github.io/awesome-superposition/feed.xml)
 
 | | Topics and papers |
 |:--|:--|
@@ -275,8 +275,8 @@ applications). Each entry has one sentence on what the work shows.
 | Date | Paper | Topics |
 |:--|:--|:--|
 | Nov&nbsp;25 | [A gene informed benchmark for BioScoring of pathology foundation models](https://arxiv.org/abs/2611.34930) | <sub>Sparse autoencoders</sub> |
-| Nov&nbsp;25 | [Sparse-to-Sparse Feature Learning for Cross-Layer Analysis and Steering](https://arxiv.org/abs/2611.33640) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;25 | [TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination](https://arxiv.org/abs/2611.34762) | <sub>Steering</sub> |
+| Nov&nbsp;25 | [Sparse-to-Sparse Feature Learning for Cross-Layer Analysis and Steering](https://arxiv.org/abs/2611.33640) | <sub>Sparse autoencoders</sub> |
 | Nov&nbsp;25 | [Interpreting Speckle Effects Through Neuron Interventions](https://arxiv.org/abs/2611.33632) | <sub>Mechanistic interpretability</sub> |
 | Nov&nbsp;24 | [MonoQPM: Splitting Features into Concepts for Inherent Interpretability and Predictive Performance](https://arxiv.org/abs/2611.33252) | <sub>Superposition, Polysemanticity</sub> |
 | Nov&nbsp;24 | [Social Bias Neurons in Multilingual Language Models: A Mechanistic Interpretability Analysis](https://arxiv.org/abs/2611.32685) | <sub>Mechanistic interpretability</sub> |
